@@ -4,7 +4,7 @@ C Source
 */
 #include "Ft_Esd_LinearRoller.h"
 #include "Ft_Esd_Theme.h"
-#include "Ft_Esd_Dl.h"
+#include "FT_Esd_Dl.h"
 #include "FT_Esd_Primitives.h"
 extern Ft_Gpu_Hal_Context_t *Ft_Esd_Host;
 

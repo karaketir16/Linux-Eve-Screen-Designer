@@ -3,7 +3,7 @@
 #define FT_ESD_PRIMITIVES_H
 
 #include "Ft_Esd.h"
-#include "Ft_Esd_Dl.h"
+#include "FT_Esd_Dl.h"
 #include "Ft_Esd_BitmapInfo.h"
 #include "Ft_Esd_Math.h"
 

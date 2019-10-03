@@ -1,6 +1,6 @@
 
 #include "Ft_Esd_TouchTag.h"
-#include "Ft_Gpu_Hal.h"
+#include "FT_Gpu_Hal.h"
 
 #include "Ft_Esd_Core.h"
 

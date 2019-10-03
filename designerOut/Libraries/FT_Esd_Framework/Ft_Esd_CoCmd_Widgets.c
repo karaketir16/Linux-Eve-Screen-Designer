@@ -32,7 +32,8 @@
 #include "Ft_Esd_CoCmd.h"
 #include "Gpu_Hal.h"
 
-#include "Ft_Esd_Dl.h"
+#include "FT_Esd_Dl.h"
+#include <stdarg.h>
 
 #if ESD_DL_OPTIMIZE
 extern ft_uint8_t Ft_Esd_Primitive;

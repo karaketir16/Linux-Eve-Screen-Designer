@@ -1,6 +1,6 @@
 
-#include "FT_Esd_DefaultTheme.h"
-#include "FT_Esd_Theme.h"
+#include "Ft_Esd_DefaultTheme.h"
+#include "Ft_Esd_Theme.h"
 
 #include "Ft_Esd_Core.h"
 

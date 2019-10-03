@@ -67,9 +67,7 @@ SOURCES += \
         $$PWD/designerOut/Libraries/FT_Eve_Hal/*.c \
         $$PWD/designerOut/Libraries/FT_Esd_Widgets/*.c \
         $$PWD/designerOut/Generated/ME812A_WH50R/FT_Esd_Framework/*.c \
-        $$PWD/spi/*.c* \
-    backup.cpp \
-    main.cpp
+        $$PWD/spi/*.c*
 
 HEADERS += \
         $$PWD/designerOut/Generated/ME812A_WH50R/App/*.h \

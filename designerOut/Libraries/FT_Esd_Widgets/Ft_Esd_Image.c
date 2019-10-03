@@ -1,6 +1,6 @@
 #include "Ft_Esd.h"
 #include "Ft_Esd_Image.h"
-#include "Ft_Esd_Primitives.h"
+#include "FT_Esd_Primitives.h"
 
 ESD_METHOD(Ft_Esd_Image_Render_Bitmap, Context = Ft_Esd_Image)
 void Ft_Esd_Image_Render_Bitmap(Ft_Esd_Image *context)

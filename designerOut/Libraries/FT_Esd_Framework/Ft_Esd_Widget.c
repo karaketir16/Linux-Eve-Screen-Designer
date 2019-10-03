@@ -1,7 +1,7 @@
 
 
 #include "Ft_Esd_Widget.h"
-#include "Ft_Esd_Dl.h"
+#include "FT_Esd_Dl.h"
 
 static Ft_Esd_WidgetSlots s_Ft_Esd_Widget__Slots = {
 	(void (*)(void *))Ft_Esd_Widget_Initialize,

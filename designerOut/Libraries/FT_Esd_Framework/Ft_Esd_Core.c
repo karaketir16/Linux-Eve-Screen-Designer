@@ -33,7 +33,7 @@
 #include "Ft_Esd_Utility.h"
 
 #include "Ft_Esd_GpuAlloc.h"
-#include "Ft_Esd_Dl.h"
+#include "FT_Esd_Dl.h"
 #include "Ft_Esd_CoCmd.h"
 #include "Ft_Esd_BitmapHandle.h"
 #include "Ft_Esd_TouchTag.h"

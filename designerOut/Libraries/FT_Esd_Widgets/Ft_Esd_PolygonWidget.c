@@ -6,7 +6,7 @@ C Source
 
 #include "Ft_Esd.h"
 #include "Ft_Esd_Widget.h"
-#include "Ft_Esd_Primitives.h"
+#include "FT_Esd_Primitives.h"
 #include "Ft_Esd_PolygonWidget.h"
 
 #define WIDTH 800.00

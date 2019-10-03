@@ -31,6 +31,7 @@
 
 #include "EVE_Cmd.h"
 #include "EVE_Platform.h"
+#include <stddef.h>
 
 static inline void endFunc(EVE_HalContext *phost)
 {

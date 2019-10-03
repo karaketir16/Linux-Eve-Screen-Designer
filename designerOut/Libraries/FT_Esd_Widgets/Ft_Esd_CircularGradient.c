@@ -1,10 +1,10 @@
 
 #include "Ft_Esd_Elements.h"
-#include "Ft_Esd_Dl.h"
+#include "FT_Esd_Dl.h"
 #include "Ft_Esd.h"
 #include "Ft_Esd_Widget.h"
 #include "Ft_Esd_CircularGradient.h"
-#include "Ft_Esd_Primitives.h"
+#include "FT_Esd_Primitives.h"
 
 #define FT_ESD_SCRATCHHANDLE (15)
 #define PIXELS(x) int((x)*16)

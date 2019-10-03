@@ -33,7 +33,7 @@
 #define FT_ESD_WIDGET_H
 
 #include "Ft_Esd.h"
-#include "FT_Esd_Math.h"
+#include "Ft_Esd_Math.h"
 #include "FT_Esd_Primitives.h"
 
 ESD_CATEGORY(EsdWidgets, DisplayName = "ESD Widgets")
