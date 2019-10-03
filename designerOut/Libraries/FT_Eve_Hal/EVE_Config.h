@@ -195,7 +195,7 @@ Validate the configured options.
 
 */
 
-#if defined(ME810A_HV35R) || defined(ME812A_WH50R) || defined(ME813A_WV7C) || defined(ME813AU_WH50C) \
+#if defined(ME810A_HV35R) || defined(ME812A_WH50R) || defined(ME813A_WV7C) || defined(ME813AU_WH50C) ||defined(NHD_3_5C_FT813) \
     || defined(EVE_MODULE_PANL)                                                                      \
     || defined(EVE_GRAPHICS_VM810C) || defined(EVE_GRAPHICS_VM816C)                                  \
     || defined(EVE_GRAPHICS_FT800) || defined(EVE_GRAPHICS_FT801)                                    \
@@ -296,6 +296,15 @@ It may also set platform, display, and flash values if none are configured.
 #ifndef EVE_PLATFORM_AVAILABLE
 #define EVE_PLATFORM_AVAILABLE
 #define FT4222_PLATFORM
+#endif
+
+#elif defined(NHD_3_5C_FT813)
+
+#define FT813_ENABLE
+
+#ifndef EVE_DISPLAY_AVAILABLE
+#define EVE_DISPLAY_AVAILABLE
+#define DISPLAY_RESOLUTION_QVGA
 #endif
 
 #elif defined(EVE_GRAPHICS_VM816C)
