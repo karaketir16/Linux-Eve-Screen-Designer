@@ -26,7 +26,7 @@
 #define HIGH "1"
 
 #define SPI_PATH "/dev/spidev3.0"
-
+#define SPI_CLOCK_SPEED 1000000
 
 
 

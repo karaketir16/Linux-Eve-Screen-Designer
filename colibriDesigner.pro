@@ -1,15 +1,5 @@
 QT -= gui
 
-#CONFIG += c99
-
-#QMAKE_CXX = gcc
-
-#QMAKE_CXXFLAGS = -x c
-
-#QMAKE_LINK = gcc
-
-#QMAKE_LINK_SHLIB = $$QMAKE_CXX
-
 CONFIG -= app_bundle
 
 # The following define makes your compiler emit warnings if you use
@@ -25,15 +15,6 @@ DEFINES += NHD_3_5C_FT813
 # In order to do so, uncomment the following line.
 # You can also select to disable deprecated APIs only up to a certain version of Qt.
 #DEFINES += QT_DISABLE_DEPRECATED_BEFORE=0x060000    # disables all the APIs deprecated before Qt 6.0.0
-
-#DESIGNER_PATH = $$quote($$absolute_path($$PWD/designerOut))
-
-#DEPENDPATH  += $$quote($$DESIGNER_PATH\Libraries)
-#INCLUDEPATH += $$quote($$DESIGNER_PATH\Generated)
-
-#DEPENDPATH  += $$quote($$DESIGNER_PATH\Libraries)
-#INCLUDEPATH += $$quote($$DESIGNER_PATH\Generated)
-
 
 DEPENDPATH  += $$PWD/designerOut/Libraries/FT_Eve_Hal/Hdr/
 INCLUDEPATH += $$PWD/designerOut/Libraries/FT_Eve_Hal/Hdr/

@@ -37,25 +37,6 @@
 #include "spi.h"
 void ticker();
 
-#if defined(EVE_MODULE_PANL)
-/* TODO: Pass these as parameters in HAL initialization, instead of here. */
-
-uint8_t ucHeap[PANL_HEAP_SIZE];
-
-/* uart_write((ft900_uart_regs_t*) p, (uint8_t) c); */
-void tfp_putc(void *p, char c); /* Placeholder for user code */
-void bacnet_notification_acked(uint8_t id); /* Placeholder for user code */
-bool bacnet_msg_received(uint8_t src, const uint8_t *indata, const size_t inlen, uint8_t *outdata, size_t *outlen); /* Placeholder for user code */
-void bacnet_unconf_msg_received(uint8_t src, const uint8_t *indata, const size_t inlen); /* Placeholder for user code */
-#endif /* #if defined(EVE_MODULE_PANL) */
-
-#if defined(__FT930__)
-static const uint8_t s_SpimGpio[5] = { 30, 31, 32, 33, 29 };
-static const pad_dir_t s_SpimFunc[5] = { pad_spim_ss0, pad_spim_ss1, pad_spim_ss2, pad_spim_ss3, pad29_spim_ss0 }
-#else
-static const uint8_t s_SpimGpio[4] = { 28, 33, 34, 35 };
-//static const pad_dir_t s_SpimFunc[4] = { pad_spim_ss0, pad_spim_ss1, pad_spim_ss2, pad_spim_ss3 };
-#endif
 
 /*********
 ** INIT **
@@ -95,24 +76,23 @@ bool EVE_HalImpl_open(EVE_HalContext *phost, EVE_HalParameters *parameters)
 {
     Spi_pd_connect();
     Spi_cs_connect();
-//	write(pd_pin, HIGH, 1);
+
     Spi_pdSet(HIGH);
-    Spi_init(SPI_PATH,1000000);
+    Spi_init(SPI_PATH, SPI_CLOCK_SPEED);
     uint8_t dummyTx = 0;
     uint8_t dummyRx = 0;
     Spi_transfer(&dummyTx, &dummyRx, 1);
-//    write(pd_pin, LOW, 1);
+
     Spi_pdSet(LOW);
     usleep(300*1000);
-//    write(pd_pin, HIGH, 1);
+
     Spi_pdSet(HIGH);
     usleep(300*1000);
-    Spi_init(SPI_PATH, 1000000);
+    Spi_init(SPI_PATH, SPI_CLOCK_SPEED);
     /* Initialize the context valriables */
-//    host->ft_cmd_fifo_wp = host->ft_dl_buff_wp = 0;
     phost->SpiDummyBytes = 1;//by default ft800/801/810/811 goes with single dummy byte for read
     phost->SpiChannels = 0;
-//    host->status = FT_GPU_HAL_OPENED;
+
     phost->Status = EVE_STATUS_OPENED;
 
 }
@@ -146,15 +126,15 @@ void EVE_Hal_startTransfer(EVE_HalContext *phost, EVE_TRANSFER_T rw, uint32_t ad
     {
         ft_uint8_t tx[4];
         ft_uint8_t rx[4];
-        /* Compose the read packet */
-        // printf("addr: 0x%06x addr: %ld\n", addr, addr);
+
+
         tx[0] = (ft_uint8_t) (addr >> 16);
         tx[1] = (ft_uint8_t) (addr >> 8);
         tx[2] = (ft_uint8_t) (addr);
 
         tx[3] = 0; //Dummy Read byte
 
-        // printf("t0: 0x%02x t1: 0x%02x t2: 0x%02x t3: 0x%02x\n", tx[0], tx[1],tx[2],tx[3]);
+
 
         Spi_transfer(tx, rx, sizeof(tx));
         phost->Status = FT_GPU_HAL_READING;
@@ -163,7 +143,7 @@ void EVE_Hal_startTransfer(EVE_HalContext *phost, EVE_TRANSFER_T rw, uint32_t ad
 
         ft_uint8_t tx[3];
         ft_uint8_t rx[3];
-        /* Compose the read packet */
+
         tx[0] = (0x80|(addr >> 16));
         tx[1] = addr >> 8;
         tx[2] = addr;
@@ -179,7 +159,6 @@ void EVE_Hal_endTransfer(EVE_HalContext *phost)
 {
     eve_assert(phost->Status == EVE_STATUS_READING || phost->Status == EVE_STATUS_WRITING);
 
-//	spi_close(SPIM, phost->Parameters.SpiCsPin);
     Spi_csSet(HIGH);
     phost->Status = EVE_STATUS_OPENED;
 }
@@ -192,7 +171,6 @@ void EVE_Hal_flush(EVE_HalContext *phost)
 
 static inline void rdBuffer(EVE_HalContext *phost, uint8_t *buffer, uint32_t size)
 {
-//	spi_readn(SPIM, buffer, size);
     while (size--) {
        (*buffer) = EVE_Hal_transfer8(phost,0);
        buffer++;
@@ -201,7 +179,6 @@ static inline void rdBuffer(EVE_HalContext *phost, uint8_t *buffer, uint32_t siz
 
 static inline void wrBuffer(EVE_HalContext *phost, const uint8_t *buffer, uint32_t size)
 {
-//	spi_writen(SPIM, buffer, size);
     while (size--) {
        EVE_Hal_transfer8(phost,*buffer);
        buffer++;
@@ -211,18 +188,15 @@ static inline void wrBuffer(EVE_HalContext *phost, const uint8_t *buffer, uint32
 static inline uint8_t transfer8(EVE_HalContext *phost, uint8_t value)
 {
     ft_uint8_t tx = value;
-//    printf("value: 0x%02x\n", value);
     ft_uint8_t rx = 0;
 
     if (phost->Status == EVE_STATUS_READING)
     {
         Spi_transfer(&tx, &rx, sizeof(tx));
-//        printf("0x%02x\n", rx);
         return rx;
     }
     else
     {
-//        printf("write 8: 0x%02x\n", tx);
         Spi_transfer(&tx, &rx, sizeof(tx));
         return 0;
     }
@@ -239,14 +213,12 @@ uint16_t EVE_Hal_transfer16(EVE_HalContext *phost, uint16_t value)
     uint8_t buffer[2];
     if (phost->Status == EVE_STATUS_READING)
     {
-//        printf("read 16\n");
         rdBuffer(phost, buffer, 2);
         return (uint16_t)buffer[0]
             | (uint16_t)buffer[1] << 8;
     }
     else
     {
-//        printf("write 16\n");
         buffer[0] = value & 0xFF;
         buffer[1] = value >> 8;
         wrBuffer(phost, buffer, 2);
@@ -373,11 +345,6 @@ void EVE_Hal_hostCommand(EVE_HalContext *phost, uint8_t cmd)
     hcmd[2] = 0;
     hcmd[3] = 0;
 
-//	spi_open(SPIM, phost->Parameters.SpiCsPin);
-//	spi_writen(SPIM, hcmd, 3);
-//	spi_close(SPIM, phost->Parameters.SpiCsPin);
-
-
     ft_uint8_t rx[3];
     Spi_csSet(LOW);
     Spi_transfer(hcmd, rx, sizeof(hcmd));
@@ -393,10 +360,6 @@ void EVE_Hal_hostCommandExt3(EVE_HalContext *phost, uint32_t cmd)
 	hcmd[1] = (cmd >> 8) & 0xff;
 	hcmd[2] = (cmd >> 16) & 0xff;
 	hcmd[3] = 0;
-
-//	spi_open(SPIM, phost->Parameters.SpiCsPin);
-//	spi_writen(SPIM, hcmd, 3);
-//	spi_close(SPIM, phost->Parameters.SpiCsPin);
 
     ft_uint8_t rx[3];
     Spi_csSet(LOW);
@@ -456,26 +419,6 @@ void EVE_Hal_setSPI(EVE_HalContext *phost, EVE_SPI_CHANNELS_T numchnls, uint8_t 
 
 uint32_t EVE_Hal_currentFrequency(EVE_HalContext *phost)
 {
-//	uint32_t t0, t1;
-//	int32_t r = 15625;
-
-//	t0 = EVE_Hal_rd32(phost, REG_CLOCK); /* t0 read */
-
-//	__asm__(
-//	    "   move.l  $r0,%0               \n\t"
-//	    "   mul.l   $r0,$r0,100          \n\t"
-//	    "1:                              \n\t"
-//	    "   sub.l   $r0,$r0,3            \n\t" /* Subtract the loop time = 4 cycles */
-//	    "   cmp.l   $r0,0                \n\t" /* Check that the counter is equal to 0 */
-//	    "   jmpc    gt, 1b               \n\t"
-//	    : /* Outputs */
-//	    : "r"(r) /* Inputs */
-//	    : "$r0"); /* Using */
-
-//	t1 = EVE_Hal_rd32(phost, REG_CLOCK); /* t1 read */
-//	return ((t1 - t0) << 6); /* bitshift 6 places is the same as multiplying 64 */
-
-
     ft_uint32_t t0, t1;
     ft_uint32_t addr = REG_CLOCK;
     ft_uint8_t spidata[4];
@@ -684,26 +627,7 @@ bool EVE_UtilImpl_bootupDisplayGpio(EVE_HalContext *phost)
 }
 
 
-//ft_uint16_t Ft_Gpu_Cmdfifo_Freespace(Ft_Gpu_Hal_Context_t *host)
-//{
-//    ft_uint16_t fullness,retval;
 
-//    //host->ft_cmd_fifo_wp = Ft_Gpu_Hal_Rd16(host,REG_CMD_WRITE);
-
-//    fullness = (host->ft_cmd_fifo_wp - Ft_Gpu_Hal_Rd16(host,REG_CMD_READ)) & 4095;
-//    retval = (EVE_CMD_FIFO_SIZE - 4) - fullness;
-//    return (retval);
-//}
-
-//ft_void_t Ft_Gpu_Hal_CheckCmdBuffer(Ft_Gpu_Hal_Context_t *host,ft_uint32_t count)
-//{
-//    ft_uint16_t getfreespace;
-//    do{
-//        getfreespace = Ft_Gpu_Cmdfifo_Freespace(host);
-//    }while(getfreespace < count);
-//}
-
-
-#endif /* #if defined(FT9XX_PLATFORM) */
+#endif /* #if defined(ColibriiMX6_PLATFORM) */
 
 /* end of file */
