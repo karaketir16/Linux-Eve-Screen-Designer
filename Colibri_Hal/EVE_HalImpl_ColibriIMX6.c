@@ -34,7 +34,7 @@
 #include "FT_DataTypes.h"
 #if defined(ColibriiMX6_PLATFORM)
 
-#include "spi.h"
+#include "colibri_spi.h"
 void ticker();
 
 

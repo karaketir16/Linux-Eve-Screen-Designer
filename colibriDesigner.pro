@@ -37,8 +37,11 @@ INCLUDEPATH += $$PWD/designerOut/Generated/ME812A_WH50R/FT_Esd_Widgets/
 DEPENDPATH  += $$PWD/designerOut/Generated/ME812A_WH50R/App/
 INCLUDEPATH += $$PWD/designerOut/Generated/ME812A_WH50R/App/
 
-DEPENDPATH  += $$PWD/spi/
-INCLUDEPATH += $$PWD/spi/
+DEPENDPATH  += $$PWD/Colibri_Hal/colibri_spi/
+INCLUDEPATH += $$PWD/Colibri_Hal/colibri_spi/
+
+DEPENDPATH  += $$PWD/Colibri_Hal/
+INCLUDEPATH += $$PWD/Colibri_Hal/
 
 
 SOURCES += \
@@ -48,7 +51,8 @@ SOURCES += \
         $$PWD/designerOut/Libraries/FT_Eve_Hal/*.c \
         $$PWD/designerOut/Libraries/FT_Esd_Widgets/*.c \
         $$PWD/designerOut/Generated/ME812A_WH50R/FT_Esd_Framework/*.c \
-        $$PWD/spi/*.c*
+        $$PWD/Colibri_Hal/colibri_spi/*.c* \
+        $$PWD/Colibri_Hal/*.c*
 
 HEADERS += \
         $$PWD/designerOut/Generated/ME812A_WH50R/App/*.h \
@@ -58,7 +62,7 @@ HEADERS += \
         $$PWD/designerOut/Libraries/FT_Eve_Hal/Hdr/*.h \
         $$PWD/designerOut/Libraries/FT_Esd_Widgets/*.h \
         $$PWD/designerOut/Generated/ME812A_WH50R/FT_Esd_Framework/*.h \
-        $$PWD/spi/*.h \
+        $$PWD/Colibri_Hal/colibri_spi/*.h \
 
 
 

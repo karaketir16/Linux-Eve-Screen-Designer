@@ -1,4 +1,4 @@
-#include "spi.h"
+#include "colibri_spi.h"
 
 //Spi::Spi(QObject *parent) : QObject(parent)
 //{
