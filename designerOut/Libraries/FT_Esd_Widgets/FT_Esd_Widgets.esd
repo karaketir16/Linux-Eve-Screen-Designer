@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<_ProjectRoot _uuid="{dcd784fe-b390-415f-ad88-e56c6bce44c1}" _name="Project" _locked="false" _version="40001" _revision="2">
+    <__Properties>
+        <_targets type="VariantList">
+            <li type="String">FT80X</li>
+            <li type="String">FT81X</li>
+            <li type="String">BT81X</li>
+        </_targets>
+        <_toolchain type="String"></_toolchain>
+        <definitions type="VariantList"/>
+    </__Properties>
+    <_ProjectFileResource _uuid="{cbc46d2e-0570-47b8-b127-c0edee93e6b8}" _name="Ft_Esd_ArcLine.c" _locked="false" fileName="Ft_Esd_ArcLine.c">
+        <_SourceFile _uuid="{2a033416-384a-4a35-a41b-c4c13c0383f5}" _name="Source File" _locked="false"/>
+    </_ProjectFileResource>
+    <_ProjectFileLink _uuid="{db67889c-3e51-4380-a6c6-3c731656bc30}" _name="Ft_Esd_ArcLine.widget" _locked="false" fileName="Ft_Esd_ArcLine.widget" type="_WidgetDocument"/>
+    <_ProjectFileResource _uuid="{5a312cd9-96bf-4c73-96a8-027f8a5b6715}" _name="Ft_Esd_ArcSlider.c" _locked="false" fileName="Ft_Esd_ArcSlider.c">
+        <_SourceFile _uuid="{c4ad3bc6-6b41-4c9f-91d7-a623e201c9cf}" _name="Source File" _locked="false"/>
+    </_ProjectFileResource>
+    <_ProjectFileLink _uuid="{ecb9da24-4686-42e6-a9ee-a4fca5c271af}" _name="Ft_Esd_ArcSlider.widget" _locked="false" fileName="Ft_Esd_ArcSlider.widget" type="_WidgetDocument"/>
+    <_ProjectFileLink _uuid="{28a9f1ab-81e7-4a03-86cb-f4e72f186cee}" _name="Ft_Esd_CheckBox.widget" _locked="false" fileName="Ft_Esd_CheckBox.widget" type="_WidgetDocument"/>
+    <_ProjectFileLink _uuid="{30916bd0-a9a7-4cd2-b208-bf59e0bc4460}" _name="Ft_Esd_Circle.widget" _locked="false" fileName="Ft_Esd_Circle.widget" type="_WidgetDocument"/>
+    <_ProjectFileLink _uuid="{4e21493a-1fa1-48d2-bb2a-17a7c7638770}" _name="Ft_Esd_Circle_Raised.widget" _locked="false" fileName="Ft_Esd_Circle_Raised.widget" type="_WidgetDocument"/>
+    <_ProjectFileLink _uuid="{81d3a7f3-5d1e-45d2-a166-26ac271e3006}" _name="Ft_Esd_Circle_Sunken.widget" _locked="false" fileName="Ft_Esd_Circle_Sunken.widget" type="_WidgetDocument"/>
+    <_ProjectFileResource _uuid="{06fd2675-fa35-452d-aed6-0afa1157029c}" _name="Ft_Esd_CircleLine.c" _locked="false" fileName="Ft_Esd_CircleLine.c">
+        <_SourceFile _uuid="{07f7fe62-4179-4edb-990b-d78cbd6f16fb}" _name="Source File" _locked="false"/>
+    </_ProjectFileResource>
+    <_ProjectFileLink _uuid="{8a8dd510-0cee-42cd-bcac-beb513efd56b}" _name="Ft_Esd_CircleLine.widget" _locked="false" fileName="Ft_Esd_CircleLine.widget" type="_WidgetDocument"/>
+    <_ProjectFileResource _uuid="{e4218132-c611-4fec-ac12-5f2be18af0de}" _name="Ft_Esd_CircularGradient.c" _locked="false" fileName="Ft_Esd_CircularGradient.c">
+        <_SourceFile _uuid="{9c25179f-b068-414e-b033-8513f518b97c}" _name="Source File" _locked="false"/>
+    </_ProjectFileResource>
+    <_ProjectFileLink _uuid="{e8620b3c-1cb1-4294-b019-ba44ddb6ee80}" _name="Ft_Esd_CircularGradient.widget" _locked="false" fileName="Ft_Esd_CircularGradient.widget" type="_WidgetDocument"/>
+    <_ProjectFileResource _uuid="{6b540517-44f0-4189-9a1e-937eeae6ad34}" _name="Ft_Esd_CircularSlider.c" _locked="false" fileName="Ft_Esd_CircularSlider.c">
+        <_SourceFile _uuid="{e1c5d074-6785-464b-a68b-1187e4a44344}" _name="Source File" _locked="false"/>
+    </_ProjectFileResource>
+    <_ProjectFileLink _uuid="{2c2eac15-2ae3-43ab-8590-dbc7e0e11303}" _name="Ft_Esd_CircularSlider.widget" _locked="false" fileName="Ft_Esd_CircularSlider.widget" type="_WidgetDocument"/>
+    <_ProjectFileLink _uuid="{8955c219-45ae-4a52-9ffb-2fc6cf53c455}" _name="Ft_Esd_Clock.widget" _locked="false" fileName="Ft_Esd_Clock.widget" type="_WidgetDocument"/>
+    <_ProjectFileResource _uuid="{830a5b41-cd94-4357-8340-c34c90c5f3c9}" _name="Ft_Esd_ColorPicker.c" _locked="false" fileName="Ft_Esd_ColorPicker.c">
+        <_SourceFile _uuid="{5cb5c445-8547-432a-9c23-462a56e5c632}" _name="Source File" _locked="false"/>
+    </_ProjectFileResource>
+    <_ProjectFileLink _uuid="{a1c08311-03d6-4b9d-bbd2-1dd64f01606b}" _name="Ft_Esd_ColorPicker.widget" _locked="false" fileName="Ft_Esd_ColorPicker.widget" type="_WidgetDocument"/>
+    <_ProjectFileResource _uuid="{d51da818-05f5-4870-8f5a-088662409cf9}" _name="Ft_Esd_DefaultTheme.h" _locked="false" fileName="Ft_Esd_DefaultTheme.h">
+        <_SourceFile _uuid="{cb9e6631-f417-4075-8dcb-e54d711376c0}" _name="Source File" _locked="false"/>
+    </_ProjectFileResource>
+    <_ProjectFileResource _uuid="{5c63963a-4b33-4e9a-8a18-c1611cb5a707}" _name="Ft_Esd_Elements.c" _locked="false" fileName="Ft_Esd_Elements.c">
+        <_SourceFile _uuid="{702b07a2-8b8c-482b-89d5-31f845262b0b}" _name="Source File" _locked="false"/>
+    </_ProjectFileResource>
+    <_ProjectFileResource _uuid="{2af5d035-c2c0-4a2d-b0aa-f185bbb7702c}" _name="Ft_Esd_Elements.h" _locked="false" fileName="Ft_Esd_Elements.h">
+        <_SourceFile _uuid="{9b43d2c0-0855-46ce-8c58-1ad0f6749245}" _name="Source File" _locked="false"/>
+    </_ProjectFileResource>
+    <_ProjectFileResource _uuid="{639a0286-2a4f-4b82-bad2-787d9cf2e10f}" _name="Ft_Esd_FixedPointNumericLabel.c" _locked="false" fileName="Ft_Esd_FixedPointNumericLabel.c">
+        <_SourceFile _uuid="{cd1ea2e4-f0f3-4c0f-a643-f80c19c26931}" _name="Source File" _locked="false"/>
+    </_ProjectFileResource>
+    <_ProjectFileLink _uuid="{ba1afb5c-2ec4-40f7-a8c1-4785a4bdab72}" _name="Ft_Esd_FixedPointNumericLabel.widget" _locked="false" fileName="Ft_Esd_FixedPointNumericLabel.widget" type="_WidgetDocument"/>
+    <_ProjectFileLink _uuid="{6628015e-776c-4553-9fe5-98595da7ed9e}" _name="Ft_Esd_Gauge.widget" _locked="false" fileName="Ft_Esd_Gauge.widget" type="_WidgetDocument"/>
+    <_ProjectFileLink _uuid="{5793a210-d0a6-42fa-a6c2-9c9afda0ce30}" _name="Ft_Esd_Gradient.widget" _locked="false" fileName="Ft_Esd_Gradient.widget" type="_WidgetDocument"/>
+    <_ProjectFileResource _uuid="{30d2c6fc-4271-43b4-8d80-7120f6122e52}" _name="Ft_Esd_Image.c" _locked="false" fileName="Ft_Esd_Image.c">
+        <_SourceFile _uuid="{a1097a46-91d1-4143-8cf4-1d4733c08c13}" _name="Source File" _locked="false"/>
+    </_ProjectFileResource>
+    <_ProjectFileLink _uuid="{2749b4e1-a6ec-43df-a64d-723cdfa1b97e}" _name="Ft_Esd_Image.widget" _locked="false" fileName="Ft_Esd_Image.widget" type="_WidgetDocument"/>
+    <_ProjectFileResource _uuid="{9faf6e6e-4ef3-43bc-aefd-de7fb95e196e}" _name="Ft_Esd_Image_Rotate.c" _locked="false" fileName="Ft_Esd_Image_Rotate.c">
+        <_SourceFile _uuid="{49d7429b-01f3-433c-b39a-d7a0405f5870}" _name="Source File" _locked="false"/>
+    </_ProjectFileResource>
+    <_ProjectFileLink _uuid="{8d712e2f-633f-4768-9b38-9760216215ed}" _name="Ft_Esd_Image_Rotate.widget" _locked="false" fileName="Ft_Esd_Image_Rotate.widget" type="_WidgetDocument"/>
+    <_ProjectFileLink _uuid="{5f871ab2-f66d-4503-8b68-7cdd9b7b3e74}" _name="Ft_Esd_ImageButton.widget" _locked="false" fileName="Ft_Esd_ImageButton.widget" type="_WidgetDocument"/>
+    <_ProjectFileLink _uuid="{506f1c0d-63eb-49a2-8703-ef8db0dfd649}" _name="Ft_Esd_IntCounter.logic" _locked="false" fileName="Ft_Esd_IntCounter.logic" type="_LogicDocument"/>
+    <_ProjectFileLink _uuid="{96bab61c-c627-4e76-9a35-05d57daa696a}" _name="Ft_Esd_Label.widget" _locked="false" fileName="Ft_Esd_Label.widget" type="_WidgetDocument"/>
+    <_ProjectFileResource _uuid="{32caeab4-f52d-4964-81f4-84659798d787}" _name="Ft_Esd_LabelButton.c" _locked="false" fileName="Ft_Esd_LabelButton.c">
+        <_SourceFile _uuid="{8eeedcd2-18d8-4e47-9ff6-39f478aeaac7}" _name="Source File" _locked="false"/>
+    </_ProjectFileResource>
+    <_ProjectFileLink _uuid="{11603a1c-e3d3-41fb-bf02-794d961280ac}" _name="Ft_Esd_LabelButton.widget" _locked="false" fileName="Ft_Esd_LabelButton.widget" type="_WidgetDocument"/>
+    <_ProjectFileLink _uuid="{d39928c4-5fd1-4b38-8a2b-958f6eeec01a}" _name="Ft_Esd_Line.widget" _locked="false" fileName="Ft_Esd_Line.widget" type="_WidgetDocument"/>
+    <_ProjectFileResource _uuid="{dbab93ab-2227-465a-968d-cdf1e925c81b}" _name="Ft_Esd_LinearRoller.c" _locked="false" fileName="Ft_Esd_LinearRoller.c">
+        <_SourceFile _uuid="{4164669e-4cff-4cbd-a8f1-ccaf75506a58}" _name="Source File" _locked="false"/>
+    </_ProjectFileResource>
+    <_ProjectFileLink _uuid="{60912691-ad1a-4ffe-bac4-a8920459f0fd}" _name="Ft_Esd_LinearRoller.widget" _locked="false" fileName="Ft_Esd_LinearRoller.widget" type="_WidgetDocument"/>
+    <_ProjectFileLink _uuid="{7491b7d4-0556-49dd-9c46-033126471bdd}" _name="Ft_Esd_MultiGradientRounded.widget" _locked="false" fileName="Ft_Esd_MultiGradientRounded.widget" type="_WidgetDocument"/>
+    <_ProjectFileResource _uuid="{1ebd235f-f5dd-417a-baa4-d5b0e43e9d08}" _name="Ft_Esd_NumericLabel.c" _locked="false" fileName="Ft_Esd_NumericLabel.c">
+        <_SourceFile _uuid="{ea2f15a6-34f6-4f57-a312-860c24c6325b}" _name="Source File" _locked="false"/>
+    </_ProjectFileResource>
+    <_ProjectFileLink _uuid="{42cc6c3c-8f03-43f0-948f-005e70f38610}" _name="Ft_Esd_NumericLabel.widget" _locked="false" fileName="Ft_Esd_NumericLabel.widget" type="_WidgetDocument"/>
+    <_ProjectFileLink _uuid="{86342afa-5f75-407e-a0e7-28af346283ab}" _name="Ft_Esd_Panel.widget" _locked="false" fileName="Ft_Esd_Panel.widget" type="_WidgetDocument"/>
+    <_ProjectFileLink _uuid="{b6ec8acb-2a20-4c4f-918e-a16ffb172772}" _name="Ft_Esd_Panel_Color.widget" _locked="false" fileName="Ft_Esd_Panel_Color.widget" type="_WidgetDocument"/>
+    <_ProjectFileLink _uuid="{45e08d4d-c952-40ed-850f-9419ee5b1f8a}" _name="Ft_Esd_Panel_Raised.widget" _locked="false" fileName="Ft_Esd_Panel_Raised.widget" type="_WidgetDocument"/>
+    <_ProjectFileLink _uuid="{8e746dd3-41ef-4a29-982b-c162379e7264}" _name="Ft_Esd_Panel_Sunken.widget" _locked="false" fileName="Ft_Esd_Panel_Sunken.widget" type="_WidgetDocument"/>
+    <_ProjectFileLink _uuid="{d131580b-7faa-4c61-9939-497652bc8bb6}" _name="Ft_Esd_PartialRing.widget" _locked="false" fileName="Ft_Esd_PartialRing.widget" type="_WidgetDocument"/>
+    <_ProjectFileLink _uuid="{53f691ce-9dc1-465a-811a-4f5d11ecbe25}" _name="Ft_Esd_PosSizeToRadius.logic" _locked="false" fileName="Ft_Esd_PosSizeToRadius.logic" type="_LogicDocument"/>
+    <_ProjectFileResource _uuid="{3caf450a-fa59-4585-a897-351897721918}" _name="Ft_Esd_ProgressBar.c" _locked="false" fileName="Ft_Esd_ProgressBar.c">
+        <_SourceFile _uuid="{15543a2a-d738-41ea-a540-daae87c43b19}" _name="Source File" _locked="false"/>
+    </_ProjectFileResource>
+    <_ProjectFileLink _uuid="{70e759cf-e50b-47a5-93c0-86539f1469a0}" _name="Ft_Esd_ProgressBar.widget" _locked="false" fileName="Ft_Esd_ProgressBar.widget" type="_WidgetDocument"/>
+    <_ProjectFileLink _uuid="{11603a1a-e3d3-41fb-bf02-794d961280ab}" _name="Ft_Esd_PushButton.widget" _locked="false" fileName="Ft_Esd_PushButton.widget" type="_WidgetDocument"/>
+    <_ProjectFileResource _uuid="{4645872b-644e-4f4e-8189-f07abbc6e6d1}" _name="Ft_Esd_RadioButton.c" _locked="false" fileName="Ft_Esd_RadioButton.c">
+        <_SourceFile _uuid="{1be2c4f6-5e99-4090-b702-45b70a595b79}" _name="Source File" _locked="false"/>
+    </_ProjectFileResource>
+    <_ProjectFileLink _uuid="{aff4d0bb-c38c-4725-a377-bbf0e7b53832}" _name="Ft_Esd_RadioButton.widget" _locked="false" fileName="Ft_Esd_RadioButton.widget" type="_WidgetDocument"/>
+    <_ProjectFileResource _uuid="{7b2592fe-77b8-4b6b-963e-357ad9b8e849}" _name="Ft_Esd_RadioGroup.c" _locked="false" fileName="Ft_Esd_RadioGroup.c">
+        <_SourceFile _uuid="{36e4ce0e-c338-47b5-aa17-90f0d08d3ff1}" _name="Source File" _locked="false"/>
+    </_ProjectFileResource>
+    <_ProjectFileLink _uuid="{57a036af-b248-4667-8ede-6946acee1ca7}" _name="Ft_Esd_RadioGroup.logic" _locked="false" fileName="Ft_Esd_RadioGroup.logic" type="_LogicDocument"/>
+    <_ProjectFileLink _uuid="{9f719260-1a41-4b8f-b259-50cc40d7ff44}" _name="Ft_Esd_Rectangle.widget" _locked="false" fileName="Ft_Esd_Rectangle.widget" type="_WidgetDocument"/>
+    <_ProjectFileLink _uuid="{cc0e6b14-840c-4128-9351-bc76577e1d3c}" _name="Ft_Esd_Ring.widget" _locked="false" fileName="Ft_Esd_Ring.widget" type="_WidgetDocument"/>
+    <_ProjectFileLink _uuid="{c58eebbd-224b-4f59-b7c2-c06fb52d769e}" _name="Ft_Esd_ScrollableImageWidget.widget" _locked="false" fileName="Ft_Esd_ScrollableImageWidget.widget" type="_WidgetDocument"/>
+    <_ProjectFileResource _uuid="{27c8aba8-596d-44c2-916a-79eb0ecc9c5f}" _name="Ft_Esd_ScrollBar.c" _locked="false" fileName="Ft_Esd_ScrollBar.c">
+        <_SourceFile _uuid="{0fcd8a3b-98bd-45e7-99c7-670c081eec4c}" _name="Source File" _locked="false"/>
+    </_ProjectFileResource>
+    <_ProjectFileLink _uuid="{a200a872-dfe4-429a-a5a8-14c93d4f48b3}" _name="Ft_Esd_ScrollBar.widget" _locked="false" fileName="Ft_Esd_ScrollBar.widget" type="_WidgetDocument"/>
+    <_ProjectFileResource _uuid="{ee6ac727-d364-420e-b8d8-a0705f0bb063}" _name="Ft_Esd_ScrollPanel.c" _locked="false" fileName="Ft_Esd_ScrollPanel.c">
+        <_SourceFile _uuid="{ff15b315-476f-4b46-b4f8-5708978feea9}" _name="Source File" _locked="false"/>
+    </_ProjectFileResource>
+    <_ProjectFileLink _uuid="{c31916ed-eaec-47c0-ac8e-7f421fa21750}" _name="Ft_Esd_ScrollPanel.widget" _locked="false" fileName="Ft_Esd_ScrollPanel.widget" type="_WidgetDocument"/>
+    <_ProjectFileResource _uuid="{17c70063-2644-4692-a41c-79114a8b53bd}" _name="Ft_Esd_ScrollSwitch.c" _locked="false" fileName="Ft_Esd_ScrollSwitch.c">
+        <_SourceFile _uuid="{a8594a31-001a-4b6a-8a90-519c975f9192}" _name="Source File" _locked="false"/>
+    </_ProjectFileResource>
+    <_ProjectFileLink _uuid="{3631da4f-dd82-45ca-87c4-fe35c90f4ec7}" _name="Ft_Esd_ScrollSwitch.widget" _locked="false" fileName="Ft_Esd_ScrollSwitch.widget" type="_WidgetDocument"/>
+    <_ProjectFileResource _uuid="{836a752b-ed31-4d16-9563-1856d63936a1}" _name="Ft_Esd_Sketch.c" _locked="false" fileName="Ft_Esd_Sketch.c">
+        <_SourceFile _uuid="{2bdfd65d-0e21-4115-8824-1fcdc2569775}" _name="Source File" _locked="false"/>
+    </_ProjectFileResource>
+    <_ProjectFileLink _uuid="{47b31512-b71a-4694-b0bb-117de97b1d96}" _name="Ft_Esd_Sketch.widget" _locked="false" fileName="Ft_Esd_Sketch.widget" type="_WidgetDocument"/>
+    <_ProjectFileResource _uuid="{7c9df993-38f5-47f8-ac6f-345f9b1a7d59}" _name="Ft_Esd_Slider.c" _locked="false" fileName="Ft_Esd_Slider.c">
+        <_SourceFile _uuid="{a21d5954-51d0-4375-9a77-d0c4b638b04d}" _name="Source File" _locked="false"/>
+    </_ProjectFileResource>
+    <_ProjectFileLink _uuid="{17ef2d59-d9ac-45d3-8549-c6647b492707}" _name="Ft_Esd_Slider.widget" _locked="false" fileName="Ft_Esd_Slider.widget" type="_WidgetDocument"/>
+    <_ProjectFileLink _uuid="{fc735af9-3cc1-477f-bb68-d62fbf23cfd6}" _name="Ft_Esd_SpinBox.widget" _locked="false" fileName="Ft_Esd_SpinBox.widget" type="_WidgetDocument"/>
+    <_ProjectFileLink _uuid="{e79e3129-ec6f-4292-96f8-04d80f3f9278}" _name="Ft_Esd_Theme_DarkOrange.theme" _locked="false" fileName="Ft_Esd_Theme_DarkOrange.theme" type="_ThemeDocument"/>
+    <_ProjectFileLink _uuid="{37eaccb0-96ba-4454-a609-38717d7f85a7}" _name="Ft_Esd_Theme_LightBlue.theme" _locked="false" fileName="Ft_Esd_Theme_LightBlue.theme" type="_ThemeDocument"/>
+    <_ProjectFileResource _uuid="{42640ffe-d90e-410b-9f66-074071826ef4}" _name="Ft_Esd_Toggle.c" _locked="false" fileName="Ft_Esd_Toggle.c">
+        <_SourceFile _uuid="{402be00e-53c7-4512-9ab2-8053684a5d78}" _name="Source File" _locked="false"/>
+    </_ProjectFileResource>
+    <_ProjectFileLink _uuid="{87fa0808-3868-474c-800a-9b9d4296f063}" _name="Ft_Esd_Toggle.widget" _locked="false" fileName="Ft_Esd_Toggle.widget" type="_WidgetDocument"/>
+
+    <_ProjectFileLink _uuid="{4223890b-1116-4769-b2df-8b53c928896e}" _name="Ft_Esd_TouchPanel.widget" _locked="false" fileName="Ft_Esd_TouchPanel.widget" type="_WidgetDocument"/>
+	<_ProjectFileResource _uuid="{e4218132-c611-4fec-ac12-5f2be18af0de}" _name="ESD Circular Gradient.c" _locked="false" fileName="Ft_Esd_CircularGradient.c">
+        <_SourceFile _uuid="{9c25179f-b068-414e-b033-8513f518b97c}" _name="Source File" _locked="false"/>
+    </_ProjectFileResource>
+    <_ProjectFileLink _uuid="{e8620b3c-1cb1-4294-b019-ba44ddb6ee80}" _name="ESD Circular Gradient.widget" _locked="false" fileName="Ft_Esd_CircularGradient.widget" type="_WidgetDocument"/>
+
+	
+	  <_ProjectFileResource _uuid="{8c7f11aa-affc-4bf1-bbf1-5a107690a16f}" _name="ESD Polygon Widget.c" _locked="false" fileName="Ft_Esd_PolygonWidget.c">
+        <_SourceFile _uuid="{93546d1e-9916-40f0-b458-cd5db8c77060}" _name="Source File" _locked="false"/>
+    </_ProjectFileResource>
+    <_ProjectFileLink _uuid="{1d62f88f-660b-4e81-a81e-c3050df72280}" _name="ESD Polygon Widget.widget" _locked="false" fileName="Ft_Esd_PolygonWidget.widget" type="_WidgetDocument"/>
+
+</_ProjectRoot>

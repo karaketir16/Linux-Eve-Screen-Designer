@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<_WidgetDocument _uuid="{1f8de14d-ad12-47ba-8270-4573090feb99}" _locked="false" displayName="ESD Progress Bar" comment="EVE builtin progress bar widget" category="EsdWidgets" defaultSignal="" icon=":/icons/ui-progress-bar.png" _version="30110" _revision="61" purpose="Widget" backToFront="">
+    <_ActorContainer _uuid="{67603db6-4dae-43d0-85ab-3fcfb2dd15ef}" _name="Actors" _locked="false"/>
+    <_ConnectionContainer _uuid="{c700ca20-6992-444e-81c4-419d18a3159f}" _name="Connections" _locked="false">
+        <_Connection _uuid="{10dd307d-78db-4e48-b519-e6be8f9feaec}" _name="Connection" _locked="false" connectionType="SlotSlot" sourceObject="{8d609b50-e808-4812-92f6-7b0cd857a0e8}" sourceConnector="_call" targetObject="{71e6a5e3-d3c1-4690-be2a-6031c05f0aa7}" targetConnector="_call"/>
+        <_Connection _uuid="{28b1e266-a7c2-48d1-8be9-d41a64314ac5}" _name="Connection" _locked="false" connectionType="OutputInput" sourceObject="{4929e915-ebe1-4b29-8d7c-db9c8113b58a}" sourceConnector="_return" targetObject="{0042bfa8-08ba-450b-99e8-e0854a98a32f}" targetConnector="c"/>
+        <_Connection _uuid="{35f94e05-b629-41bd-9756-fd05eb2d9545}" _name="Connection" _locked="false" connectionType="SlotSlot" sourceObject="{3fc804b9-d6b2-4ccf-862f-2f1a5ae9a041}" sourceConnector="_call" targetObject="{0042bfa8-08ba-450b-99e8-e0854a98a32f}" targetConnector="_call"/>
+        <_Connection _uuid="{8dcf6034-d64b-41a5-be53-465c1f20115d}" _name="Connection" _locked="false" connectionType="SignalSlot" sourceObject="{33e91425-dd20-42c3-8acd-50b9f934b83c}" sourceConnector="signal" targetObject="{3fc804b9-d6b2-4ccf-862f-2f1a5ae9a041}" targetConnector="_call"/>
+        <_Connection _uuid="{9045c476-781d-48a8-9818-84dc357e1ac7}" _name="Connection" _locked="false" connectionType="OutputInput" sourceObject="{87db905b-e00d-44f7-bffd-eae427bbf2f7}" sourceConnector="value" targetObject="{71e6a5e3-d3c1-4690-be2a-6031c05f0aa7}" targetConnector="range"/>
+        <_Connection _uuid="{a7c3d8f9-5366-4d7f-865a-a2592e06d311}" _name="Connection" _locked="false" connectionType="OutputInput" sourceObject="{f26b7ff1-3c15-4fa0-ad2c-1f07722ae25e}" sourceConnector="_return" targetObject="{71e6a5e3-d3c1-4690-be2a-6031c05f0aa7}" targetConnector="val"/>
+        <_Connection _uuid="{a9310751-2220-458b-a4aa-c98686579618}" _name="Connection" _locked="false" connectionType="OutputInput" sourceObject="{01ec1bef-0dc1-4001-bc76-7cfc47baac91}" sourceConnector="value" targetObject="{4929e915-ebe1-4b29-8d7c-db9c8113b58a}" targetConnector="theme"/>
+        <_Connection _uuid="{b4e9fddf-88c4-4b35-a802-10bec68a1fe8}" _name="Connection" _locked="false" connectionType="OutputInput" sourceObject="{87db905b-e00d-44f7-bffd-eae427bbf2f7}" sourceConnector="value" targetObject="{f26b7ff1-3c15-4fa0-ad2c-1f07722ae25e}" targetConnector="max"/>
+        <_Connection _uuid="{b9e0f485-9451-4101-9ba9-f08f48490b20}" _name="Connection" _locked="false" connectionType="OutputInput" sourceObject="{dca95190-11e1-4d0e-bfd3-b5cc84360b24}" sourceConnector="_return" targetObject="{8d609b50-e808-4812-92f6-7b0cd857a0e8}" targetConnector="c"/>
+        <_Connection _uuid="{c9a13cc1-043b-4ee2-8ff3-9a88d03f27d6}" _name="Connection" _locked="false" connectionType="SlotSlot" sourceObject="{0042bfa8-08ba-450b-99e8-e0854a98a32f}" sourceConnector="_call" targetObject="{8d609b50-e808-4812-92f6-7b0cd857a0e8}" targetConnector="_call"/>
+        <_Connection _uuid="{f8708e24-26d4-4c6b-a4bc-716b2425522c}" _name="Connection" _locked="false" connectionType="OutputInput" sourceObject="{01ec1bef-0dc1-4001-bc76-7cfc47baac91}" sourceConnector="value" targetObject="{dca95190-11e1-4d0e-bfd3-b5cc84360b24}" targetConnector="theme"/>
+        <_Connection _uuid="{fa6b6e11-92a8-4af2-a50d-f93f0539ebd5}" _name="Connection" _locked="false" connectionType="OutputInput" sourceObject="{c6d97a8c-70c7-467a-8aa6-0fd0f5cc5161}" sourceConnector="value" targetObject="{f26b7ff1-3c15-4fa0-ad2c-1f07722ae25e}" targetConnector="value"/>
+    </_ConnectionContainer>
+    <_NodeContainer _uuid="{46346e59-bb04-4659-9bab-78770fd07393}" _name="Nodes" _locked="false">
+        <_LogicIncludeHeader _uuid="{0d89c68b-a6ec-4cc9-b86c-88dbbb9bdf35}" _name="FT_DataTypes.h" _locked="false" _x="-267" _y="-193" _color="#303030" _background="#606060"/>
+        <_LogicBlockSlot _uuid="{33e91425-dd20-42c3-8acd-50b9f934b83c}" _name="Render" _locked="false" _x="317" _y="-173" _color="#ff930e" _background="#c74200" _displayName=""/>
+        <_LogicIncludeHeader _uuid="{5b07216a-b34e-450e-8063-1648c55f7641}" _name="Ft_Esd_DefaultTheme.h" _locked="false" _x="-262" _y="-160" _color="#303030" _background="#606060"/>
+        <Ft_Esd_Theme_GetBackColor _uuid="{4929e915-ebe1-4b29-8d7c-db9c8113b58a}" _name="Ft_Esd_Theme_GetBackColor" _locked="false" _x="1" _y="-137" _color="#303030" _background="#606060">
+            <__Properties>
+                <theme type="String">Ft_Esd_Theme_GetCurrent</theme>
+            </__Properties>
+        </Ft_Esd_Theme_GetBackColor>
+        <Ft_Esd_Dl_COLOR_A _uuid="{3fc804b9-d6b2-4ccf-862f-2f1a5ae9a041}" _name="Ft_Esd_Dl_COLOR_A" _locked="false" _x="322" _y="-121" _color="#ff930e" _background="#c74200">
+            <__Properties>
+                <alpha type="String">255</alpha>
+            </__Properties>
+        </Ft_Esd_Dl_COLOR_A>
+        <_LogicBlockInput _uuid="{01ec1bef-0dc1-4001-bc76-7cfc47baac91}" _name="Theme" _locked="false" _x="-258" _y="-86" _color="#303030" _background="#606060" _displayName="" _comment="" _type="Ft_Esd_Theme *" _editRole=""/>
+        <Ft_Esd_Theme_GetPrimaryColor _uuid="{dca95190-11e1-4d0e-bfd3-b5cc84360b24}" _name="Ft_Esd_Theme_GetPrimaryColor" _locked="false" _x="4" _y="-64" _color="#303030" _background="#606060">
+            <__Properties>
+                <theme type="String">Ft_Esd_Theme_GetCurrent</theme>
+            </__Properties>
+        </Ft_Esd_Theme_GetPrimaryColor>
+        <Ft_Gpu_CoCmd_BgColor _uuid="{0042bfa8-08ba-450b-99e8-e0854a98a32f}" _name="Ft_Gpu_CoCmd_BgColor" _locked="false" _x="321" _y="-44" _color="#ff930e" _background="#c74200">
+            <__Properties>
+                <c type="String">0</c>
+            </__Properties>
+        </Ft_Gpu_CoCmd_BgColor>
+        <Ft_Esd_Dl_COLOR_RGB _uuid="{8d609b50-e808-4812-92f6-7b0cd857a0e8}" _name="Ft_Esd_Dl_COLOR_RGB" _locked="false" _x="318" _y="32" _color="#ff930e" _background="#c74200"/>
+        <_WidgetInterface _uuid="{9dfeacc1-767a-4d26-9150-bf7423b62650}" _name="Widget Interface" _locked="false" _x="-511" _y="89" _color="#303030" _background="#606060"/>
+        <Ft_Esd_ProgressBar_CoCmd _uuid="{71e6a5e3-d3c1-4690-be2a-6031c05f0aa7}" _name="Ft_Esd_ProgressBar_CoCmd" _locked="false" _x="593" _y="123" _color="#303030" _background="#606060">
+            <__Properties>
+                <options type="String">0</options>
+                <val type="String">0</val>
+                <range type="String">0</range>
+            </__Properties>
+        </Ft_Esd_ProgressBar_CoCmd>
+        <Ft_Esd_UInt16_ClampedValue _uuid="{f26b7ff1-3c15-4fa0-ad2c-1f07722ae25e}" _name="Clamp UInt16" _locked="false" _x="8" _y="136" _color="#303030" _background="#606060">
+            <__Properties>
+                <value type="String">0</value>
+                <min type="String">0</min>
+                <max type="String">100</max>
+            </__Properties>
+        </Ft_Esd_UInt16_ClampedValue>
+        <_LogicBlockInput _uuid="{c6d97a8c-70c7-467a-8aa6-0fd0f5cc5161}" _name="Val" _locked="false" _x="-511" _y="342" _color="#303030" _background="#606060" _displayName="Value" _comment="" _type="ft_uint16_t" _editRole="">
+            <__Properties>
+                <_max type="String">65535</_max>
+                <default type="int">0</default>
+            </__Properties>
+        </_LogicBlockInput>
+        <_LogicBlockInput _uuid="{87db905b-e00d-44f7-bffd-eae427bbf2f7}" _name="Range" _locked="false" _x="-511" _y="396" _color="#303030" _background="#606060" _displayName="Range" _comment="" _type="ft_uint16_t" _editRole="">
+            <__Properties>
+                <_min type="String">0</_min>
+                <_max type="String">65535</_max>
+                <default type="int">100</default>
+            </__Properties>
+        </_LogicBlockInput>
+    </_NodeContainer>
+    <_WidgetContainer _uuid="{6291c547-0733-4b4a-92fc-03bd876819b7}" _name="Widgets" _locked="false">
+        <__Properties>
+            <x type="int">50</x>
+            <y type="int">50</y>
+            <width type="int">180</width>
+            <height type="int">24</height>
+        </__Properties>
+    </_WidgetContainer>
+</_WidgetDocument>

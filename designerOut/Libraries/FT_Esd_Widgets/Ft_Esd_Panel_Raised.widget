@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<_WidgetDocument _uuid="{4c920000-bee8-47c2-9ef5-e1473e5de1ef}" _locked="false" displayName="ESD Panel Raised" comment="" category="_GroupHidden" defaultSignal="" icon="" _version="40001" _revision="12" purpose="Widget" backToFront="">
+    <_ActorContainer _uuid="{26b21609-ff05-4159-9616-3e9f7bc4faf7}" _name="Actors" _locked="false"/>
+    <_ConnectionContainer _uuid="{35262b83-98c3-42b4-abfa-17fe0b6bac38}" _name="Connections" _locked="false">
+        <_Connection _uuid="{0245e4c8-c403-4976-8448-ea47e0db7f5a}" _name="Connection" _locked="false" connectionType="VariableInput" sourceObject="{af816d32-4704-4078-b2df-87aa8c5144c4}" sourceConnector="_widgetGlobalWidth" targetObject="{c72d345b-ce6d-47f6-93f8-65964bb7e20e}" targetConnector="width"/>
+        <_Connection _uuid="{122f7953-b183-4f4c-9dc5-591f1e76798f}" _name="Connection" _locked="false" connectionType="VariableInput" sourceObject="{af816d32-4704-4078-b2df-87aa8c5144c4}" sourceConnector="_widgetGlobalHeight" targetObject="{c72d345b-ce6d-47f6-93f8-65964bb7e20e}" targetConnector="height"/>
+        <_Connection _uuid="{310df767-c8f4-43ba-9694-5680df7d95a5}" _name="Connection" _locked="false" connectionType="OutputInput" sourceObject="{a7f0d7e4-2f29-49a8-91be-d0fb249d55db}" sourceConnector="value" targetObject="{c72d345b-ce6d-47f6-93f8-65964bb7e20e}" targetConnector="radius"/>
+        <_Connection _uuid="{5175976e-b21f-4684-bfdf-739816897b12}" _name="Connection" _locked="false" connectionType="VariableInput" sourceObject="{af816d32-4704-4078-b2df-87aa8c5144c4}" sourceConnector="_widgetGlobalY" targetObject="{c72d345b-ce6d-47f6-93f8-65964bb7e20e}" targetConnector="y"/>
+        <_Connection _uuid="{91a0bb5b-db70-4c1d-84c2-3ca1f11ee038}" _name="Connection" _locked="false" connectionType="VariableInput" sourceObject="{af816d32-4704-4078-b2df-87aa8c5144c4}" sourceConnector="_widgetGlobalX" targetObject="{c72d345b-ce6d-47f6-93f8-65964bb7e20e}" targetConnector="x"/>
+        <_Connection _uuid="{b6f027dc-41ad-40a9-aa93-9afa60fc4ed7}" _name="Connection" _locked="false" connectionType="OutputInput" sourceObject="{9e7471af-7ccb-4e91-bfba-df22cdb18e5b}" sourceConnector="value" targetObject="{c72d345b-ce6d-47f6-93f8-65964bb7e20e}" targetConnector="color"/>
+    </_ConnectionContainer>
+    <_NodeContainer _uuid="{81b7d8a8-2e9a-48fb-a932-c4cbdfacb1e5}" _name="Nodes" _locked="false">
+        <_LogicBlockInput _uuid="{a7f0d7e4-2f29-49a8-91be-d0fb249d55db}" _name="radius" _locked="false" _x="224" _y="-520" _color="#303030" _background="#606060" _displayName="" _comment="corner's radius" _type="int" _editRole="">
+            <__Properties>
+                <default type="int">36</default>
+            </__Properties>
+        </_LogicBlockInput>
+        <_WidgetInterface _uuid="{af816d32-4704-4078-b2df-87aa8c5144c4}" _name="Widget Interface" _locked="false" _x="-7" _y="-457" _color="#303030" _background="#606060"/>
+        <_LogicBlockInput _uuid="{9e7471af-7ccb-4e91-bfba-df22cdb18e5b}" _name="color" _locked="false" _x="224" _y="-440" _color="#303030" _background="#606060" _displayName="" _comment="" _type="ft_argb32_t" _editRole="">
+            <__Properties>
+                <default type="Color">#fafafa</default>
+            </__Properties>
+        </_LogicBlockInput>
+        <Ft_Esd_Elements_PanelRaised _uuid="{c72d345b-ce6d-47f6-93f8-65964bb7e20e}" _name="ESD Panel Raised" _locked="false" _x="536" _y="-440" _color="#62af21" _background="#606060" _z="0">
+            <__Properties>
+                <_active type="bool">true</_active>
+                <color type="String">#6b6b6b</color>
+                <x type="double">171</x>
+                <y type="double">145</y>
+                <width type="String">80</width>
+                <height type="String">60</height>
+                <radius type="String">4</radius>
+            </__Properties>
+        </Ft_Esd_Elements_PanelRaised>
+    </_NodeContainer>
+    <_WidgetContainer _uuid="{fbdceaa2-b57b-4529-8315-95983e8cff85}" _name="Widgets" _locked="false">
+        <__Properties>
+            <x type="double">107</x>
+            <y type="double">64</y>
+            <width type="int">400</width>
+            <height type="int">300</height>
+        </__Properties>
+    </_WidgetContainer>
+</_WidgetDocument>

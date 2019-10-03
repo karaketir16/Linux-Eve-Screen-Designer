@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<_ProjectRoot _uuid="{71423442-2c81-459c-81f4-93b67122e252}" _name="Project" _locked="false" _version="40001" _revision="33">
+    <__Properties>
+        <_targets type="VariantList">
+            <li type="String">FT8XX</li>
+        </_targets>
+        <_toolchain type="String"></_toolchain>
+        <definitions type="VariantList"/>
+    </__Properties>
+    <_ProjectFolder _uuid="{993d4239-37a9-424f-a2ce-68553276574c}" _name="Compatibility" _locked="false">
+        <_ProjectFileResource _uuid="{d360740e-25e2-41e2-ae7d-b67f89a8bc66}" _name="CoPro_Cmds.c" _locked="false" fileName="CoPro_Cmds.c">
+            <_SourceFile _uuid="{e92062b6-05d7-4024-8ec9-ffb86f0af5c6}" _name="Source File" _locked="false"/>
+        </_ProjectFileResource>
+        <_ProjectFileResource _uuid="{5f86c432-271b-4687-9a4b-0d5ac786ae50}" _name="CoPro_Cmds.h" _locked="false" fileName="CoPro_Cmds.h">
+            <_SourceFile _uuid="{20245e78-8819-43f8-a447-404ea3827b24}" _name="Source File" _locked="false"/>
+        </_ProjectFileResource>
+        <_ProjectFileResource _uuid="{dde4fc99-6c06-4fa1-852c-ff6ec1bd84b6}" _name="FT_CoPro_Cmds.h" _locked="false" fileName="FT_CoPro_Cmds.h">
+            <_SourceFile _uuid="{1b83a708-d28a-4c52-b9a7-b92392c020be}" _name="Source File" _locked="false"/>
+        </_ProjectFileResource>
+    </_ProjectFolder>
+    <_ProjectFileResource _uuid="{3155d058-eedb-4e61-8c3a-b125f7d91e6b}" _name="Ft_Esd.c" _locked="false" fileName="Ft_Esd.c">
+        <_SourceFile _uuid="{891c0fa3-c188-4c63-b63b-d4baa5fc1437}" _name="Source File" _locked="false"/>
+    </_ProjectFileResource>
+    <_ProjectFileResource _uuid="{6ef467fa-cf6c-48a8-bd0c-2aaf062f7cea}" _name="Ft_Esd.h" _locked="false" fileName="Ft_Esd.h">
+        <_SourceFile _uuid="{dd9bea27-9d2a-41a3-a3bb-157c15ab3761}" _name="Source File" _locked="false"/>
+    </_ProjectFileResource>
+    <_ProjectFileResource _uuid="{db4dc6c1-fa1a-4534-a510-049c4624df0d}" _name="Ft_Esd_BitmapHandle.c" _locked="false" fileName="Ft_Esd_BitmapHandle.c">
+        <_SourceFile _uuid="{0d4a5d4e-205b-4db4-b271-5ac19045b667}" _name="Source File" _locked="false"/>
+    </_ProjectFileResource>
+    <_ProjectFileResource _uuid="{5048f1de-55dd-4c31-863e-23baa1f46dce}" _name="Ft_Esd_BitmapHandle.h" _locked="false" fileName="Ft_Esd_BitmapHandle.h">
+        <_SourceFile _uuid="{90cd04d0-cb9b-4d02-af09-2cbc145517e5}" _name="Source File" _locked="false"/>
+    </_ProjectFileResource>
+    <_ProjectFileResource _uuid="{86964aeb-1390-43ba-995e-98196da1c7be}" _name="Ft_Esd_BitmapInfo.c" _locked="false" fileName="Ft_Esd_BitmapInfo.c">
+        <_SourceFile _uuid="{1702cf20-39c3-4100-8bb9-92d241394031}" _name="Source File" _locked="false"/>
+    </_ProjectFileResource>
+    <_ProjectFileResource _uuid="{5477c845-1078-42ba-90a4-b3a22d0c66bd}" _name="Ft_Esd_BitmapInfo.h" _locked="false" fileName="Ft_Esd_BitmapInfo.h">
+        <_SourceFile _uuid="{87918cfb-f906-4585-9db0-1ecf4b20fd7b}" _name="Source File" _locked="false"/>
+    </_ProjectFileResource>
+    <_ProjectFileResource _uuid="{36b4bdce-2d09-419f-b816-37fc2162373a}" _name="Ft_Esd_CheckTypeSizes.c" _locked="false" fileName="Ft_Esd_CheckTypeSizes.c">
+        <_SourceFile _uuid="{df33df39-af87-4720-b4ed-ecee6e939cd4}" _name="Source File" _locked="false"/>
+    </_ProjectFileResource>
+    <_ProjectFileResource _uuid="{b844ee91-00b3-43e8-9c55-8b8cd670e4da}" _name="Ft_Esd_CoCmd.c" _locked="false" fileName="Ft_Esd_CoCmd.c">
+        <_SourceFile _uuid="{d8513e58-1dc6-4db5-9ec3-b90dc2bd82db}" _name="Source File" _locked="false"/>
+    </_ProjectFileResource>
+    <_ProjectFileResource _uuid="{9a23c434-aec5-482e-9df0-db3495a23b7d}" _name="Ft_Esd_CoCmd.h" _locked="false" fileName="Ft_Esd_CoCmd.h">
+        <_SourceFile _uuid="{dc61fde5-aa1a-4ef6-bf24-f0738b8ba9e2}" _name="Source File" _locked="false"/>
+    </_ProjectFileResource>
+    <_ProjectFileResource _uuid="{7ad2212c-cd03-4a49-96c3-d451ba4a33d4}" _name="Ft_Esd_CoCmd_Bg.c" _locked="false" fileName="Ft_Esd_CoCmd_Bg.c">
+        <_SourceFile _uuid="{c6f6e6c8-5978-4440-9c16-48c447c1a587}" _name="Source File" _locked="false"/>
+    </_ProjectFileResource>
+    <_ProjectFileResource _uuid="{99f637b2-bfe3-4106-ad3c-411d8e8c70a7}" _name="Ft_Esd_CoCmd_IO.c" _locked="false" fileName="Ft_Esd_CoCmd_IO.c">
+        <_SourceFile _uuid="{bc7a5f6a-f22d-4a27-9485-89244e9df04b}" _name="Source File" _locked="false"/>
+    </_ProjectFileResource>
+    <_ProjectFileResource _uuid="{f0374809-0765-42e4-a3a8-ad112ad28b88}" _name="Ft_Esd_CoCmd_State.c" _locked="false" fileName="Ft_Esd_CoCmd_State.c">
+        <_SourceFile _uuid="{d5e3dccf-9e00-4f3b-b15c-1f32fbffefd6}" _name="Source File" _locked="false"/>
+    </_ProjectFileResource>
+    <_ProjectFileResource _uuid="{f1d27a3a-009b-4400-905d-32b2696e13d4}" _name="Ft_Esd_CoCmd_Widgets.c" _locked="false" fileName="Ft_Esd_CoCmd_Widgets.c">
+        <_SourceFile _uuid="{d223d465-4f3b-470d-9c27-cf5676e87615}" _name="Source File" _locked="false"/>
+    </_ProjectFileResource>
+    <_ProjectFileResource _uuid="{418db218-5d78-47b5-a5ba-92311ebfad77}" _name="Ft_Esd_Core.c" _locked="false" fileName="Ft_Esd_Core.c">
+        <_SourceFile _uuid="{1c5908e4-032b-41fe-ad51-1bc7bcd60051}" _name="Source File" _locked="false"/>
+    </_ProjectFileResource>
+    <_ProjectFileResource _uuid="{23a8a752-7012-4c03-9111-eb0a326ec3c7}" _name="Ft_Esd_Core.h" _locked="false" fileName="Ft_Esd_Core.h">
+        <_SourceFile _uuid="{f478050c-3b93-4f43-a4a5-d837653f4d75}" _name="Source File" _locked="false"/>
+    </_ProjectFileResource>
+    <_ProjectFileResource _uuid="{765ca042-462a-4b73-b4af-1d978be560cc}" _name="FT_Esd_Dl.c" _locked="false" fileName="FT_Esd_Dl.c">
+        <_SourceFile _uuid="{afee2ab8-e974-43b1-b42b-74df18d33ecc}" _name="Source File" _locked="false"/>
+    </_ProjectFileResource>
+    <_ProjectFileResource _uuid="{765ca042-462a-4b73-b4af-1d978be560dd}" _name="FT_Esd_Dl.h" _locked="false" fileName="FT_Esd_Dl.h">
+        <_SourceFile _uuid="{afee2ab8-e974-43b1-b42b-74df18d33edd}" _name="Source File" _locked="false"/>
+    </_ProjectFileResource>
+    <_ProjectFileResource _uuid="{f3256a0a-f03a-4a75-9d02-abefecdc597e}" _name="Ft_Esd_FontInfo.c" _locked="false" fileName="Ft_Esd_FontInfo.c">
+        <_SourceFile _uuid="{82e6df5c-c49f-403d-bed4-d0354f2486db}" _name="Source File" _locked="false"/>
+    </_ProjectFileResource>
+    <_ProjectFileResource _uuid="{f848b2d3-1792-4078-bdd4-f00340a79ee5}" _name="Ft_Esd_FontInfo.h" _locked="false" fileName="Ft_Esd_FontInfo.h">
+        <_SourceFile _uuid="{eecc2e38-e6a0-4829-b684-be803d7a251c}" _name="Source File" _locked="false"/>
+    </_ProjectFileResource>
+    <_ProjectFileResource _uuid="{66c3975d-5178-4528-94f5-893ff3c91818}" _name="Ft_Esd_GpuAlloc.c" _locked="false" fileName="Ft_Esd_GpuAlloc.c">
+        <_SourceFile _uuid="{a4bc7a66-28ef-4496-b760-4cec89b7b1a1}" _name="Source File" _locked="false"/>
+    </_ProjectFileResource>
+    <_ProjectFileResource _uuid="{887cd82c-344e-4bf2-907e-f51705e802e9}" _name="Ft_Esd_GpuAlloc.h" _locked="false" fileName="Ft_Esd_GpuAlloc.h">
+        <_SourceFile _uuid="{74ed22e9-b9c2-44ee-ab7f-0369e511b844}" _name="Source File" _locked="false"/>
+    </_ProjectFileResource>
+    <_ProjectFileLink _uuid="{e4c8444c-3bb1-4255-91d2-f063628ad755}" _name="Ft_Esd_IdleChecker.actor" _locked="false" fileName="Ft_Esd_IdleChecker.actor" type="_ActorDocument"/>
+    <_ProjectFileResource _uuid="{512fb2cf-b693-4aec-8fc9-e0747e81b3b2}" _name="Ft_Esd_Layout_Display.c" _locked="false" fileName="%ESD30_LIBRARIES%/FT_Esd_Framework/Ft_Esd_Layout_Display.c">
+        <_SourceFile _uuid="{abaead6b-9eaa-4734-a29e-e387884380fb}" _name="Source File" _locked="false"/>
+    </_ProjectFileResource>
+    <_ProjectFileResource _uuid="{274ae3ec-ae0c-477d-8e9b-68f0dc8d895b}" _name="Ft_Esd_Layout_Display.h" _locked="false" fileName="%ESD30_LIBRARIES%/FT_Esd_Framework/Ft_Esd_Layout_Display.h">
+        <_SourceFile _uuid="{8ee03b40-1beb-4ba9-a4ca-b7eaf2f3dbfd}" _name="Source File" _locked="false"/>
+    </_ProjectFileResource>
+    <_ProjectFileResource _uuid="{26bd5c22-16c4-4edf-a6d8-a044a30fb050}" _name="Ft_Esd_Layout_Fill.c" _locked="false" fileName="%ESD30_LIBRARIES%/FT_Esd_Framework/Ft_Esd_Layout_Fill.c">
+        <_SourceFile _uuid="{ed011194-715e-4071-9cd4-063991f879f0}" _name="Source File" _locked="false"/>
+    </_ProjectFileResource>
+    <_ProjectFileResource _uuid="{b481e411-d2fe-412b-9ac7-f140fcc36c0b}" _name="Ft_Esd_Layout_Fill.h" _locked="false" fileName="%ESD30_LIBRARIES%/FT_Esd_Framework/Ft_Esd_Layout_Fill.h">
+        <_SourceFile _uuid="{6c325800-4d4e-4ff0-af09-83634f7305d2}" _name="Source File" _locked="false"/>
+    </_ProjectFileResource>
+    <_ProjectFileResource _uuid="{16f57e9e-6bc7-443c-8a76-6b2c98613177}" _name="Ft_Esd_Layout_Fixed.c" _locked="false" fileName="%ESD30_LIBRARIES%/FT_Esd_Framework/Ft_Esd_Layout_Fixed.c">
+        <_SourceFile _uuid="{be49b261-99c6-416e-8a9f-22da668cbc92}" _name="Source File" _locked="false"/>
+    </_ProjectFileResource>
+    <_ProjectFileResource _uuid="{d6eb661c-4e97-4cf0-848f-9125f7894e38}" _name="Ft_Esd_Layout_Fixed.h" _locked="false" fileName="%ESD30_LIBRARIES%/FT_Esd_Framework/Ft_Esd_Layout_Fixed.h">
+        <_SourceFile _uuid="{d93c763a-1cec-4158-b01c-526c5275b65f}" _name="Source File" _locked="false"/>
+    </_ProjectFileResource>
+    <_ProjectFileResource _uuid="{0ca8827e-8442-450f-9ced-81d9a2fa77af}" _name="Ft_Esd_Layout_Linear.c" _locked="false" fileName="%ESD30_LIBRARIES%/FT_Esd_Framework/Ft_Esd_Layout_Linear.c">
+        <_SourceFile _uuid="{a28a86a5-1212-441c-ba4b-0bfd27cf8434}" _name="Source File" _locked="false"/>
+    </_ProjectFileResource>
+    <_ProjectFileResource _uuid="{3594e15b-98f1-4cf2-a09e-fd7244d6b649}" _name="Ft_Esd_Layout_Linear.h" _locked="false" fileName="%ESD30_LIBRARIES%/FT_Esd_Framework/Ft_Esd_Layout_Linear.h">
+        <_SourceFile _uuid="{a544fcf0-b6b9-429e-989d-4907ffbee818}" _name="Source File" _locked="false"/>
+    </_ProjectFileResource>
+    <_ProjectFileResource _uuid="{b571b619-50d0-4181-8df6-0ace982ddcbc}" _name="Ft_Esd_Layout_Scroll.c" _locked="false" fileName="%ESD30_LIBRARIES%/FT_Esd_Framework/Ft_Esd_Layout_Scroll.c">
+        <_SourceFile _uuid="{824841fc-630d-4389-94af-20cdab41cc83}" _name="Source File" _locked="false"/>
+    </_ProjectFileResource>
+    <_ProjectFileResource _uuid="{e868b4cc-b1c9-463a-ab8a-ae5d9eb89dd4}" _name="Ft_Esd_Layout_Scroll.h" _locked="false" fileName="%ESD30_LIBRARIES%/FT_Esd_Framework/Ft_Esd_Layout_Scroll.h">
+        <_SourceFile _uuid="{179b3010-d1c9-423e-a704-7842e4dc44c2}" _name="Source File" _locked="false"/>
+    </_ProjectFileResource>
+    <_ProjectFileLink _uuid="{400637f7-0315-40cf-ab4b-c58a082788b6}" _name="Ft_Esd_Layout_Stretch.widget" _locked="false" fileName="Ft_Esd_Layout_Stretch.widget" type="_WidgetDocument"/>
+    <_ProjectFileResource _uuid="{e0794a7f-7987-461f-a9aa-262bda83d886}" _name="Ft_Esd_Layout_Switch.c" _locked="false" fileName="%ESD30_LIBRARIES%/FT_Esd_Framework/Ft_Esd_Layout_Switch.c">
+        <_SourceFile _uuid="{054d2ce2-ce22-485b-af5d-225af8dce279}" _name="Source File" _locked="false"/>
+    </_ProjectFileResource>
+    <_ProjectFileResource _uuid="{46138ca6-0706-4a22-9976-df04bfcf72bb}" _name="Ft_Esd_Layout_Switch.h" _locked="false" fileName="%ESD30_LIBRARIES%/FT_Esd_Framework/Ft_Esd_Layout_Switch.h">
+        <_SourceFile _uuid="{c7a6c6ce-1d8b-443e-9924-9f83ce5fc4bb}" _name="Source File" _locked="false"/>
+    </_ProjectFileResource>
+    <_ProjectFileResource _uuid="{d9873910-a8c7-4678-aa9c-da0c51a19343}" _name="Ft_Esd_Layout_Tag.c" _locked="false" fileName="%ESD30_LIBRARIES%/FT_Esd_Framework/Ft_Esd_Layout_Tag.c">
+        <_SourceFile _uuid="{b845c769-f2cd-4490-bea6-66736410bd3b}" _name="Source File" _locked="false"/>
+    </_ProjectFileResource>
+    <_ProjectFileResource _uuid="{57cbe215-5d24-4c3c-b4d7-80b9f5442edb}" _name="Ft_Esd_Layout_Tag.h" _locked="false" fileName="%ESD30_LIBRARIES%/FT_Esd_Framework/Ft_Esd_Layout_Tag.h">
+        <_SourceFile _uuid="{7bec2153-596d-4bfe-8ece-e71ebe8f532b}" _name="Source File" _locked="false"/>
+    </_ProjectFileResource>
+    <_ProjectFileResource _uuid="{3b3c441e-3b28-430b-8863-536e4f02a15e}" _name="Ft_Esd_Layout_Theme.c" _locked="false" fileName="%ESD30_LIBRARIES%/FT_Esd_Framework/Ft_Esd_Layout_Theme.c">
+        <_SourceFile _uuid="{b079ede6-008f-45ad-bcdd-37b003e727dd}" _name="Source File" _locked="false"/>
+    </_ProjectFileResource>
+    <_ProjectFileResource _uuid="{a55dfae7-70d4-442c-8d40-b8217563b80d}" _name="Ft_Esd_Layout_Theme.h" _locked="false" fileName="%ESD30_LIBRARIES%/FT_Esd_Framework/Ft_Esd_Layout_Theme.h">
+        <_SourceFile _uuid="{258f838f-9436-4c19-86db-c6dc1e11b5e6}" _name="Source File" _locked="false"/>
+    </_ProjectFileResource>
+    <_ProjectFileResource _uuid="{3b3c441e-3b28-430b-8863-ccce4f02a15e}" _name="Ft_Esd_Math.c" _locked="false" fileName="%ESD30_LIBRARIES%/FT_Esd_Framework/Ft_Esd_Math.c">
+        <_SourceFile _uuid="{b079ede6-008f-45ad-bcdd-37aaaae727dd}" _name="Source File" _locked="false"/>
+    </_ProjectFileResource>
+    <_ProjectFileResource _uuid="{a55dfae7-70d4-442c-8d40-aaa17563b80d}" _name="Ft_Esd_Math.h" _locked="false" fileName="%ESD30_LIBRARIES%/FT_Esd_Framework/Ft_Esd_Math.h">
+        <_SourceFile _uuid="{258f838f-9436-4c19-86db-c6dc1gggg5e6}" _name="Source File" _locked="false"/>
+    </_ProjectFileResource>
+    <_ProjectFileResource _uuid="{765ca042-462a-4b73-b4af-1d978be560ee}" _name="FT_Esd_Primitives.c" _locked="false" fileName="FT_Esd_Primitives.c">
+        <_SourceFile _uuid="{afee2ab8-e974-43b1-b42b-74df18d33eee}" _name="Source File" _locked="false"/>
+    </_ProjectFileResource>
+    <_ProjectFileResource _uuid="{765ca042-462a-4b73-b4af-1d978be560ff}" _name="FT_Esd_Primitives.h" _locked="false" fileName="FT_Esd_Primitives.h">
+        <_SourceFile _uuid="{afee2ab8-e974-43b1-b42b-74df18d33eff}" _name="Source File" _locked="false"/>
+    </_ProjectFileResource>
+    <_ProjectFileResource _uuid="{0e09a83f-06fe-48b4-a96f-2414a35fea1f}" _name="Ft_Esd_Primitives_Circle.c" _locked="false" fileName="Ft_Esd_Primitives_Circle.c">
+        <_SourceFile _uuid="{3d5092db-2721-4472-9ac5-ddc47fda6eb3}" _name="Source File" _locked="false"/>
+    </_ProjectFileResource>
+    <_ProjectFileResource _uuid="{6d2198a8-73d1-43a8-a4d2-41683e574f03}" _name="Ft_Esd_Primitives_Gradient.c" _locked="false" fileName="Ft_Esd_Primitives_Gradient.c">
+        <_SourceFile _uuid="{58b1b2af-9237-4377-b003-a092f8adc43e}" _name="Source File" _locked="false"/>
+    </_ProjectFileResource>
+    <_ProjectFileLink _uuid="{8b5130b6-21bc-4dca-ac39-03cafc987c53}" _name="Ft_Esd_RenderForwarder.widget" _locked="false" fileName="%ESD30_LIBRARIES%/FT_Esd_Framework/Ft_Esd_RenderForwarder.widget" type="_WidgetDocument"/>
+    <_ProjectFileResource _uuid="{c50f2fef-9859-4f9b-b97e-57e3b7860aca}" _name="Ft_Esd_ResourceInfo.c" _locked="false" fileName="Ft_Esd_ResourceInfo.c">
+        <_SourceFile _uuid="{85886b44-dc9d-4aec-85ca-14f45915efb9}" _name="Source File" _locked="false"/>
+    </_ProjectFileResource>
+    <_ProjectFileResource _uuid="{5ec34bc5-2ec2-49a2-bed8-7906e52be582}" _name="Ft_Esd_ResourceInfo.h" _locked="false" fileName="Ft_Esd_ResourceInfo.h">
+        <_SourceFile _uuid="{e2f99419-f6e6-47fc-ad82-2e4cd1c2ddd6}" _name="Source File" _locked="false"/>
+    </_ProjectFileResource>
+    <_ProjectFileResource _uuid="{a2f25f59-1e6c-45db-bcde-c2483303f430}" _name="Ft_Esd_Support.c" _locked="false" fileName="Ft_Esd_Support.c">
+        <_SourceFile _uuid="{91b55b15-0f2f-4178-b624-72aeb89afbd0}" _name="Source File" _locked="false"/>
+    </_ProjectFileResource>
+    <_ProjectFileResource _uuid="{cfd60c52-b6f0-494c-9395-862bd13e788d}" _name="Ft_Esd_Theme.c" _locked="false" fileName="%ESD30_LIBRARIES%/FT_Esd_Framework/Ft_Esd_Theme.c">
+        <_SourceFile _uuid="{c331f41c-62f5-44aa-a3a5-27f2a5be3b8e}" _name="Source File" _locked="false"/>
+    </_ProjectFileResource>
+    <_ProjectFileResource _uuid="{20641421-fdba-4fcd-975f-a29a724b2e5e}" _name="Ft_Esd_Theme.h" _locked="false" fileName="%ESD30_LIBRARIES%/FT_Esd_Framework/Ft_Esd_Theme.h">
+        <_SourceFile _uuid="{bcc2a19c-305c-43a2-9de2-00fd58cba129}" _name="Source File" _locked="false"/>
+    </_ProjectFileResource>
+    <_ProjectFileLink _uuid="{3875cfc0-468a-4c33-a21b-13e41dde9ce0}" _name="Ft_Esd_Timer.actor" _locked="false" fileName="Ft_Esd_Timer.actor" type="_ActorDocument"/>
+    <_ProjectFileResource _uuid="{7b6e0faf-9b55-47c1-b8ab-3e9ee623839f}" _name="Ft_Esd_Timer.c" _locked="false" fileName="Ft_Esd_Timer.c">
+        <_SourceFile _uuid="{266d0efa-b5b8-4d50-82fe-f8ec9b402545}" _name="Source File" _locked="false"/>
+    </_ProjectFileResource>
+    <_ProjectFileLink _uuid="{6e5031b7-425c-42f6-999f-7b664c6051d8}" _name="Ft_Esd_TouchArea.actor" _locked="false" fileName="Ft_Esd_TouchArea.actor" type="_ActorDocument"/>
+    <_ProjectFileResource _uuid="{55269a4d-34ef-40e7-9882-6fd3cb8b52dc}" _name="Ft_Esd_TouchArea.c" _locked="false" fileName="Ft_Esd_TouchArea.c">
+        <_SourceFile _uuid="{74c17fdd-bc57-42ed-90ed-96cf51679fea}" _name="Source File" _locked="false"/>
+    </_ProjectFileResource>
+    <_ProjectFileLink _uuid="{4b9073ba-c542-4a27-9cbb-42b2d75489a3}" _name="Ft_Esd_TouchScrollLogic.actor" _locked="false" fileName="Ft_Esd_TouchScrollLogic.actor" type="_ActorDocument"/>
+    <_ProjectFileResource _uuid="{ae4ccd30-f5b2-40da-97bc-e86191b992f7}" _name="Ft_Esd_TouchScrollLogic.c" _locked="false" fileName="Ft_Esd_TouchScrollLogic.c">
+        <_SourceFile _uuid="{6c1b926f-4889-4e84-ad90-c0f34c34a0de}" _name="Source File" _locked="false"/>
+    </_ProjectFileResource>
+    <_ProjectFileResource _uuid="{fc972a15-4c4c-4c5d-9b84-51b4197aeef5}" _name="Ft_Esd_TouchTag.c" _locked="false" fileName="Ft_Esd_TouchTag.c">
+        <_SourceFile _uuid="{b441f16f-6bde-4792-87c6-37ddc517774d}" _name="Source File" _locked="false"/>
+    </_ProjectFileResource>
+    <_ProjectFileResource _uuid="{7583b127-e3ae-4fce-af55-81a2f250968c}" _name="Ft_Esd_TouchTag.h" _locked="false" fileName="Ft_Esd_TouchTag.h">
+        <_SourceFile _uuid="{847fe148-918a-4b01-92b2-8d70f724dcf5}" _name="Source File" _locked="false"/>
+    </_ProjectFileResource>
+    <_ProjectFileResource _uuid="{0aeea1a5-db45-488f-80e2-c3b63e3c7f56}" _name="Ft_Esd_TouchTagRenderInterface.c" _locked="false" fileName="Ft_Esd_TouchTagRenderInterface.c">
+        <_SourceFile _uuid="{cd0547f8-0e8e-484d-a437-6bb866715039}" _name="Source File" _locked="false"/>
+    </_ProjectFileResource>
+    <_ProjectFileResource _uuid="{e16612d0-9c96-4780-a7e6-30e9375222a2}" _name="Ft_Esd_TouchTagRenderInterface.h" _locked="false" fileName="Ft_Esd_TouchTagRenderInterface.h">
+        <_SourceFile _uuid="{cf1062db-b14f-4672-9e46-97b8a6253217}" _name="Source File" _locked="false"/>
+    </_ProjectFileResource>
+    <_ProjectFileResource _uuid="{765ca042-462a-4b73-b4af-1d978be560aa}" _name="Ft_Esd_Utility.c" _locked="false" fileName="Ft_Esd_Utility.c">
+        <_SourceFile _uuid="{afee2ab8-e974-43b1-b42b-74df18d33eaa}" _name="Source File" _locked="false"/>
+    </_ProjectFileResource>
+    <_ProjectFileResource _uuid="{765ca042-462a-4b73-b4ab-1d978be560ab}" _name="Ft_Esd_Utility.h" _locked="false" fileName="Ft_Esd_Utility.h">
+        <_SourceFile _uuid="{afee2aba-e97a-43ba-b42b-74df18d33eaa}" _name="Source File" _locked="false"/>
+    </_ProjectFileResource>
+    <_ProjectFileResource _uuid="{0d0142df-1fa1-4c2d-b4b3-832eabfacad0}" _name="Ft_Esd_Widget.c" _locked="false" fileName="%ESD30_LIBRARIES%/FT_Esd_Framework/Ft_Esd_Widget.c">
+        <_SourceFile _uuid="{22eaa767-3249-4fd1-b01b-122b293292e3}" _name="Source File" _locked="false"/>
+    </_ProjectFileResource>
+    <_ProjectFileResource _uuid="{f64dd513-542c-40b3-a190-68e2bfff9b79}" _name="Ft_Esd_Widget.h" _locked="false" fileName="%ESD30_LIBRARIES%/FT_Esd_Framework/Ft_Esd_Widget.h">
+        <_SourceFile _uuid="{b4f634ae-27cd-44ba-ba4a-f695ac6276c6}" _name="Source File" _locked="false"/>
+    </_ProjectFileResource>
+    <_ProjectFileResource _uuid="{cd8f0e80-bc4e-494c-bdc9-d04860df6665}" _name="Ft_Esd_Widget_Utils.c" _locked="false" fileName="%ESD30_LIBRARIES%/FT_Esd_Framework/Ft_Esd_Widget_Utils.c">
+        <_SourceFile _uuid="{f01d4643-d8a1-4eb2-8ec6-c71a47e00f1c}" _name="Source File" _locked="false"/>
+    </_ProjectFileResource>
+</_ProjectRoot>

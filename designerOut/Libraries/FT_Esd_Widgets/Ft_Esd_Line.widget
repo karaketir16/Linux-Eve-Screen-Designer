@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<_WidgetDocument _uuid="{a4f5889d-011a-4f51-99e7-c060150c7a4a}" _locked="false" displayName="Line Widget" comment="" category="EsdBasicWidegts" defaultSignal="" icon="" _version="30110" _revision="13" purpose="Widget" backToFront="">
+    <_ActorContainer _uuid="{a9b6375f-bb50-4ebd-b064-c22a09ccc65e}" _name="Actors" _locked="false"/>
+    <_ConnectionContainer _uuid="{76fa261e-89cf-469d-b395-b2c80778dc9a}" _name="Connections" _locked="false">
+        <_Connection _uuid="{112471ff-cf97-4a10-a3ae-602a3473ae07}" _name="Connection" _locked="false" connectionType="OutputInput" sourceObject="{4b277dcf-bd28-403a-a753-325484a94547}" sourceConnector="result" targetObject="{69d41bd1-7d46-464f-a5ca-5f38060ba223}" targetConnector="x1"/>
+        <_Connection _uuid="{267a3fae-9e46-450a-9423-82fb2ba8600f}" _name="Connection" _locked="false" connectionType="VariableInput" sourceObject="{7fbc2798-d192-4c14-8f6a-b6749d8feb78}" sourceConnector="_widgetGlobalY" targetObject="{18437b53-4422-4bda-9b2d-8a31c00563fd}" targetConnector="left"/>
+        <_Connection _uuid="{43de4b19-4407-414e-8304-4fe27da99333}" _name="Connection" _locked="false" connectionType="VariableInput" sourceObject="{7fbc2798-d192-4c14-8f6a-b6749d8feb78}" sourceConnector="_widgetGlobalX" targetObject="{69d41bd1-7d46-464f-a5ca-5f38060ba223}" targetConnector="x0"/>
+        <_Connection _uuid="{4bd8f196-1eba-4150-85bf-b94bc88f4ad1}" _name="Connection" _locked="false" connectionType="OutputInput" sourceObject="{18437b53-4422-4bda-9b2d-8a31c00563fd}" sourceConnector="result" targetObject="{69d41bd1-7d46-464f-a5ca-5f38060ba223}" targetConnector="y1"/>
+        <_Connection _uuid="{6d2b07ba-d647-4918-94de-2bc68649b838}" _name="Connection" _locked="false" connectionType="OutputInput" sourceObject="{7c60de10-e880-41a7-af41-e8c2058b29ea}" sourceConnector="value" targetObject="{69d41bd1-7d46-464f-a5ca-5f38060ba223}" targetConnector="color"/>
+        <_Connection _uuid="{caf32427-d919-4f0f-93f9-6b94d88f4cad}" _name="Connection" _locked="false" connectionType="OutputInput" sourceObject="{d412adc8-a478-4701-bba6-f04671b632c7}" sourceConnector="value" targetObject="{69d41bd1-7d46-464f-a5ca-5f38060ba223}" targetConnector="width"/>
+        <_Connection _uuid="{d264d8a3-ef1e-4943-811b-b75db751286c}" _name="Connection" _locked="false" connectionType="VariableInput" sourceObject="{7fbc2798-d192-4c14-8f6a-b6749d8feb78}" sourceConnector="_widgetGlobalX" targetObject="{4b277dcf-bd28-403a-a753-325484a94547}" targetConnector="left"/>
+        <_Connection _uuid="{e1321538-0c07-4ce8-b007-9c06798f1c29}" _name="Connection" _locked="false" connectionType="VariableInput" sourceObject="{7fbc2798-d192-4c14-8f6a-b6749d8feb78}" sourceConnector="_widgetGlobalY" targetObject="{69d41bd1-7d46-464f-a5ca-5f38060ba223}" targetConnector="y0"/>
+        <_Connection _uuid="{e3370df4-89dc-4630-9114-e4bf14d7c141}" _name="Connection" _locked="false" connectionType="VariableInput" sourceObject="{7fbc2798-d192-4c14-8f6a-b6749d8feb78}" sourceConnector="_widgetGlobalWidth" targetObject="{4b277dcf-bd28-403a-a753-325484a94547}" targetConnector="right"/>
+        <_Connection _uuid="{e98a5c83-34e3-4291-9f1a-6ee0e8127110}" _name="Connection" _locked="false" connectionType="VariableInput" sourceObject="{7fbc2798-d192-4c14-8f6a-b6749d8feb78}" sourceConnector="_widgetGlobalHeight" targetObject="{18437b53-4422-4bda-9b2d-8a31c00563fd}" targetConnector="right"/>
+    </_ConnectionContainer>
+    <_NodeContainer _uuid="{b715b6b9-ef67-4874-9aa4-fae8dbdfc4e3}" _name="Nodes" _locked="false">
+        <_LogicOperatorBinary _uuid="{4b277dcf-bd28-403a-a753-325484a94547}" _name="Binary Operator" _locked="false" _x="318" _y="-657" _color="#303030" _background="#606060" _comment="" _type="int" _editRole="">
+            <__Properties>
+                <operator type="String">+</operator>
+            </__Properties>
+        </_LogicOperatorBinary>
+        <_LogicBlockInput _uuid="{d412adc8-a478-4701-bba6-f04671b632c7}" _name="linewidth" _locked="false" _x="21" _y="-640" _color="#303030" _background="#606060" _displayName="" _comment="line width" _type="int" _editRole="">
+            <__Properties>
+                <default type="int">16</default>
+            </__Properties>
+        </_LogicBlockInput>
+        <_WidgetInterface _uuid="{7fbc2798-d192-4c14-8f6a-b6749d8feb78}" _name="Widget Interface" _locked="false" _x="64" _y="-520" _color="#303030" _background="#606060"/>
+        <_LogicOperatorBinary _uuid="{18437b53-4422-4bda-9b2d-8a31c00563fd}" _name="Binary Operator 2" _locked="false" _x="329" _y="-273" _color="#303030" _background="#606060" _comment="" _type="int" _editRole="">
+            <__Properties>
+                <operator type="String">+</operator>
+            </__Properties>
+        </_LogicOperatorBinary>
+        <_LogicBlockInput _uuid="{7c60de10-e880-41a7-af41-e8c2058b29ea}" _name="color" _locked="false" _x="655" _y="-242" _color="#303030" _background="#606060" _displayName="" _comment="" _type="ft_argb32_t" _editRole="">
+            <__Properties>
+                <default type="Color">#fafafa</default>
+            </__Properties>
+        </_LogicBlockInput>
+    </_NodeContainer>
+    <_WidgetContainer _uuid="{dbbd9171-3450-4907-b2bf-785f2e8aec0b}" _name="Widgets" _locked="false">
+        <__Properties>
+            <width type="int">400</width>
+            <height type="int">300</height>
+        </__Properties>
+        <Ft_Esd_Render_Line _uuid="{69d41bd1-7d46-464f-a5ca-5f38060ba223}" _name="ESD Line (Integer)" _locked="false" _x="719" _y="-578" _color="#62af21" _background="#606060" _z="0">
+            <__Properties>
+                <_active type="bool">true</_active>
+                <x0 type="double">240</x0>
+                <y0 type="double">141</y0>
+                <x1 type="double">607</x1>
+                <y1 type="double">330</y1>
+                <width type="String">4</width>
+                <color type="String">#FFFFFFFF</color>
+            </__Properties>
+        </Ft_Esd_Render_Line>
+    </_WidgetContainer>
+</_WidgetDocument>

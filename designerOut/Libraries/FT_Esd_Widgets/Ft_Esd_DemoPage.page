@@ -1,0 +1,312 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<_PageDocument _uuid="{4c24ed6c-8442-4b88-ad41-4bc0c78c22bb}" _locked="false" displayName="ESD Widget Demo Page" comment="" category="EsdWidgets" defaultSignal="" icon="" _version="30106" _revision="5" purpose="Page" backToFront="">
+    <_ActorContainer _uuid="{fb482b0c-a42c-4281-b4dc-46d7647808e0}" _name="Actors" _locked="false">
+        <Ft_Esd_TouchTag _uuid="{c1ecffd8-43c5-495f-b476-fa76a9c891c6}" _name="Touch Tag" _locked="false" _x="-409" _y="608" _color="#dec32e" _background="#606060">
+            <__Properties>
+                <_active type="bool">false</_active>
+            </__Properties>
+        </Ft_Esd_TouchTag>
+    </_ActorContainer>
+    <_ConnectionContainer _uuid="{bc62bae6-0486-4009-b818-f6c00571e1b5}" _name="Connections" _locked="false">
+        <_Connection _uuid="{1422f7ce-b167-40e3-823b-961d2a971a71}" _name="Connection" _locked="false" connectionType="OutputInput" sourceObject="{1c4c615f-2385-4bfb-b722-393933e88e66}" sourceConnector="result" targetObject="{37f913a8-28cd-4ac6-a8b0-592457669b09}" targetConnector="Val"/>
+        <_Connection _uuid="{44c7b232-b3bb-4058-8e99-6bf9094e62db}" _name="Connection" _locked="false" connectionType="SignalSlot" sourceObject="{90cb4b45-63f3-4467-bc8b-33d305042a29}" sourceConnector="Pushed" targetObject="{d1b351af-06da-43ef-83f8-b04353a206a3}" targetConnector="Toggle"/>
+        <_Connection _uuid="{5218eb68-f99e-42a4-8c67-69f27890f74a}" _name="Connection" _locked="false" connectionType="OutputInput" sourceObject="{397d23ba-356e-4131-9a7e-0770dc027a46}" sourceConnector="_return" targetObject="{1c4c615f-2385-4bfb-b722-393933e88e66}" targetConnector="left"/>
+        <_Connection _uuid="{56808f3b-1603-4add-a734-28a0b749db00}" _name="Connection" _locked="false" connectionType="OutputInput" sourceObject="{c1ecffd8-43c5-495f-b476-fa76a9c891c6}" sourceConnector="TouchY" targetObject="{9d0a4132-8089-47f1-8a40-21f1547db559}" targetConnector="Value"/>
+        <_Connection _uuid="{69cc4717-4d66-4cab-a809-e3d20e06c7a6}" _name="Connection" _locked="false" connectionType="WriterVariable" sourceObject="{a0b175e1-236a-456f-8e48-1ef92d3bf13a}" sourceConnector="Changed" targetObject="{6ddc839e-a77b-41c7-8fdd-94c8a327dc58}" targetConnector="Value"/>
+        <_Connection _uuid="{770d57f3-e6a2-46e6-9367-f0af44ec1066}" _name="Connection" _locked="false" connectionType="OutputInput" sourceObject="{397d23ba-356e-4131-9a7e-0770dc027a46}" sourceConnector="_return" targetObject="{5caad9e6-2206-4ac8-a8d2-655b90c1df6c}" targetConnector="Ms"/>
+        <_Connection _uuid="{7f961507-3442-4631-a346-2f4a7bbeb7c6}" _name="Connection" _locked="false" connectionType="OutputInput" sourceObject="{397d23ba-356e-4131-9a7e-0770dc027a46}" sourceConnector="_return" targetObject="{bb87e0e0-d349-4488-9b85-eea19e173bb6}" targetConnector="Val"/>
+        <_Connection _uuid="{84c825d3-26f1-4e2c-916d-9663b6bd2846}" _name="Connection" _locked="false" connectionType="OutputVariable" sourceObject="{c1ecffd8-43c5-495f-b476-fa76a9c891c6}" sourceConnector="TouchY" targetObject="{9d0a4132-8089-47f1-8a40-21f1547db559}" targetConnector="_widgetY"/>
+        <_Connection _uuid="{8ddc1dc9-0b2b-4554-b8d0-ed073182f61b}" _name="Connection" _locked="false" connectionType="WriterVariable" sourceObject="{6ddc839e-a77b-41c7-8fdd-94c8a327dc58}" sourceConnector="Changed" targetObject="{a0b175e1-236a-456f-8e48-1ef92d3bf13a}" targetConnector="Value"/>
+        <_Connection _uuid="{9d66b904-cf78-488d-a980-666e8dfcf4e7}" _name="Connection" _locked="false" connectionType="WriterVariable" sourceObject="{af4ddf33-e9d3-4cec-860c-02318d995e71}" sourceConnector="Changed" targetObject="{78c59cee-d699-4ccf-b06a-0c65e597b39a}" targetConnector="_widgetActive"/>
+        <_Connection _uuid="{a84a1cc7-8c5d-4128-8626-af99b6f1313c}" _name="Connection" _locked="false" connectionType="OutputVariable" sourceObject="{c1ecffd8-43c5-495f-b476-fa76a9c891c6}" sourceConnector="TouchX" targetObject="{9b2a3b86-cc8a-4ade-828c-830041a918bb}" targetConnector="_widgetX"/>
+        <_Connection _uuid="{b9ebdf6d-f3cc-46bc-8e42-827f90621334}" _name="Connection" _locked="false" connectionType="SignalSlot" sourceObject="{7fd39c6d-99f7-4161-bbc0-d6c04815e28b}" sourceConnector="signal" targetObject="{d1b351af-06da-43ef-83f8-b04353a206a3}" targetConnector="Toggle"/>
+        <_Connection _uuid="{d23a1e09-23ae-4a18-aa83-b0b4e97e3f8d}" _name="Connection" _locked="false" connectionType="OutputInput" sourceObject="{c1ecffd8-43c5-495f-b476-fa76a9c891c6}" sourceConnector="TouchX" targetObject="{9b2a3b86-cc8a-4ade-828c-830041a918bb}" targetConnector="Value"/>
+        <_Connection _uuid="{fd8cb1aa-93ce-4362-9548-0f11182c8d7f}" _name="Connection" _locked="false" connectionType="VariableInput" sourceObject="{a0b175e1-236a-456f-8e48-1ef92d3bf13a}" sourceConnector="Value" targetObject="{ebee511a-11ea-4631-bade-e85484cced6e}" targetConnector="Value"/>
+    </_ConnectionContainer>
+    <_NodeContainer _uuid="{bbf02b71-5de6-4e72-acea-79f94d9d05d9}" _name="Nodes" _locked="false">
+        <_LogicVariableWriter _uuid="{da061032-521a-42f0-b10e-c414eb068aed}" _name="Set Variable" _locked="false" _x="-128" _y="-370" _color="#303030" _background="#606060" _comment="" _type="int" _editRole=""/>
+        <_LogicOperatorBinary _uuid="{1c4c615f-2385-4bfb-b722-393933e88e66}" _name="Binary Operator" _locked="false" _x="123" _y="-311" _color="#303030" _background="#606060" _comment="" _type="ft_uint16_t" _editRole="">
+            <__Properties>
+                <operator type="String">%</operator>
+                <right type="String">1000</right>
+            </__Properties>
+        </_LogicOperatorBinary>
+        <Ft_Esd_GetMillis _uuid="{397d23ba-356e-4131-9a7e-0770dc027a46}" _name="Ft_Esd_GetMillis" _locked="false" _x="-126" _y="-250" _color="#303030" _background="#606060"/>
+        <_LogicBlockSlot _uuid="{7fd39c6d-99f7-4161-bbc0-d6c04815e28b}" _name="Start" _locked="false" _x="-672" _y="272" _color="#303030" _background="#606060" _displayName=""/>
+    </_NodeContainer>
+    <_WidgetContainer _uuid="{72799442-05f2-4423-b99d-7663d63c62f8}" _name="Widgets" _locked="false">
+        <__Properties>
+            <x type="double">20</x>
+            <y type="double">20</y>
+            <width type="double">745</width>
+            <height type="double">487</height>
+        </__Properties>
+        <Ft_Esd_Layout_Fixed _super="_Widget" _uuid="{5da6baee-f5a4-4c2b-9d9d-60c4e2d67562}" _name="Fixed Position" _locked="false" _x="870" _y="31" _color="#8544a5" _background="#606060" _z="0">
+            <__Properties>
+                <_widgetActive type="bool">true</_widgetActive>
+                <_widgetX type="double">20</_widgetX>
+                <_widgetY type="double">20</_widgetY>
+                <_widgetWidth type="double">395</_widgetWidth>
+                <_widgetHeight type="double">237</_widgetHeight>
+            </__Properties>
+            <Ft_Esd_ProgressBar _super="_Widget" _uuid="{37f913a8-28cd-4ac6-a8b0-592457669b09}" _name="ESD ProgressBar" _locked="false" _x="378" _y="-413" _color="#62af21" _background="#606060" _allocation="Static" _z="0">
+                <__Properties>
+                    <_widgetActive type="bool">true</_widgetActive>
+                    <_widgetX type="int">389</_widgetX>
+                    <_widgetY type="int">286</_widgetY>
+                    <_widgetWidth type="int">180</_widgetWidth>
+                    <_widgetHeight type="int">25</_widgetHeight>
+                    <Val type="String">0</Val>
+                    <Range type="int">1000</Range>
+                </__Properties>
+            </Ft_Esd_ProgressBar>
+            <Ft_Esd_Gauge _super="_Widget" _uuid="{bb87e0e0-d349-4488-9b85-eea19e173bb6}" _name="ESD Gauge" _locked="false" _x="-403" _y="-350" _color="#62af21" _background="#606060" _allocation="Static" _z="0">
+                <__Properties>
+                    <_widgetActive type="bool">true</_widgetActive>
+                    <_widgetX type="int">287</_widgetX>
+                    <_widgetY type="int">324</_widgetY>
+                    <_widgetWidth type="int">144</_widgetWidth>
+                    <_widgetHeight type="int">144</_widgetHeight>
+                    <Theme type="String">Ft_Esd_Theme_GetCurrent</Theme>
+                    <Alpha type="String">255</Alpha>
+                    <Major type="String">4</Major>
+                    <Minor type="String">16</Minor>
+                </__Properties>
+            </Ft_Esd_Gauge>
+            <Ft_Esd_Elements_Panel _uuid="{59d3c5e7-c3da-491e-a834-1079a2778441}" _name="ESD Panel" _locked="false" _x="-663" _y="-339" _color="#62af21" _background="#606060" _z="0">
+                <__Properties>
+                    <_active type="bool">true</_active>
+                    <theme type="String">Ft_Esd_Theme_GetCurrent</theme>
+                    <x type="double">536</x>
+                    <y type="double">96</y>
+                    <width type="double">130</width>
+                    <height type="double">145.00000000000003</height>
+                    <radius type="String">4</radius>
+                    <raised type="String">0</raised>
+                </__Properties>
+            </Ft_Esd_Elements_Panel>
+            <Ft_Esd_Clock _super="_Widget" _uuid="{5caad9e6-2206-4ac8-a8d2-655b90c1df6c}" _name="ESD Clock" _locked="false" _x="123" _y="-236" _color="#62af21" _background="#606060" _allocation="Static" _z="0">
+                <__Properties>
+                    <_widgetActive type="bool">true</_widgetActive>
+                    <_widgetX type="int">383</_widgetX>
+                    <_widgetY type="int">98</_widgetY>
+                    <_widgetWidth type="int">80</_widgetWidth>
+                    <_widgetHeight type="int">80</_widgetHeight>
+                    <Theme type="String">Ft_Esd_Theme_GetCurrent</Theme>
+                    <Alpha type="String">255</Alpha>
+                    <Interactive type="bool">true</Interactive>
+                </__Properties>
+            </Ft_Esd_Clock>
+            <Ft_Esd_PushButton _super="_Widget" _uuid="{0286866b-c080-49be-b31f-4403bab071bc}" _name="ESD PushButton" _locked="false" _x="-671" _y="-130" _color="#62af21" _background="#606060" _allocation="Static" _z="0">
+                <__Properties>
+                    <_widgetActive type="bool">true</_widgetActive>
+                    <_widgetX type="int">26</_widgetX>
+                    <_widgetY type="int">14</_widgetY>
+                    <_widgetWidth type="int">120</_widgetWidth>
+                    <_widgetHeight type="int">36</_widgetHeight>
+                    <Theme type="String">Ft_Esd_Theme_GetCurrent</Theme>
+                    <Font type="String">27</Font>
+                    <Text type="String">Button</Text>
+                    <Primary type="String">1</Primary>
+                </__Properties>
+            </Ft_Esd_PushButton>
+            <Ft_Esd_PushButton _super="_Widget" _uuid="{5d86b338-25d1-4fa4-828c-17bbfc4ee2cb}" _name="ESD PushButton" _locked="false" _x="-98" _y="-121" _color="#62af21" _background="#606060" _allocation="Static" _z="0">
+                <__Properties>
+                    <_widgetActive type="bool">true</_widgetActive>
+                    <_widgetX type="int">158</_widgetX>
+                    <_widgetY type="int">13</_widgetY>
+                    <_widgetWidth type="int">120</_widgetWidth>
+                    <_widgetHeight type="int">36</_widgetHeight>
+                    <Theme type="String">Ft_Esd_Theme_GetCurrent</Theme>
+                    <Font type="String">27</Font>
+                    <Text type="String">Button</Text>
+                    <Primary type="bool">false</Primary>
+                </__Properties>
+            </Ft_Esd_PushButton>
+            <Ft_Esd_Rectangle _super="_Widget" _uuid="{6d3a77da-a00b-47aa-b9d1-a973ed7c529f}" _name="ESD Rectangle" _locked="false" _x="383" _y="-73" _color="#62af21" _background="#606060" _allocation="Static" _z="0">
+                <__Properties>
+                    <_widgetActive type="bool">true</_widgetActive>
+                    <_widgetX type="int">431</_widgetX>
+                    <_widgetY type="int">13</_widgetY>
+                    <_widgetWidth type="int">80</_widgetWidth>
+                    <_widgetHeight type="int">36</_widgetHeight>
+                    <Radius type="String">4</Radius>
+                    <Color type="String">#ffffff</Color>
+                </__Properties>
+            </Ft_Esd_Rectangle>
+            <Ft_Esd_Toggle _super="_Widget" _uuid="{af4ddf33-e9d3-4cec-860c-02318d995e71}" _name="ESD Toggle" _locked="false" _x="-423" _y="-19" _color="#62af21" _background="#606060" _allocation="Static" _z="0">
+                <__Properties>
+                    <_widgetActive type="bool">true</_widgetActive>
+                    <_widgetX type="int">450</_widgetX>
+                    <_widgetY type="int">331</_widgetY>
+                    <_widgetWidth type="int">120</_widgetWidth>
+                    <_widgetHeight type="int">36</_widgetHeight>
+                    <Theme type="String">Ft_Esd_Theme_GetCurrent</Theme>
+                    <Font type="String">27</Font>
+                    <Text type="String">Toggle</Text>
+                    <AutoResize type="String">ESD_AUTORESIZE_HEIGHT</AutoResize>
+                </__Properties>
+            </Ft_Esd_Toggle>
+            <Ft_Esd_PushButton _super="_Widget" _uuid="{8d73cb2c-2b1b-41ce-840a-05daf4d04d8f}" _name="ESD PushButton" _locked="false" _x="123" _y="15" _color="#62af21" _background="#606060" _allocation="Static" _z="0">
+                <__Properties>
+                    <_widgetActive type="bool">true</_widgetActive>
+                    <_widgetX type="int">21</_widgetX>
+                    <_widgetY type="int">66</_widgetY>
+                    <_widgetWidth type="int">120</_widgetWidth>
+                    <_widgetHeight type="int">36</_widgetHeight>
+                    <Theme type="String">Ft_Esd_Theme_GetCurrent</Theme>
+                    <Font type="String">27</Font>
+                    <Text type="String">Button</Text>
+                    <Primary type="bool">false</Primary>
+                </__Properties>
+            </Ft_Esd_PushButton>
+            <Ft_Esd_Label _super="_Widget" _uuid="{93e1233e-d5aa-4ab0-9f01-248e9a81c9a6}" _name="ESD Label" _locked="false" _x="384" _y="75" _color="#62af21" _background="#606060" _allocation="Static" _z="0">
+                <__Properties>
+                    <_widgetActive type="bool">true</_widgetActive>
+                    <_widgetX type="int">158</_widgetX>
+                    <_widgetY type="int">66</_widgetY>
+                    <_widgetWidth type="int">120</_widgetWidth>
+                    <_widgetHeight type="int">36</_widgetHeight>
+                    <AutoResize type="String">ESD_AUTORESIZE_HEIGHT</AutoResize>
+                    <Theme type="String">Ft_Esd_Theme_GetCurrent</Theme>
+                    <Font type="String">27</Font>
+                    <Text type="String">Label</Text>
+                    <AlignX type="String">OPT_ALIGN_LEFT</AlignX>
+                    <AlignY type="String">OPT_ALIGN_TOP</AlignY>
+                </__Properties>
+            </Ft_Esd_Label>
+            <Ft_Esd_PushButton _super="_Widget" _uuid="{78c59cee-d699-4ccf-b06a-0c65e597b39a}" _name="ESD PushButton" _locked="false" _x="-196" _y="152" _color="#62af21" _background="#606060" _allocation="Static" _z="0">
+                <__Properties>
+                    <_widgetActive type="bool">true</_widgetActive>
+                    <_widgetX type="int">292</_widgetX>
+                    <_widgetY type="int">13</_widgetY>
+                    <_widgetWidth type="int">120</_widgetWidth>
+                    <_widgetHeight type="int">36</_widgetHeight>
+                    <Theme type="String">Ft_Esd_Theme_GetCurrent</Theme>
+                    <Font type="String">27</Font>
+                    <Text type="String">Button</Text>
+                    <Primary type="bool">false</Primary>
+                </__Properties>
+            </Ft_Esd_PushButton>
+            <Ft_Esd_Toggle _super="_Widget" _uuid="{d1b351af-06da-43ef-83f8-b04353a206a3}" _name="ESD Toggle" _locked="false" _x="-411" _y="263" _color="#62af21" _background="#606060" _allocation="Static" _z="0">
+                <__Properties>
+                    <_widgetActive type="bool">true</_widgetActive>
+                    <_widgetX type="int">450</_widgetX>
+                    <_widgetY type="int">385</_widgetY>
+                    <_widgetWidth type="int">120</_widgetWidth>
+                    <_widgetHeight type="int">74</_widgetHeight>
+                    <Theme type="String">Ft_Esd_Theme_GetCurrent</Theme>
+                    <Font type="int">31</Font>
+                    <Text type="String">Toggle</Text>
+                    <AutoResize type="String">ESD_AUTORESIZE_HEIGHT</AutoResize>
+                </__Properties>
+            </Ft_Esd_Toggle>
+            <Ft_Esd_SpinBox _super="_Widget" _uuid="{a0b175e1-236a-456f-8e48-1ef92d3bf13a}" _name="ESD SpinBox" _locked="false" _x="127" _y="335" _color="#62af21" _background="#606060" _allocation="Static" _z="0">
+                <__Properties>
+                    <_widgetActive type="bool">true</_widgetActive>
+                    <_widgetX type="int">19</_widgetX>
+                    <_widgetY type="int">118</_widgetY>
+                    <_widgetWidth type="String">240</_widgetWidth>
+                    <_widgetHeight type="double">74</_widgetHeight>
+                    <Theme type="String">Ft_Esd_Theme_GetCurrent</Theme>
+                    <Step type="String">1</Step>
+                    <SideButtons type="bool">true</SideButtons>
+                </__Properties>
+            </Ft_Esd_SpinBox>
+            <Ft_Esd_NumericLabel _super="_Widget" _uuid="{ebee511a-11ea-4631-bade-e85484cced6e}" _name="ESD NumericLabel" _locked="false" _x="382" _y="355" _color="#62af21" _background="#606060" _allocation="Static" _z="0">
+                <__Properties>
+                    <_widgetActive type="bool">true</_widgetActive>
+                    <_widgetX type="int">558</_widgetX>
+                    <_widgetY type="int">42</_widgetY>
+                    <_widgetWidth type="int">120</_widgetWidth>
+                    <_widgetHeight type="int">36</_widgetHeight>
+                    <Theme type="String">Ft_Esd_Theme_GetCurrent</Theme>
+                    <Font type="String">27</Font>
+                    <AlignX type="String">OPT_ALIGN_LEFT</AlignX>
+                    <AlignY type="String">OPT_ALIGN_CENTER</AlignY>
+                    <AutoResize type="String">ESD_AUTORESIZE_HEIGHT</AutoResize>
+                    <Value type="int">12345</Value>
+                    <EnablePadding type="String">false</EnablePadding>
+                    <NoOfDigits type="String">5</NoOfDigits>
+                    <IsZeroLeading type="String">false</IsZeroLeading>
+                </__Properties>
+            </Ft_Esd_NumericLabel>
+            <Ft_Esd_LabelButton _super="_Widget" _uuid="{90cb4b45-63f3-4467-bc8b-33d305042a29}" _name="ESD Label Button" _locked="false" _x="-688" _y="396" _color="#62af21" _background="#606060" _allocation="Static" _z="0">
+                <__Properties>
+                    <_widgetActive type="bool">true</_widgetActive>
+                    <_widgetX type="int">602</_widgetX>
+                    <_widgetY type="int">290</_widgetY>
+                    <_widgetWidth type="int">120</_widgetWidth>
+                    <_widgetHeight type="int">36</_widgetHeight>
+                    <Theme type="String">Ft_Esd_Theme_GetCurrent</Theme>
+                    <Font type="String">27</Font>
+                    <Text type="String">Label Button</Text>
+                    <Primary type="String">true</Primary>
+                    <AlignX type="String">OPT_ALIGN_LEFT</AlignX>
+                    <AlignY type="String">OPT_ALIGN_CENTER</AlignY>
+                    <AutoResize type="String">ESD_AUTORESIZE_HEIGHT</AutoResize>
+                </__Properties>
+            </Ft_Esd_LabelButton>
+            <Ft_Esd_NumericLabel _super="_Widget" _uuid="{9b2a3b86-cc8a-4ade-828c-830041a918bb}" _name="ESD NumericLabel" _locked="false" _x="-118" _y="546" _color="#62af21" _background="#606060" _allocation="Static" _z="0">
+                <__Properties>
+                    <_widgetActive type="bool">true</_widgetActive>
+                    <_widgetX type="int">0</_widgetX>
+                    <_widgetY type="int">0</_widgetY>
+                    <_widgetWidth type="int">120</_widgetWidth>
+                    <_widgetHeight type="int">36</_widgetHeight>
+                    <Theme type="String">Ft_Esd_Theme_GetCurrent</Theme>
+                    <Font type="String">27</Font>
+                    <AlignX type="String">OPT_ALIGN_LEFT</AlignX>
+                    <AlignY type="String">OPT_ALIGN_CENTER</AlignY>
+                    <AutoResize type="String">ESD_AUTORESIZE_HEIGHT</AutoResize>
+                    <Value type="String">0</Value>
+                    <EnablePadding type="String">false</EnablePadding>
+                    <NoOfDigits type="String">5</NoOfDigits>
+                    <IsZeroLeading type="String">false</IsZeroLeading>
+                </__Properties>
+            </Ft_Esd_NumericLabel>
+            <Ft_Esd_SpinBox _super="_Widget" _uuid="{6ddc839e-a77b-41c7-8fdd-94c8a327dc58}" _name="ESD SpinBox" _locked="false" _x="129" _y="572" _color="#62af21" _background="#606060" _allocation="Static" _z="0">
+                <__Properties>
+                    <_widgetActive type="bool">true</_widgetActive>
+                    <_widgetX type="int">20</_widgetX>
+                    <_widgetY type="int">206</_widgetY>
+                    <_widgetWidth type="int">180</_widgetWidth>
+                    <_widgetHeight type="int">60</_widgetHeight>
+                    <Theme type="String">Ft_Esd_Theme_GetCurrent</Theme>
+                    <Step type="int">10</Step>
+                    <SideButtons type="String">false</SideButtons>
+                </__Properties>
+            </Ft_Esd_SpinBox>
+            <Ft_Esd_NumericLabel _super="_Widget" _uuid="{9d0a4132-8089-47f1-8a40-21f1547db559}" _name="ESD NumericLabel" _locked="false" _x="-117" _y="733" _color="#62af21" _background="#606060" _allocation="Static" _z="0">
+                <__Properties>
+                    <_widgetActive type="bool">true</_widgetActive>
+                    <_widgetX type="int">0</_widgetX>
+                    <_widgetY type="int">0</_widgetY>
+                    <_widgetWidth type="int">120</_widgetWidth>
+                    <_widgetHeight type="int">36</_widgetHeight>
+                    <Theme type="String">Ft_Esd_Theme_GetCurrent</Theme>
+                    <Font type="String">27</Font>
+                    <AlignX type="String">OPT_ALIGN_LEFT</AlignX>
+                    <AlignY type="String">OPT_ALIGN_CENTER</AlignY>
+                    <AutoResize type="String">ESD_AUTORESIZE_HEIGHT</AutoResize>
+                    <Value type="String">0</Value>
+                    <EnablePadding type="String">false</EnablePadding>
+                    <NoOfDigits type="String">5</NoOfDigits>
+                    <IsZeroLeading type="String">false</IsZeroLeading>
+                </__Properties>
+            </Ft_Esd_NumericLabel>
+            <Ft_Esd_SpinBox _super="_Widget" _uuid="{76342770-9c6d-4ea9-842c-59b003a8484c}" _name="ESD SpinBox" _locked="false" _x="144" _y="828" _color="#62af21" _background="#606060" _allocation="Static" _z="0">
+                <__Properties>
+                    <_widgetActive type="bool">true</_widgetActive>
+                    <_widgetX type="int">21</_widgetX>
+                    <_widgetY type="int">301</_widgetY>
+                    <_widgetWidth type="int">180</_widgetWidth>
+                    <_widgetHeight type="int">60</_widgetHeight>
+                    <Theme type="String">Ft_Esd_Theme_GetCurrent</Theme>
+                    <Step type="String">1</Step>
+                    <SideButtons type="String">false</SideButtons>
+                </__Properties>
+            </Ft_Esd_SpinBox>
+        </Ft_Esd_Layout_Fixed>
+    </_WidgetContainer>
+</_PageDocument>

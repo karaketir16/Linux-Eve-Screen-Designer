@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<_ActorDocument _uuid="{d98bc249-d8db-480e-9f34-383dc1905dd7}" _locked="false" displayName="Touch Area" comment="Utility for managing touch area. Create one instance for each touch area you need to handle " category="EsdUtilities" defaultSignal="" icon=":/icons/hand-point-090.png" _version="30106" _revision="2">
+    <_ActorContainer _uuid="{bb8a630d-4836-410d-96e1-6fc3dc2c1042}" _name="Actors" _locked="false"/>
+    <_ConnectionContainer _uuid="{9ae3f5a5-7f81-4440-ad92-6233bd823ca8}" _name="Connections" _locked="false">
+        <_Connection _uuid="{05651b68-7fa2-48d7-a5e4-394076d49d47}" _name="Connection" _locked="false" connectionType="OutputInput" sourceObject="{56538305-d2d7-41e8-9141-776b85c82f71}" sourceConnector="_return" targetObject="{1e3d9996-bfa1-4dd4-9142-131536c4a5e9}" targetConnector="value"/>
+        <_Connection _uuid="{097fb656-685e-4e5c-80c6-4b7a94c947f3}" _name="Connection" _locked="false" connectionType="SlotSlot" sourceObject="{e8863f94-f665-48dd-b790-c5ab4588faec}" sourceConnector="write" targetObject="{b3060698-8386-42be-9955-134e5aafac1a}" targetConnector="call"/>
+        <_Connection _uuid="{0b71a46b-ea96-4947-9133-23f6db739143}" _name="Connection" _locked="false" connectionType="VariableInput" sourceObject="{183e54cd-e56d-44cd-be04-65979a35ff88}" sourceConnector="value" targetObject="{474341c9-9ed5-4312-9872-a77ecc2bcbec}" targetConnector="left"/>
+        <_Connection _uuid="{0f032e53-1246-42e8-9d74-d4db85724d08}" _name="Connection" _locked="false" connectionType="SignalSlot" sourceObject="{fbc44fc1-884d-4391-a0c9-483ff6f4844e}" sourceConnector="then" targetObject="{7a7c8f55-0106-4497-a795-512cee2babd8}" targetConnector="slot"/>
+        <_Connection _uuid="{231c35f0-1594-4c18-a7c6-7054ae1bde65}" _name="Connection" _locked="false" connectionType="SignalSlot" sourceObject="{b3060698-8386-42be-9955-134e5aafac1a}" sourceConnector="then" targetObject="{95271d00-fbe8-44e9-8fb0-0dfe3d9c5ecc}" targetConnector="slot"/>
+        <_Connection _uuid="{2e277238-727f-41b6-b81a-914244eb9e48}" _name="Connection" _locked="false" connectionType="OutputInput" sourceObject="{cae4cac9-3345-4830-8c99-3d05a1405e45}" sourceConnector="_return" targetObject="{4f236416-66e0-4319-bc28-1e35d4223acf}" targetConnector="value"/>
+        <_Connection _uuid="{357a9127-1d28-4d10-ab0c-4066d53faa00}" _name="Connection" _locked="false" connectionType="SignalSlot" sourceObject="{bdbc8010-208d-4439-a228-6c92ec3b7898}" sourceConnector="signal" targetObject="{03b06de8-3567-451d-85b0-860139c192c2}" targetConnector="_call"/>
+        <_Connection _uuid="{3b6bef80-57e3-498d-a35a-55b1b01ba904}" _name="Connection" _locked="false" connectionType="OutputInput" sourceObject="{cb8b3419-179d-42d2-a10c-fb806cb1cad1}" sourceConnector="_return" targetObject="{1a43364c-29d5-4899-b5fa-cf9eb36453a7}" targetConnector="value"/>
+        <_Connection _uuid="{3d5431c2-7394-4196-aa8a-46422e42c317}" _name="Connection" _locked="false" connectionType="OutputInput" sourceObject="{9b0786c1-cd6c-4c91-b87c-c60b76367f00}" sourceConnector="result" targetObject="{d577c7af-ae52-40b9-9b1b-aa9d252c09de}" targetConnector="value"/>
+        <_Connection _uuid="{3f4cd6b6-ea56-45d5-8555-52c6573098dd}" _name="Connection" _locked="false" connectionType="SignalSlot" sourceObject="{efbc5616-0aac-483e-9d99-e8961f5ebb19}" sourceConnector="then" targetObject="{fbc44fc1-884d-4391-a0c9-483ff6f4844e}" targetConnector="call"/>
+        <_Connection _uuid="{5ae416ec-0b1e-4440-a128-610c9bbcb5e6}" _name="Connection" _locked="false" connectionType="VariableInput" sourceObject="{183e54cd-e56d-44cd-be04-65979a35ff88}" sourceConnector="value" targetObject="{6ab20257-aaa5-49e4-8d24-e854d6b1bc01}" targetConnector="right"/>
+        <_Connection _uuid="{7b766e01-a8af-4e43-b6b4-b74930a247a4}" _name="Connection" _locked="false" connectionType="WriterVariable" sourceObject="{8a8415dc-0874-430c-9bf5-ac8f1c7f06ca}" sourceConnector="target" targetObject="{183e54cd-e56d-44cd-be04-65979a35ff88}" targetConnector="value"/>
+        <_Connection _uuid="{7b93cb9d-d08f-4450-b586-b2e843489fcc}" _name="Connection" _locked="false" connectionType="OutputInput" sourceObject="{6cc28a8c-0b00-4beb-b652-caef89fdc97f}" sourceConnector="result" targetObject="{6ab20257-aaa5-49e4-8d24-e854d6b1bc01}" targetConnector="left"/>
+        <_Connection _uuid="{7faa38c7-5570-4f00-98aa-415217992055}" _name="Connection" _locked="false" connectionType="SlotSlot" sourceObject="{8a8415dc-0874-430c-9bf5-ac8f1c7f06ca}" sourceConnector="write" targetObject="{e8863f94-f665-48dd-b790-c5ab4588faec}" targetConnector="write"/>
+        <_Connection _uuid="{913ba44d-67d8-445f-861e-e060b28d1ef1}" _name="Connection" _locked="false" connectionType="OutputInput" sourceObject="{474341c9-9ed5-4312-9872-a77ecc2bcbec}" sourceConnector="result" targetObject="{e8863f94-f665-48dd-b790-c5ab4588faec}" targetConnector="value"/>
+        <_Connection _uuid="{9501218b-b295-43ef-9114-eefc5a5f77c7}" _name="Connection" _locked="false" connectionType="VariableInput" sourceObject="{ebc7ed8a-b8f7-4a65-bacc-a67704f681dc}" sourceConnector="value" targetObject="{fbc44fc1-884d-4391-a0c9-483ff6f4844e}" targetConnector="if"/>
+        <_Connection _uuid="{97cf3587-008e-4810-9eae-17e64064cd66}" _name="Connection" _locked="false" connectionType="OutputInput" sourceObject="{6ab20257-aaa5-49e4-8d24-e854d6b1bc01}" sourceConnector="result" targetObject="{efbc5616-0aac-483e-9d99-e8961f5ebb19}" targetConnector="if"/>
+        <_Connection _uuid="{b7941eae-6f76-46b7-b3bf-bd393545b259}" _name="Connection" _locked="false" connectionType="SlotSlot" sourceObject="{03b06de8-3567-451d-85b0-860139c192c2}" sourceConnector="_call" targetObject="{efbc5616-0aac-483e-9d99-e8961f5ebb19}" targetConnector="call"/>
+        <_Connection _uuid="{c370dd73-ab7f-4686-b679-2e0d90d35b21}" _name="Connection" _locked="false" connectionType="OutputInput" sourceObject="{202511b6-0256-43c2-81a3-387b7da0aee7}" sourceConnector="_return" targetObject="{6cc28a8c-0b00-4beb-b652-caef89fdc97f}" targetConnector="left"/>
+        <_Connection _uuid="{d0514285-441f-482e-83a7-4e9b0e579003}" _name="Connection" _locked="false" connectionType="SignalSlot" sourceObject="{efbc5616-0aac-483e-9d99-e8961f5ebb19}" sourceConnector="then" targetObject="{8a8415dc-0874-430c-9bf5-ac8f1c7f06ca}" targetConnector="write"/>
+        <_Connection _uuid="{df20cfb0-cad4-4f49-aa0a-a0c6b399a778}" _name="Connection" _locked="false" connectionType="WriterVariable" sourceObject="{e8863f94-f665-48dd-b790-c5ab4588faec}" sourceConnector="target" targetObject="{ebc7ed8a-b8f7-4a65-bacc-a67704f681dc}" targetConnector="value"/>
+        <_Connection _uuid="{e10adda0-8e67-450c-a894-507e35a5b24f}" _name="Connection" _locked="false" connectionType="VariableInput" sourceObject="{ebc7ed8a-b8f7-4a65-bacc-a67704f681dc}" sourceConnector="value" targetObject="{9b0786c1-cd6c-4c91-b87c-c60b76367f00}" targetConnector="left"/>
+        <_Connection _uuid="{e96b7805-500b-4f63-85b2-87a3b414969a}" _name="Connection" _locked="false" connectionType="OutputInput" sourceObject="{6cc28a8c-0b00-4beb-b652-caef89fdc97f}" sourceConnector="result" targetObject="{8a8415dc-0874-430c-9bf5-ac8f1c7f06ca}" targetConnector="value"/>
+        <_Connection _uuid="{f1f503ee-fac6-4aa9-be7f-03f883aa997c}" _name="Connection" _locked="false" connectionType="VariableInput" sourceObject="{ebc7ed8a-b8f7-4a65-bacc-a67704f681dc}" sourceConnector="value" targetObject="{b3060698-8386-42be-9955-134e5aafac1a}" targetConnector="if"/>
+        <_Connection _uuid="{fa44aac1-45ce-4c61-9bc3-cfbcb0782ec7}" _name="Connection" _locked="false" connectionType="OutputInput" sourceObject="{56538305-d2d7-41e8-9141-776b85c82f71}" sourceConnector="_return" targetObject="{9b0786c1-cd6c-4c91-b87c-c60b76367f00}" targetConnector="right"/>
+        <_Connection _uuid="{fd10dd77-4a07-46d8-a2e9-fc1fdaa6c923}" _name="Connection" _locked="false" connectionType="OutputInput" sourceObject="{56538305-d2d7-41e8-9141-776b85c82f71}" sourceConnector="_return" targetObject="{474341c9-9ed5-4312-9872-a77ecc2bcbec}" targetConnector="right"/>
+    </_ConnectionContainer>
+    <_NodeContainer _uuid="{15ad8804-de46-4b1c-9c6d-bda9db0e1f53}" _name="Nodes" _locked="false">
+        <_LogicBlockSlot _uuid="{bdbc8010-208d-4439-a228-6c92ec3b7898}" _name="Update" _locked="false" _x="-430" _y="-559" _color="#303030" _background="#606060" _displayName=""/>
+        <_LogicIncludeHeader _uuid="{e85443a3-6fdd-4f21-9181-af95b06a6b2c}" _name="FT_DataTypes.h" _locked="false" _x="-1153" _y="-547" _color="#303030" _background="#606060"/>
+        <Ft_Esd_TouchArea_Update_TouchTag _uuid="{03b06de8-3567-451d-85b0-860139c192c2}" _name="TouchTag Update" _locked="false" _x="-425" _y="-503" _color="#303030" _background="#606060"/>
+        <Ft_Esd_TouchTag_CurrentTag _uuid="{202511b6-0256-43c2-81a3-387b7da0aee7}" _name="Current Tag" _locked="false" _x="-1161" _y="-469" _color="#303030" _background="#606060"/>
+        <_LogicOperatorBinary _uuid="{6cc28a8c-0b00-4beb-b652-caef89fdc97f}" _name="Is Touching" _locked="false" _x="-924" _y="-467" _color="#303030" _background="#606060" _comment="" _type="ft_uint8_t" _editRole="">
+            <__Properties>
+                <operator type="String">!=</operator>
+            </__Properties>
+        </_LogicOperatorBinary>
+        <_LogicCondition _uuid="{efbc5616-0aac-483e-9d99-e8961f5ebb19}" _name="If Touching Changed" _locked="false" _x="-426" _y="-448" _color="#303030" _background="#606060"/>
+        <_LogicCondition _uuid="{fbc44fc1-884d-4391-a0c9-483ff6f4844e}" _name="Condition" _locked="false" _x="353" _y="-446" _color="#303030" _background="#606060"/>
+        <_LogicBlockSignal _uuid="{7a7c8f55-0106-4497-a795-512cee2babd8}" _name="Up" _locked="false" _x="594" _y="-446" _color="#303030" _background="#606060" _displayName=""/>
+        <_LogicOperatorBinary _uuid="{6ab20257-aaa5-49e4-8d24-e854d6b1bc01}" _name="TouchingChanged" _locked="false" _x="-676" _y="-442" _color="#303030" _background="#606060" _comment="" _type="ft_bool_t" _editRole="">
+            <__Properties>
+                <operator type="String">!=</operator>
+            </__Properties>
+        </_LogicOperatorBinary>
+        <_LogicBlockVariable _uuid="{183e54cd-e56d-44cd-be04-65979a35ff88}" _name="LastTouching" _locked="false" _x="-925" _y="-396" _color="#303030" _background="#606060" _displayName="" _comment="" _type="ft_bool_t" _editRole="">
+            <__Properties>
+                <access type="String">Private</access>
+            </__Properties>
+        </_LogicBlockVariable>
+        <_LogicVariableWriter _uuid="{8a8415dc-0874-430c-9bf5-ac8f1c7f06ca}" _name="Set LastTouching" _locked="false" _x="-926" _y="-341" _color="#303030" _background="#606060" _comment="" _type="ft_bool_t" _editRole=""/>
+        <_LogicOperatorBinary _uuid="{474341c9-9ed5-4312-9872-a77ecc2bcbec}" _name="Touching In Bounds" _locked="false" _x="-680" _y="-331" _color="#303030" _background="#606060" _comment="" _type="ft_bool_t" _editRole="">
+            <__Properties>
+                <operator type="String">&amp;&amp;</operator>
+            </__Properties>
+        </_LogicOperatorBinary>
+        <_LogicVariableWriter _uuid="{e8863f94-f665-48dd-b790-c5ab4588faec}" _name="Set If Touch Down In Bounds" _locked="false" _x="-174" _y="-268" _color="#303030" _background="#606060" _comment="" _type="ft_bool_t" _editRole=""/>
+        <_LogicCondition _uuid="{b3060698-8386-42be-9955-134e5aafac1a}" _name="Condition" _locked="false" _x="357" _y="-267" _color="#303030" _background="#606060"/>
+        <_LogicBlockSignal _uuid="{95271d00-fbe8-44e9-8fb0-0dfe3d9c5ecc}" _name="Down" _locked="false" _x="596" _y="-266" _color="#303030" _background="#606060" _displayName=""/>
+        <Ft_Esd_TouchArea_IsInBounds _uuid="{56538305-d2d7-41e8-9141-776b85c82f71}" _name="Ft_Esd_TouchArea_IsInBounds" _locked="false" _x="-927" _y="-254" _color="#303030" _background="#606060"/>
+        <_LogicBlockVariable _uuid="{ebc7ed8a-b8f7-4a65-bacc-a67704f681dc}" _name="Touching" _locked="false" _x="77" _y="-250" _color="#303030" _background="#606060" _displayName="" _comment="Set while touching and touch started inside this touch area" _type="ft_bool_t" _editRole="">
+            <__Properties>
+                <access type="String">ReadOnly</access>
+            </__Properties>
+        </_LogicBlockVariable>
+        <_LogicBlockInput _uuid="{15b757b8-54e1-4d44-87e1-bced6b2af9ba}" _name="X" _locked="false" _x="-1159" _y="-187" _color="#303030" _background="#606060" _displayName="" _comment="" _type="int" _editRole=""/>
+        <_LogicBlockOutput _uuid="{d577c7af-ae52-40b9-9b1b-aa9d252c09de}" _name="Inside" _locked="false" _x="80" _y="-157" _color="#303030" _background="#606060" _displayName="" _comment="Set while touching, touch started on this area, and touch is currently on this area" _type="ft_bool_t" _editRole=""/>
+        <_LogicOperatorBinary _uuid="{9b0786c1-cd6c-4c91-b87c-c60b76367f00}" _name="Toucing and IsInBounds" _locked="false" _x="-173" _y="-152" _color="#303030" _background="#606060" _comment="" _type="ft_bool_t" _editRole="">
+            <__Properties>
+                <operator type="String">&amp;&amp;</operator>
+            </__Properties>
+        </_LogicOperatorBinary>
+        <_LogicBlockInput _uuid="{9ada1635-d324-4502-9e3e-0b2b47e22d01}" _name="Y" _locked="false" _x="-1159" _y="-131" _color="#303030" _background="#606060" _displayName="" _comment="" _type="int" _editRole=""/>
+        <_LogicBlockInput _uuid="{3823c075-18ed-40a6-8f11-1b136560f153}" _name="Width" _locked="false" _x="-1159" _y="-73" _color="#303030" _background="#606060" _displayName="" _comment="" _type="int" _editRole=""/>
+        <_LogicBlockOutput _uuid="{1e3d9996-bfa1-4dd4-9142-131536c4a5e9}" _name="Hover" _locked="false" _x="79" _y="-61" _color="#303030" _background="#606060" _displayName="" _comment="Set while touching and touch is currently on this area, but the touch did not necessarily start on this area" _type="ft_bool_t" _editRole=""/>
+        <_LogicBlockInput _uuid="{d8b3fcae-5159-4563-9040-c0929cc4bdef}" _name="Height" _locked="false" _x="-1159" _y="-17" _color="#303030" _background="#606060" _displayName="" _comment="" _type="int" _editRole=""/>
+        <_LogicBlockOutput _uuid="{1a43364c-29d5-4899-b5fa-cf9eb36453a7}" _name="TouchX" _locked="false" _x="84" _y="116" _color="#303030" _background="#606060" _displayName="" _comment="" _type="ft_int16_t" _editRole=""/>
+        <Ft_Esd_TouchTag_TouchX _uuid="{cb8b3419-179d-42d2-a10c-fb806cb1cad1}" _name="Touch X" _locked="false" _x="-163" _y="117" _color="#303030" _background="#606060"/>
+        <Ft_Esd_TouchTag_TouchY _uuid="{cae4cac9-3345-4830-8c99-3d05a1405e45}" _name="Touch Y" _locked="false" _x="-162" _y="177" _color="#303030" _background="#606060"/>
+        <_LogicBlockOutput _uuid="{4f236416-66e0-4319-bc28-1e35d4223acf}" _name="TouchY" _locked="false" _x="86" _y="178" _color="#303030" _background="#606060" _displayName="" _comment="" _type="ft_int16_t" _editRole=""/>
+    </_NodeContainer>
+</_ActorDocument>

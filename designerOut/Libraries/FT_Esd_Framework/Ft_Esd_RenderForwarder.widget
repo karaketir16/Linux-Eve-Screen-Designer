@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<_WidgetDocument _uuid="{2ebdfaae-9ee3-492b-8c67-8c7cb5c05566}" _locked="false" displayName="Render Forwarder" comment="Use to insert custom rendering at a specific location in the layout" category="EsdLayoutAdvanced" defaultSignal="" icon=":/icons/layer--arrow.png" _version="30107" _revision="11" purpose="Widget" backToFront="">
+    <_ActorContainer _uuid="{202dd436-879b-4a52-9657-7ae480817496}" _name="Actors" _locked="false"/>
+    <_ConnectionContainer _uuid="{77b68117-61ef-48d1-acca-d6db847914d4}" _name="Connections" _locked="false">
+        <_Connection _uuid="{0a65bbbb-ccb7-4fa2-98dc-349d269502cd}" _name="Connection" _locked="false" connectionType="SignalSlot" sourceObject="{2a5f3ad5-03aa-442a-8ffa-66d0c76a7398}" sourceConnector="signal" targetObject="{bdca0843-6e9d-4ec6-8ebd-3722aa98bb6b}" targetConnector="slot"/>
+        <_Connection _uuid="{43bfb3b3-4015-4dfc-bb3e-89be1e8abb75}" _name="Connection" _locked="false" connectionType="VariableInput" sourceObject="{5289f32a-e028-4fc7-9486-e4f6865e44d0}" sourceConnector="_widgetGlobalY" targetObject="{067f06cf-0f12-44d3-b3a0-d2a811df1e2e}" targetConnector="value"/>
+        <_Connection _uuid="{b522e84c-061c-4c3d-bfa6-6247f7e89d78}" _name="Connection" _locked="false" connectionType="SignalSlot" sourceObject="{b252a766-9d7f-4861-8839-e59638453d8c}" sourceConnector="signal" targetObject="{7306afd9-0f85-44a2-b1a9-61e1534d63cc}" targetConnector="slot"/>
+        <_Connection _uuid="{c8f0c591-c181-4159-8fd8-2815712aeb01}" _name="Connection" _locked="false" connectionType="VariableInput" sourceObject="{5289f32a-e028-4fc7-9486-e4f6865e44d0}" sourceConnector="_widgetGlobalWidth" targetObject="{afe0d15c-9158-4499-bc97-907e5950e829}" targetConnector="value"/>
+        <_Connection _uuid="{ca6abbb1-d8c6-4c1b-afe5-13da22242efe}" _name="Connection" _locked="false" connectionType="SignalSlot" sourceObject="{3cb91e9b-3dbe-4717-95e5-d1fb667bf951}" sourceConnector="signal" targetObject="{4fa78c4d-bbcb-4ce9-988b-202789d6c452}" targetConnector="slot"/>
+        <_Connection _uuid="{d7e69934-c7ee-4e99-8bab-631896ceba79}" _name="Connection" _locked="false" connectionType="VariableInput" sourceObject="{5289f32a-e028-4fc7-9486-e4f6865e44d0}" sourceConnector="_widgetGlobalX" targetObject="{90835855-bb8d-4c0c-a262-c927e8ccff5e}" targetConnector="value"/>
+        <_Connection _uuid="{ddf7eda3-47ab-4672-8235-ddabb34c6e1a}" _name="Connection" _locked="false" connectionType="VariableInput" sourceObject="{5289f32a-e028-4fc7-9486-e4f6865e44d0}" sourceConnector="_widgetGlobalHeight" targetObject="{451fd2bd-a16e-4af6-948d-5dbd7da61b9e}" targetConnector="value"/>
+    </_ConnectionContainer>
+    <_NodeContainer _uuid="{2150042b-1d62-4224-9315-06248b1dafc3}" _name="Nodes" _locked="false">
+        <_WidgetInterface _uuid="{5289f32a-e028-4fc7-9486-e4f6865e44d0}" _name="Widget Interface" _locked="false" _x="-174" _y="-280" _color="#303030" _background="#606060"/>
+        <_LogicBlockOutput _uuid="{90835855-bb8d-4c0c-a262-c927e8ccff5e}" _name="GlobalX" _locked="false" _x="144" _y="-250" _color="#303030" _background="#606060" _displayName="Global X" _comment="" _type="ft_int16_t" _editRole=""/>
+        <_LogicBlockOutput _uuid="{067f06cf-0f12-44d3-b3a0-d2a811df1e2e}" _name="GlobalY" _locked="false" _x="144" _y="-187" _color="#303030" _background="#606060" _displayName="Global Y" _comment="" _type="ft_int16_t" _editRole=""/>
+        <_LogicBlockOutput _uuid="{afe0d15c-9158-4499-bc97-907e5950e829}" _name="GlobalWidth" _locked="false" _x="143" _y="-125" _color="#303030" _background="#606060" _displayName="Global Width" _comment="" _type="ft_int16_t" _editRole=""/>
+        <_LogicBlockOutput _uuid="{451fd2bd-a16e-4af6-948d-5dbd7da61b9e}" _name="GlobalHeight" _locked="false" _x="143" _y="-62" _color="#303030" _background="#606060" _displayName="Global Height" _comment="" _type="ft_int16_t" _editRole=""/>
+        <_LogicBlockSignal _uuid="{4fa78c4d-bbcb-4ce9-988b-202789d6c452}" _name="ForwardUpdate" _locked="false" _x="75" _y="86" _color="#303030" _background="#606060" _displayName="Forward Update"/>
+        <_LogicBlockSlot _uuid="{3cb91e9b-3dbe-4717-95e5-d1fb667bf951}" _name="Update" _locked="false" _x="-144" _y="86" _color="#303030" _background="#606060" _displayName=""/>
+        <_LogicBlockSlot _uuid="{b252a766-9d7f-4861-8839-e59638453d8c}" _name="Render" _locked="false" _x="-148" _y="141" _color="#303030" _background="#606060" _displayName=""/>
+        <_LogicBlockSignal _uuid="{7306afd9-0f85-44a2-b1a9-61e1534d63cc}" _name="ForwardRender" _locked="false" _x="78" _y="142" _color="#303030" _background="#606060" _displayName="Forward Render"/>
+        <_LogicBlockSignal _uuid="{bdca0843-6e9d-4ec6-8ebd-3722aa98bb6b}" _name="ForwardIdle" _locked="false" _x="78" _y="196" _color="#303030" _background="#606060" _displayName="Forward Idle"/>
+        <_LogicBlockSlot _uuid="{2a5f3ad5-03aa-442a-8ffa-66d0c76a7398}" _name="Idle" _locked="false" _x="-150" _y="196" _color="#303030" _background="#606060" _displayName=""/>
+    </_NodeContainer>
+    <_WidgetContainer _uuid="{cc4f1145-7018-4711-a343-d2cd8d0175b6}" _name="Widgets" _locked="false">
+        <__Properties>
+            <width type="int">50</width>
+            <height type="int">50</height>
+        </__Properties>
+    </_WidgetContainer>
+</_WidgetDocument>

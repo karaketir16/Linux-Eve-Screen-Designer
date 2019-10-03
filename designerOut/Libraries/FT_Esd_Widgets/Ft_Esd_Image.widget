@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<_WidgetDocument _uuid="{5bcb6da1-3bf2-4a89-bd66-afe79d81c0d9}" _locked="false" displayName="ESD Image" comment="" category="EsdWidgets" defaultSignal="" icon="" _version="40001" _revision="16" purpose="Widget" backToFront="">
+    <_ActorContainer _uuid="{158c6a5f-ce4b-492e-aae0-3e54e77dda19}" _name="Actors" _locked="false"/>
+    <_ConnectionContainer _uuid="{5a4480d9-6d50-423b-913f-67f107b4d7cb}" _name="Connections" _locked="false">
+        <_Connection _uuid="{2de8345e-6ccc-4941-b3d1-efcb568a36f3}" _name="Connection" _locked="false" connectionType="SignalSlot" sourceObject="{b7df7e4e-477a-415c-8bdf-13328b0fef3d}" sourceConnector="signal" targetObject="{85cda9b1-bba4-4ba0-8d2c-759d312a3792}" targetConnector="_call"/>
+    </_ConnectionContainer>
+    <_NodeContainer _uuid="{c4a1d464-da0b-4f1d-bda6-eda40a20fdf5}" _name="Nodes" _locked="false">
+        <_LogicBlockSlot _uuid="{b7df7e4e-477a-415c-8bdf-13328b0fef3d}" _name="Render" _locked="false" _x="29" _y="-8" _color="#303030" _background="#606060" _displayName=""/>
+        <Ft_Esd_Image_Render_Bitmap _uuid="{85cda9b1-bba4-4ba0-8d2c-759d312a3792}" _name="Ft_Esd_Image_Render_Bitmap" _locked="false" _x="272" _y="-7" _color="#303030" _background="#606060"/>
+        <_LogicBlockVariable _uuid="{79274048-c8f3-43c4-8f2a-114c857c40a3}" _name="Color" _locked="false" _x="35" _y="67" _color="#303030" _background="#606060" _displayName="" _comment="" _type="ft_argb32_t" _editRole="">
+            <__Properties>
+                <value type="Color">#ffffff</value>
+                <access type="String">Public</access>
+            </__Properties>
+        </_LogicBlockVariable>
+        <_LogicBlockInput _uuid="{5ca369f6-b0ad-4aca-bd24-72c3fe9544d1}" _name="BitmapCell" _locked="false" _x="34" _y="133" _color="#303030" _background="#606060" _displayName="Bitmap Cell" _comment="" _type="Ft_Esd_BitmapCell" _editRole=""/>
+        <_LogicBlockVariable _uuid="{db944cb3-0d0d-42ee-adcc-ea3576a45b70}" _name="Align" _locked="false" _x="36" _y="198" _color="#303030" _background="#606060" _displayName="" _comment="" _type="Esd_Align" _editRole="">
+            <__Properties>
+                <value type="String">ESD_ALIGN_TOPLEFT</value>
+                <access type="String">Public</access>
+            </__Properties>
+        </_LogicBlockVariable>
+        <_LogicBlockVariable _uuid="{09c16ef9-d308-4419-a734-eb9973eb01da}" _name="Scaling" _locked="false" _x="37" _y="256" _color="#303030" _background="#606060" _displayName="" _comment="" _type="Esd_Scaling" _editRole="">
+            <__Properties>
+                <value type="String">ESD_SCALING_ORIGINAL</value>
+                <access type="String">Public</access>
+            </__Properties>
+        </_LogicBlockVariable>
+        <_LogicBlockVariable _uuid="{a1a0f5f0-0bb7-484d-b122-db237c318497}" _name="AutoResize" _locked="false" _x="40" _y="312" _color="#303030" _background="#606060" _displayName="" _comment="" _type="Esd_AutoResize" _editRole="">
+            <__Properties>
+                <value type="String">ESD_AUTORESIZE_BOTH</value>
+                <access type="String">Public</access>
+            </__Properties>
+        </_LogicBlockVariable>
+        <_LogicBlockVariable _uuid="{365561f4-7b39-4965-ac56-e93cd280783e}" _name="ScaleX" _locked="false" _x="38" _y="380" _color="#303030" _background="#606060" _displayName="" _comment="" _type="ft_int32_f16_t" _editRole="">
+            <__Properties>
+                <value type="double">1</value>
+                <access type="String">Public</access>
+            </__Properties>
+        </_LogicBlockVariable>
+        <_LogicBlockVariable _uuid="{ff3cf4ec-02b8-428d-b685-9118680ea886}" _name="ScaleY" _locked="false" _x="40" _y="440" _color="#303030" _background="#606060" _displayName="" _comment="" _type="ft_int32_f16_t" _editRole="">
+            <__Properties>
+                <value type="double">1</value>
+                <access type="String">Public</access>
+            </__Properties>
+        </_LogicBlockVariable>
+        <_LogicBlockInput _uuid="{2a516810-02c7-4f00-aad9-b79e7ee9d93b}" _name="MinAlpha" _locked="false" _x="40" _y="508" _color="#303030" _background="#606060" _displayName="AlphaFilter" _comment="Minimum Alpha Filter" _type="ft_uint8_t" _editRole="">
+            <__Properties>
+                <_min type="String">0</_min>
+                <_max type="String">255</_max>
+                <default type="int">1</default>
+            </__Properties>
+        </_LogicBlockInput>
+    </_NodeContainer>
+    <_WidgetContainer _uuid="{5135ec72-17ce-4852-8d2f-429df78b72f4}" _name="Widgets" _locked="false">
+        <__Properties>
+            <x type="double">70</x>
+            <y type="double">92</y>
+            <width type="int">100</width>
+            <height type="int">100</height>
+        </__Properties>
+    </_WidgetContainer>
+</_WidgetDocument>

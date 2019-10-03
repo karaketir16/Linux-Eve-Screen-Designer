@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<_WidgetDocument _uuid="{62f03b49-0a9d-46d3-a726-1372c798875a}" _locked="false" displayName="ESD Multi Gradient (Rounded)" comment="" category="EsdBasicWidegts" defaultSignal="" icon="" _version="40001" _revision="4" purpose="Widget" backToFront="">
+    <_ActorContainer _uuid="{f10516d0-4a3c-447c-9ccb-515845081392}" _name="Actors" _locked="false"/>
+    <_ConnectionContainer _uuid="{c76355b4-440f-4ced-a05a-b8b58f199ae3}" _name="Connections" _locked="false">
+        <_Connection _uuid="{49e07ad6-aa81-48cb-aa09-7143e1184196}" _name="Connection" _locked="false" connectionType="VariableInput" sourceObject="{5d8caf90-59fb-4e62-871d-7ecf943212e8}" sourceConnector="value" targetObject="{5d1465d2-ed37-407d-a0db-200e9250d97b}" targetConnector="bottomRight"/>
+        <_Connection _uuid="{5a409acf-9eab-43ff-ba7e-5a25a529b354}" _name="Connection" _locked="false" connectionType="VariableInput" sourceObject="{2e732baf-0e8a-41c3-b781-9ce4055cf1a7}" sourceConnector="value" targetObject="{5d1465d2-ed37-407d-a0db-200e9250d97b}" targetConnector="topRight"/>
+        <_Connection _uuid="{62ac1438-576e-475f-a9f9-ac159f1fb9e8}" _name="Connection" _locked="false" connectionType="VariableInput" sourceObject="{df9e0544-1e26-4146-bde8-c86203ab492b}" sourceConnector="_widgetHeight" targetObject="{5d1465d2-ed37-407d-a0db-200e9250d97b}" targetConnector="height"/>
+        <_Connection _uuid="{a16a7425-cf1d-43b2-99aa-84f9a7b33687}" _name="Connection" _locked="false" connectionType="VariableInput" sourceObject="{376092a9-218b-4a48-9811-39882a0d34a2}" sourceConnector="value" targetObject="{5d1465d2-ed37-407d-a0db-200e9250d97b}" targetConnector="bottomLeft"/>
+        <_Connection _uuid="{a2401459-b8f2-45a8-b8b7-88b686e2c3ab}" _name="Connection" _locked="false" connectionType="VariableInput" sourceObject="{df9e0544-1e26-4146-bde8-c86203ab492b}" sourceConnector="_widgetWidth" targetObject="{5d1465d2-ed37-407d-a0db-200e9250d97b}" targetConnector="width"/>
+        <_Connection _uuid="{a332f323-4a0d-4f88-ab9c-64dc26cbee6a}" _name="Connection" _locked="false" connectionType="VariableInput" sourceObject="{3c7ceeb7-643f-4ef4-ab77-07ac57930f07}" sourceConnector="value" targetObject="{5d1465d2-ed37-407d-a0db-200e9250d97b}" targetConnector="topLeft"/>
+        <_Connection _uuid="{a85e0524-a675-44da-b324-c037b53cecbd}" _name="Connection" _locked="false" connectionType="VariableInput" sourceObject="{857c8c78-49e9-47eb-bf31-28f5e56ca018}" sourceConnector="value" targetObject="{5d1465d2-ed37-407d-a0db-200e9250d97b}" targetConnector="alpha"/>
+        <_Connection _uuid="{ab01861b-736b-4223-8523-05ee7f260289}" _name="Connection" _locked="false" connectionType="VariableInput" sourceObject="{df9e0544-1e26-4146-bde8-c86203ab492b}" sourceConnector="_widgetY" targetObject="{5d1465d2-ed37-407d-a0db-200e9250d97b}" targetConnector="y"/>
+        <_Connection _uuid="{d00efed0-7e1f-4a15-a3b6-f7f6e679f1fe}" _name="Connection" _locked="false" connectionType="VariableInput" sourceObject="{5e2ad282-dc31-4684-ab82-9d904a67ead0}" sourceConnector="value" targetObject="{5d1465d2-ed37-407d-a0db-200e9250d97b}" targetConnector="radius"/>
+        <_Connection _uuid="{ddbf86f9-9a2f-46d3-a65f-a59883cd5482}" _name="Connection" _locked="false" connectionType="VariableInput" sourceObject="{df9e0544-1e26-4146-bde8-c86203ab492b}" sourceConnector="_widgetX" targetObject="{5d1465d2-ed37-407d-a0db-200e9250d97b}" targetConnector="x"/>
+    </_ConnectionContainer>
+    <_NodeContainer _uuid="{03af66bc-244b-4697-a296-45741a9f21bd}" _name="Nodes" _locked="false">
+        <_WidgetInterface _uuid="{df9e0544-1e26-4146-bde8-c86203ab492b}" _name="Widget Interface" _locked="false" _x="-572" _y="-197" _color="#303030" _background="#606060"/>
+        <Esd_Render_MultiGradient_Rounded _uuid="{5d1465d2-ed37-407d-a0db-200e9250d97b}" _name="ESD Multi Gradient (Rounded)" _locked="false" _x="-292" _y="-150" _color="#62af21" _background="#606060" _z="0">
+            <__Properties>
+                <_active type="bool">true</_active>
+                <x type="String">0</x>
+                <y type="String">0</y>
+                <width type="String">0</width>
+                <height type="String">0</height>
+                <radius type="String">4</radius>
+                <alpha type="String">255</alpha>
+                <topLeft type="String">#FF0012</topLeft>
+                <topRight type="String">#31FF00</topRight>
+                <bottomLeft type="String">#6700FF</bottomLeft>
+                <bottomRight type="String">#00D1FF</bottomRight>
+            </__Properties>
+        </Esd_Render_MultiGradient_Rounded>
+        <_LogicBlockVariable _uuid="{857c8c78-49e9-47eb-bf31-28f5e56ca018}" _name="Alpha" _locked="false" _x="-572" _y="58" _color="#303030" _background="#606060" _displayName="" _comment="" _type="ft_uint8_t" _editRole="">
+            <__Properties>
+                <value type="int">255</value>
+                <access type="String">Public</access>
+            </__Properties>
+        </_LogicBlockVariable>
+        <_LogicBlockVariable _uuid="{5e2ad282-dc31-4684-ab82-9d904a67ead0}" _name="Radius" _locked="false" _x="-572" _y="122" _color="#303030" _background="#606060" _displayName="" _comment="" _type="ft_int32_f4_t" _editRole="">
+            <__Properties>
+                <_min type="String">1</_min>
+                <value type="double">4</value>
+                <access type="String">Public</access>
+            </__Properties>
+        </_LogicBlockVariable>
+        <_LogicBlockVariable _uuid="{3c7ceeb7-643f-4ef4-ab77-07ac57930f07}" _name="TopLeft" _locked="false" _x="-572" _y="185" _color="#303030" _background="#606060" _displayName="Top Left" _comment="" _type="ft_rgb32_t" _editRole="">
+            <__Properties>
+                <value type="Color">#ff0012</value>
+                <access type="String">Public</access>
+            </__Properties>
+        </_LogicBlockVariable>
+        <_LogicBlockVariable _uuid="{2e732baf-0e8a-41c3-b781-9ce4055cf1a7}" _name="TopRight" _locked="false" _x="-571" _y="249" _color="#303030" _background="#606060" _displayName="Top Right" _comment="" _type="ft_rgb32_t" _editRole="">
+            <__Properties>
+                <value type="Color">#31ff00</value>
+                <access type="String">Public</access>
+            </__Properties>
+        </_LogicBlockVariable>
+        <_LogicBlockVariable _uuid="{376092a9-218b-4a48-9811-39882a0d34a2}" _name="BottomLeft" _locked="false" _x="-571" _y="313" _color="#303030" _background="#606060" _displayName="Bottom Left" _comment="" _type="ft_rgb32_t" _editRole="">
+            <__Properties>
+                <value type="Color">#6700ff</value>
+                <access type="String">Public</access>
+            </__Properties>
+        </_LogicBlockVariable>
+        <_LogicBlockVariable _uuid="{5d8caf90-59fb-4e62-871d-7ecf943212e8}" _name="BottomRight" _locked="false" _x="-571" _y="377" _color="#303030" _background="#606060" _displayName="Bottom Right" _comment="" _type="ft_rgb32_t" _editRole="">
+            <__Properties>
+                <value type="Color">#00d1ff</value>
+                <access type="String">Public</access>
+            </__Properties>
+        </_LogicBlockVariable>
+    </_NodeContainer>
+    <_WidgetContainer _uuid="{069ba2e7-99d4-40b7-88a9-84be3d4ac328}" _name="Widgets" _locked="false">
+        <__Properties>
+            <width type="int">400</width>
+            <height type="int">300</height>
+        </__Properties>
+    </_WidgetContainer>
+</_WidgetDocument>

@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<_LogicDocument _uuid="{77f18d1e-a306-4b83-8ebe-345ffa2e07c8}" _locked="false" displayName="" comment="" category="_GroupHidden" defaultSignal="" icon="" _version="30106" _revision="1">
+    <_ConnectionContainer _uuid="{46c211b5-4746-496e-8fdd-990910511ebf}" _name="Connections" _locked="false">
+        <_Connection _uuid="{0e020c1f-6862-4cac-b19a-bb3179ab05a9}" _name="Connection" _locked="false" connectionType="VariableInput" sourceObject="{75e5f6bf-b243-49d9-86ad-5feb2013136a}" sourceConnector="value" targetObject="{3070523c-24fa-426c-85c1-77d7b54706ef}" targetConnector="right"/>
+        <_Connection _uuid="{202257cc-90d2-4a10-a1e7-3d1620880d75}" _name="Connection" _locked="false" connectionType="OutputInput" sourceObject="{fb60ff4f-7ec5-4888-893a-4e19aecee71c}" sourceConnector="result" targetObject="{30120c52-86b4-4efd-9b10-f77a1e6e9524}" targetConnector="value"/>
+        <_Connection _uuid="{295c5d1c-d227-4ebf-a42c-791f7de41b89}" _name="Connection" _locked="false" connectionType="WriterVariable" sourceObject="{7c1de3db-ba46-430f-9171-e9da9b29a78e}" sourceConnector="target" targetObject="{6813ca7a-d523-4772-b3ba-7ed27e27c10e}" targetConnector="value"/>
+        <_Connection _uuid="{59ab2a33-7e9a-4d47-8778-ac172791b122}" _name="Connection" _locked="false" connectionType="VariableInput" sourceObject="{6813ca7a-d523-4772-b3ba-7ed27e27c10e}" sourceConnector="value" targetObject="{fb60ff4f-7ec5-4888-893a-4e19aecee71c}" targetConnector="left"/>
+        <_Connection _uuid="{765a278c-5754-4299-8c1c-ef0dfb1454ca}" _name="Connection" _locked="false" connectionType="VariableInput" sourceObject="{6813ca7a-d523-4772-b3ba-7ed27e27c10e}" sourceConnector="value" targetObject="{3070523c-24fa-426c-85c1-77d7b54706ef}" targetConnector="left"/>
+        <_Connection _uuid="{841d3b68-8ab4-4077-821e-c2b62e966450}" _name="Connection" _locked="false" connectionType="VariableInput" sourceObject="{75e5f6bf-b243-49d9-86ad-5feb2013136a}" sourceConnector="value" targetObject="{fb60ff4f-7ec5-4888-893a-4e19aecee71c}" targetConnector="right"/>
+        <_Connection _uuid="{8f6fe666-5024-456d-b622-1c3272e3bb23}" _name="Connection" _locked="false" connectionType="OutputInput" sourceObject="{3070523c-24fa-426c-85c1-77d7b54706ef}" sourceConnector="result" targetObject="{7c1de3db-ba46-430f-9171-e9da9b29a78e}" targetConnector="value"/>
+        <_Connection _uuid="{adac3c48-ac4f-41d4-a8e4-43939e6b5b16}" _name="Connection" _locked="false" connectionType="SignalSlot" sourceObject="{de658d54-74ba-443c-91e2-01d92becc663}" sourceConnector="signal" targetObject="{7c1de3db-ba46-430f-9171-e9da9b29a78e}" targetConnector="write"/>
+        <_Connection _uuid="{e27d77cc-3f59-4c18-96d9-732183945c96}" _name="Connection" _locked="false" connectionType="SignalSlot" sourceObject="{f42ffe70-dd38-4f65-b65d-0e5b12476692}" sourceConnector="signal" targetObject="{30120c52-86b4-4efd-9b10-f77a1e6e9524}" targetConnector="write"/>
+        <_Connection _uuid="{f316719d-b58e-48d5-ad13-57606d84d5a7}" _name="Connection" _locked="false" connectionType="WriterVariable" sourceObject="{30120c52-86b4-4efd-9b10-f77a1e6e9524}" sourceConnector="target" targetObject="{6813ca7a-d523-4772-b3ba-7ed27e27c10e}" targetConnector="value"/>
+    </_ConnectionContainer>
+    <_NodeContainer _uuid="{7284d50e-f05f-4da0-890d-a2aa6a4edb75}" _name="Nodes" _locked="false">
+        <_LogicVariableWriter _uuid="{30120c52-86b4-4efd-9b10-f77a1e6e9524}" _name="Set Variable" _locked="false" _x="-1155" _y="-154" _color="#303030" _background="#606060" _comment="" _type="int" _editRole=""/>
+        <_LogicBlockSlot _uuid="{f42ffe70-dd38-4f65-b65d-0e5b12476692}" _name="Inc" _locked="false" _x="-1392" _y="-149" _color="#303030" _background="#606060" _displayName=""/>
+        <_LogicOperatorBinary _uuid="{fb60ff4f-7ec5-4888-893a-4e19aecee71c}" _name="Plus" _locked="false" _x="-1382" _y="-62" _color="#303030" _background="#606060" _comment="" _type="int" _editRole="">
+            <__Properties>
+                <_min type="String"></_min>
+                <_max type="String"></_max>
+                <_singleStep type="String"></_singleStep>
+                <operator type="String">+</operator>
+                <left type="String"></left>
+                <right type="String"></right>
+            </__Properties>
+        </_LogicOperatorBinary>
+        <_LogicBlockVariable _uuid="{6813ca7a-d523-4772-b3ba-7ed27e27c10e}" _name="Value" _locked="false" _x="-912" _y="-49" _color="#303030" _background="#606060" _displayName="" _comment="" _type="int" _editRole="">
+            <__Properties>
+                <_min type="String"></_min>
+                <_max type="String"></_max>
+                <_singleStep type="String"></_singleStep>
+                <access type="String">Public</access>
+            </__Properties>
+        </_LogicBlockVariable>
+        <_LogicVariableWriter _uuid="{7c1de3db-ba46-430f-9171-e9da9b29a78e}" _name="Set Variable" _locked="false" _x="-1154" _y="27" _color="#303030" _background="#606060" _comment="" _type="int" _editRole=""/>
+        <_LogicBlockSlot _uuid="{de658d54-74ba-443c-91e2-01d92becc663}" _name="Dec" _locked="false" _x="-1379" _y="37" _color="#303030" _background="#606060" _displayName=""/>
+        <_LogicBlockVariable _uuid="{75e5f6bf-b243-49d9-86ad-5feb2013136a}" _name="Step" _locked="false" _x="-1637" _y="37" _color="#303030" _background="#606060" _displayName="" _comment="" _type="int" _editRole="">
+            <__Properties>
+                <value type="String">1</value>
+                <access type="String">Public</access>
+            </__Properties>
+        </_LogicBlockVariable>
+        <_LogicOperatorBinary _uuid="{3070523c-24fa-426c-85c1-77d7b54706ef}" _name="Minus" _locked="false" _x="-1378" _y="115" _color="#303030" _background="#606060" _comment="" _type="int" _editRole="">
+            <__Properties>
+                <_min type="String"></_min>
+                <_max type="String"></_max>
+                <_singleStep type="String"></_singleStep>
+                <operator type="String">-</operator>
+                <left type="String"></left>
+                <right type="String"></right>
+            </__Properties>
+        </_LogicOperatorBinary>
+    </_NodeContainer>
+</_LogicDocument>

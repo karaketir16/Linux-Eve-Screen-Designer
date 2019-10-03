@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<_ProjectRoot _uuid="{b62e2cbf-5185-468f-a5d3-72423599ee4e}" _name="Project" _locked="false" _version="40001" _revision="78">
+    <__Properties>
+        <_targets type="VariantList">
+            <li type="String">FT8XX</li>
+        </_targets>
+        <_toolchain type="String"></_toolchain>
+        <definitions type="VariantList"/>
+    </__Properties>
+    <_ProjectFolder _uuid="{1d418a91-d170-486c-bc70-3adf5476b425}" _name="Hdr" _locked="false">
+        <_ProjectFileResource _uuid="{e9ff910e-a15a-470d-aad3-289c57b4952c}" _name="bt8xxemu.h" _locked="false" fileName="Hdr/bt8xxemu.h">
+            <_SourceFile _uuid="{c22e985d-e1bc-453d-93c2-009ccdf952fa}" _name="Source File" _locked="false"/>
+        </_ProjectFileResource>
+        <_ProjectFileResource _uuid="{ea6a5232-d1c2-4977-9de1-96b3ef5a3109}" _name="bt8xxemu_inttypes.h" _locked="false" fileName="Hdr/bt8xxemu_inttypes.h">
+            <_SourceFile _uuid="{5e44c006-9ffe-481c-a674-6f3704fe4790}" _name="Source File" _locked="false"/>
+        </_ProjectFileResource>
+        <_ProjectFileResource _uuid="{878dc528-8b94-4206-9538-15bb206e7701}" _name="FT_DataTypes.h" _locked="false" fileName="Hdr/FT_DataTypes.h">
+            <_SourceFile _uuid="{a632ae89-6f82-48f3-adf4-3b0de701b176}" _name="Source File" _locked="false"/>
+        </_ProjectFileResource>
+        <_ProjectFileResource _uuid="{7887a56e-2d64-47f8-83a9-93414af2b216}" _name="FT_Gpu.h" _locked="false" fileName="Hdr/FT_Gpu.h">
+            <_SourceFile _uuid="{de43e0d9-f189-499b-a76c-1a0ba1ac81c7}" _name="Source File" _locked="false"/>
+        </_ProjectFileResource>
+        <_ProjectFileResource _uuid="{67403428-0ca4-4fab-92e6-8c61b709da16}" _name="FT_Gpu_Hal.h" _locked="false" fileName="Hdr/FT_Gpu_Hal.h">
+            <_SourceFile _uuid="{6ee388d4-5b18-4b87-bcfd-14e55c68ab96}" _name="Source File" _locked="false"/>
+        </_ProjectFileResource>
+        <_ProjectFileResource _uuid="{de78a30d-e2ae-4aaa-9136-0270e08a85ce}" _name="FT_LoadFile.h" _locked="false" fileName="Hdr/FT_LoadFile.h">
+            <_SourceFile _uuid="{8430f215-4745-4762-a7fe-e346e63249c0}" _name="Source File" _locked="false"/>
+        </_ProjectFileResource>
+        <_ProjectFileResource _uuid="{185f2e0c-ce14-4652-9aa3-b76f7b5f9ec6}" _name="FT_Platform.h" _locked="false" fileName="Hdr/FT_Platform.h">
+            <_SourceFile _uuid="{b25b2d23-b7d4-40ec-8c09-4a8befc4f2a4}" _name="Source File" _locked="false"/>
+        </_ProjectFileResource>
+        <_ProjectFileResource _uuid="{7c55083e-33d3-4907-a78e-e5d96185cbe4}" _name="ftd2xx.h" _locked="false" fileName="Hdr/ftd2xx.h">
+            <_SourceFile _uuid="{f9a5cbe3-095d-4e1d-82c3-5d0d617fa440}" _name="Source File" _locked="false"/>
+        </_ProjectFileResource>
+        <_ProjectFileResource _uuid="{90523d6b-81f0-4d41-abe4-c1384d510df9}" _name="Gpu.h" _locked="false" fileName="Hdr/Gpu.h">
+            <_SourceFile _uuid="{f3a36461-7da5-46b0-9d95-8158862030b2}" _name="Source File" _locked="false"/>
+        </_ProjectFileResource>
+        <_ProjectFileResource _uuid="{f4776ade-5142-4c0b-9586-5cc8984dfacb}" _name="Gpu_Hal.h" _locked="false" fileName="Hdr/Gpu_Hal.h">
+            <_SourceFile _uuid="{a8f3b158-0e67-4efa-a009-b76e22ba2b1c}" _name="Source File" _locked="false"/>
+        </_ProjectFileResource>
+        <_ProjectFileResource _uuid="{69a80616-2ef3-4cb0-afe7-20ca6e17daa2}" _name="Hal_Config.h" _locked="false" fileName="Hdr/Hal_Config.h">
+            <_SourceFile _uuid="{4841c3e2-5018-4472-a1dd-41055662d28b}" _name="Source File" _locked="false"/>
+        </_ProjectFileResource>
+        <_ProjectFileResource _uuid="{40d2945c-cb7b-4789-9c67-41fc7019c25b}" _name="LibFT4222.h" _locked="false" fileName="Hdr/LibFT4222.h">
+            <_SourceFile _uuid="{b3e0bceb-7c12-485f-a97d-083b41d91b88}" _name="Source File" _locked="false"/>
+        </_ProjectFileResource>
+        <_ProjectFileResource _uuid="{19eb8314-0851-4a70-b546-bb43ff9e4f1c}" _name="libMPSSE_spi.h" _locked="false" fileName="Hdr/libMPSSE_spi.h">
+            <_SourceFile _uuid="{6294594e-d706-4dd6-96c2-e17ecc65af41}" _name="Source File" _locked="false"/>
+        </_ProjectFileResource>
+        <_ProjectFileResource _uuid="{a0e62db9-9361-42ec-bc89-c0a1b5e812bc}" _name="Platform.h" _locked="false" fileName="Hdr/Platform.h">
+            <_SourceFile _uuid="{7a8536b1-c5ee-4b77-95bd-94c576404d79}" _name="Source File" _locked="false"/>
+        </_ProjectFileResource>
+        <_ProjectFileResource _uuid="{d3c6914e-9820-4fc1-a47d-cc1d033396b1}" _name="WinTypes.h" _locked="false" fileName="Hdr/WinTypes.h">
+            <_SourceFile _uuid="{dff82ba6-8a32-409c-961b-943c3bdb0de2}" _name="Source File" _locked="false"/>
+        </_ProjectFileResource>
+    </_ProjectFolder>
+    <_ProjectFileResource _uuid="{8f6aa4c8-e585-4bd2-a906-dbcb2551caca}" _name="EVE_Cmd.c" _locked="false" fileName="EVE_Cmd.c">
+        <_SourceFile _uuid="{7690308f-427a-4f42-a846-d39725873742}" _name="Source File" _locked="false"/>
+    </_ProjectFileResource>
+    <_ProjectFileResource _uuid="{5e98d95a-100b-44a6-bab5-91e7aba1d373}" _name="EVE_Cmd.h" _locked="false" fileName="EVE_Cmd.h">
+        <_SourceFile _uuid="{81405c4e-c827-4d78-b042-522905221b82}" _name="Source File" _locked="false"/>
+    </_ProjectFileResource>
+    <_ProjectFileResource _uuid="{b0507a2e-1967-4e1b-8bfa-bbbc82a020d0}" _name="EVE_Config.h" _locked="false" fileName="EVE_Config.h">
+        <_SourceFile _uuid="{1f448c56-1b6e-4350-842d-3a977e658097}" _name="Source File" _locked="false"/>
+    </_ProjectFileResource>
+    <_ProjectFileResource _uuid="{4b57bf57-a1d6-4884-92dd-4d6c09982b34}" _name="EVE_EmulatorMain.c" _locked="false" fileName="EVE_EmulatorMain.c">
+        <_SourceFile _uuid="{03ab960b-a5d4-4e7c-a22a-2b760ee9d09b}" _name="Source File" _locked="false"/>
+    </_ProjectFileResource>
+    <_ProjectFileResource _uuid="{ade41c83-3d77-4fbc-82db-83329d134f50}" _name="EVE_EmulatorMain.h" _locked="false" fileName="EVE_EmulatorMain.h">
+        <_SourceFile _uuid="{1446581c-bf89-4ce3-ae60-8e758df99e6f}" _name="Source File" _locked="false"/>
+    </_ProjectFileResource>
+    <_ProjectFileResource _uuid="{78bf5903-38fa-49c2-8338-31adedd3529e}" _name="EVE_GpuDefs.h" _locked="false" fileName="EVE_GpuDefs.h">
+        <_SourceFile _uuid="{a9731b78-7626-4d70-acb8-4738257eb4f2}" _name="Source File" _locked="false"/>
+    </_ProjectFileResource>
+    <_ProjectFileResource _uuid="{b586cf7e-9e45-446e-a078-38475986e79f}" _name="EVE_GpuTypes.h" _locked="false" fileName="EVE_GpuTypes.h">
+        <_SourceFile _uuid="{6f86ac90-092b-4cdb-941c-ee8964d91075}" _name="Source File" _locked="false"/>
+    </_ProjectFileResource>
+    <_ProjectFileResource _uuid="{df4d75e5-4040-4531-a4bb-229f9bfa3043}" _name="EVE_Hal.c" _locked="false" fileName="EVE_Hal.c">
+        <_SourceFile _uuid="{3498d63e-d46a-4d26-81c1-ce1c36bce79e}" _name="Source File" _locked="false"/>
+    </_ProjectFileResource>
+    <_ProjectFileResource _uuid="{c62b98d5-2e0c-4ab0-908c-afcd91fab40b}" _name="EVE_Hal.h" _locked="false" fileName="EVE_Hal.h">
+        <_SourceFile _uuid="{98e13e00-b72f-4159-8f7b-2f7781ba7996}" _name="Source File" _locked="false"/>
+    </_ProjectFileResource>
+    <_ProjectFileResource _uuid="{c1bf4ef1-d205-4fa1-8fd0-3fba6a1427b1}" _name="EVE_HalImpl.h" _locked="false" fileName="EVE_HalImpl.h">
+        <_SourceFile _uuid="{c28dd5c9-6d68-44af-8461-d4fdf1412dec}" _name="Source File" _locked="false"/>
+    </_ProjectFileResource>
+    <_ProjectFileResource _uuid="{f24ef811-626d-4f21-9654-d8986e81353a}" _name="EVE_HalImpl_BT8XXEMU.c" _locked="false" fileName="EVE_HalImpl_BT8XXEMU.c">
+        <_SourceFile _uuid="{e9c07b04-2105-42a8-afdf-285feb8f021a}" _name="Source File" _locked="false"/>
+    </_ProjectFileResource>
+    <_ProjectFileResource _uuid="{f1765752-7f8e-4084-b901-a87518f7edf6}" _name="EVE_HalImpl_FT4222.c" _locked="false" fileName="EVE_HalImpl_FT4222.c">
+        <_SourceFile _uuid="{f757d2ad-7aa4-4c30-a7bb-5a889b7084d1}" _name="Source File" _locked="false"/>
+    </_ProjectFileResource>
+    <_ProjectFileResource _uuid="{b935e4f5-8b0c-433a-9c16-3e838e499a3d}" _name="EVE_HalImpl_FT9XX.c" _locked="false" fileName="EVE_HalImpl_FT9XX.c">
+        <_SourceFile _uuid="{f586be8f-763e-4fdb-bd16-ab9fcfbfaf59}" _name="Source File" _locked="false"/>
+    </_ProjectFileResource>
+    <_ProjectFileResource _uuid="{e6f6a365-ec3d-4ec0-90b6-2dee6e86dddf}" _name="EVE_HalImpl_MPSSE.c" _locked="false" fileName="EVE_HalImpl_MPSSE.c">
+        <_SourceFile _uuid="{c2b6a298-c337-4685-a0c4-a79f9f45e3c7}" _name="Source File" _locked="false"/>
+    </_ProjectFileResource>
+    <_ProjectFileResource _uuid="{95e85f9e-2c06-48ac-b72a-2ae709c5bb22}" _name="EVE_HalImpl_WIN32.c" _locked="false" fileName="EVE_HalImpl_WIN32.c">
+        <_SourceFile _uuid="{b69f81ac-10e4-46ca-a9f4-018ca4920345}" _name="Source File" _locked="false"/>
+    </_ProjectFileResource>
+    <_ProjectFileResource _uuid="{da3d556a-29fb-42d9-94a2-b24d05331fcb}" _name="EVE_ILI9488.h" _locked="false" fileName="EVE_ILI9488.h">
+        <_SourceFile _uuid="{4ac59109-9d72-4e9a-83ab-536ae33dcd6d}" _name="Source File" _locked="false"/>
+    </_ProjectFileResource>
+    <_ProjectFileResource _uuid="{c00a6de6-933d-4ed0-a626-380018d6f25f}" _name="EVE_ILI9488_FT9XX.c" _locked="false" fileName="EVE_ILI9488_FT9XX.c">
+        <_SourceFile _uuid="{8532a18a-469b-421b-9230-52cbc116f8eb}" _name="Source File" _locked="false"/>
+    </_ProjectFileResource>
+    <_ProjectFileResource _uuid="{db0f4652-ef55-4e69-9bd4-b23810c1231c}" _name="EVE_IntTypes.h" _locked="false" fileName="EVE_IntTypes.h">
+        <_SourceFile _uuid="{70b6060c-fe94-4143-9b7b-3043f7c60ebe}" _name="Source File" _locked="false"/>
+    </_ProjectFileResource>
+    <_ProjectFileResource _uuid="{dce7846d-973c-491a-9a66-8213cb8f9677}" _name="EVE_IntTypes_MSVC12.h" _locked="false" fileName="EVE_IntTypes_MSVC12.h">
+        <_SourceFile _uuid="{ba8c9ea4-33b3-4361-8620-1bafa1a110cc}" _name="Source File" _locked="false"/>
+    </_ProjectFileResource>
+    <_ProjectFileResource _uuid="{06ffbbfe-eb5c-4f44-9158-235db93d2706}" _name="EVE_LoadFile.h" _locked="false" fileName="EVE_LoadFile.h">
+        <_SourceFile _uuid="{03602299-f1c0-442d-a890-a7db01a0dadc}" _name="Source File" _locked="false"/>
+    </_ProjectFileResource>
+    <_ProjectFileResource _uuid="{6725a8fa-1065-430b-85af-4d9d6ac1d2bb}" _name="EVE_LoadFile_FATFS.c" _locked="false" fileName="EVE_LoadFile_FATFS.c">
+        <_SourceFile _uuid="{c7024adf-6ed3-42e8-a669-bda938dbc1dd}" _name="Source File" _locked="false"/>
+    </_ProjectFileResource>
+    <_ProjectFileResource _uuid="{3a56008d-d277-4855-af0e-69609b80adc2}" _name="EVE_LoadFile_STDIO.c" _locked="false" fileName="EVE_LoadFile_STDIO.c">
+        <_SourceFile _uuid="{04e4f7e8-cdf0-4d0e-9a06-40f5c8fceb82}" _name="Source File" _locked="false"/>
+    </_ProjectFileResource>
+    <_ProjectFileResource _uuid="{f0cf6728-2f46-4e2f-9d42-637682ca7a2f}" _name="EVE_Platform.h" _locked="false" fileName="EVE_Platform.h">
+        <_SourceFile _uuid="{7b3feb19-d5dc-4d1b-a029-33b50c416eef}" _name="Source File" _locked="false"/>
+    </_ProjectFileResource>
+    <_ProjectFileResource _uuid="{3df22218-8e25-40e3-9357-654c435be09d}" _name="EVE_Platform_BT8XXEMU.h" _locked="false" fileName="EVE_Platform_BT8XXEMU.h">
+        <_SourceFile _uuid="{fce43535-b1b4-4b52-90b1-7baeb5996226}" _name="Source File" _locked="false"/>
+    </_ProjectFileResource>
+    <_ProjectFileResource _uuid="{c10c60cb-5afa-4091-86d8-ed0b1e310357}" _name="EVE_Platform_FT4222.h" _locked="false" fileName="EVE_Platform_FT4222.h">
+        <_SourceFile _uuid="{f16fdf9a-d7eb-4835-9f00-824fb9d7b407}" _name="Source File" _locked="false"/>
+    </_ProjectFileResource>
+    <_ProjectFileResource _uuid="{6ba00c18-7eb2-487f-8bc3-d750c09d08e0}" _name="EVE_Platform_FT9XX.h" _locked="false" fileName="EVE_Platform_FT9XX.h">
+        <_SourceFile _uuid="{3b36e84a-f394-4eeb-b511-f127f4b2c676}" _name="Source File" _locked="false"/>
+    </_ProjectFileResource>
+    <_ProjectFileResource _uuid="{d87024a5-55d0-4008-abfa-dbe46d8d6000}" _name="EVE_Platform_MPSSE.h" _locked="false" fileName="EVE_Platform_MPSSE.h">
+        <_SourceFile _uuid="{85fd6263-a07b-4669-a116-e7b0f2fbc9a6}" _name="Source File" _locked="false"/>
+    </_ProjectFileResource>
+    <_ProjectFileResource _uuid="{ad32f557-db97-4ff9-8f36-255a0cfb1b4a}" _name="EVE_Platform_WIN32.h" _locked="false" fileName="EVE_Platform_WIN32.h">
+        <_SourceFile _uuid="{7b59a662-da1a-428f-838c-7a15e0bed679}" _name="Source File" _locked="false"/>
+    </_ProjectFileResource>
+    <_ProjectFileResource _uuid="{e6427e9d-2ecc-43fd-aa87-7b19a5781e0b}" _name="EVE_Util.c" _locked="false" fileName="EVE_Util.c">
+        <_SourceFile _uuid="{da7d2fa1-f6a3-4e23-b7e3-5ffc098db4e6}" _name="Source File" _locked="false"/>
+    </_ProjectFileResource>
+    <_ProjectFileResource _uuid="{2f97b5af-eded-4e31-bb96-270f47227b0b}" _name="EVE_Util.h" _locked="false" fileName="EVE_Util.h">
+        <_SourceFile _uuid="{09b5414e-7c25-4d38-9827-4fca96540259}" _name="Source File" _locked="false"/>
+    </_ProjectFileResource>
+</_ProjectRoot>

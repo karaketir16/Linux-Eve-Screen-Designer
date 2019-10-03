@@ -1,0 +1,24 @@
+FatFs Module Sample Projects                             (C)ChaN, 2015਍ഀ  吀栀椀猀 愀爀挀栀椀瘀攀 挀漀渀琀愀椀渀猀 猀愀洀瀀氀攀 瀀爀漀樀攀挀琀猀 昀漀爀 昀甀渀挀琀椀漀渀⼀挀漀洀瀀愀琀椀戀椀氀椀琀礀 琀攀猀琀ഀ
+  of FatFs module with platform dependent low level disk I/O modules.਍ഀ䐀䤀刀䔀䌀吀伀刀䤀䔀匀ഀഀ
+  Directory       Platform  --------------- -------------------------------------------------  <avr>           Atmel AVR with multiple drives (ATmega64)਍  㰀昀洀㌀㸀           䘀甀樀椀琀猀甀 䘀䴀㌀ ⠀䴀䈀㤀䈀䘀㘀㄀㠀吀⤀ഀ  㰀最攀渀攀爀椀挀㸀       䜀攀渀攀爀椀挀 䴀䌀唀猀ഀ
+  <h8>            Hitachi H8/300H (HD64F3694)  <lpc17xx>       NXP LPC17xx (LPC1768)਍  㰀氀瀀挀㈀㌀砀砀㸀       一堀倀 䰀倀䌀㈀㌀砀砀 ⠀䰀倀䌀㈀㌀㠀㠀⤀ഀ  㰀瀀椀挀㈀㐀㸀         䴀椀挀爀漀挀栀椀瀀 倀䤀䌀㈀㐀 ⠀倀䤀䌀㈀㐀䘀䨀㘀㐀䜀䄀　　㈀⤀ഀ
+  <rx600>         Renesas RX62N (R5F562N8BDFB)  <sh2>           Renesas SH-2A (R5S72620W14FPU)਍  㰀猀琀洀㌀㈀㸀         匀吀 匀吀䴀㌀㈀ ⠀匀吀䴀㌀㈀䘀㄀　　刀䈀吀㘀⤀ഀ  㰀瘀㠀㔀　㸀          一䔀䌀 嘀㠀㔀　䔀匀 ⠀唀倀䐀㜀　䘀㌀㜀㄀㘀⤀ഀ
+  <win32>         Windows 2K/XP (VC 6 to 2008), ANSI/Unicode਍  䔀愀挀栀 猀愀洀瀀氀攀 瀀爀漀樀攀挀琀 挀漀渀琀愀椀渀猀 猀甀瀀瀀漀爀琀 漀昀 昀漀氀氀漀眀椀渀最 洀攀搀椀愀⸀ഀഀ
+            MMC/SDC  MMC/SDC    CFC      PATA    NAND-FTL             (SPI)   (native)  (8bit)   (16bit)  (SLC/SB)਍  䜀攀渀攀爀椀挀     漀                                         ഀ  䰀倀䌀㄀㜀　　     漀                                         ഀ
+  LPC2300               o                           o     STM32       o                                         ਍  匀䠀㜀㈀㘀㈀      漀                                         ഀ  嘀㠀㔀　䔀匀      漀                                         ഀ
+  H8/300H     o                                           AVR comp    o                  o        o             ਍  倀䤀䌀㈀㐀       漀                                         ഀ  䘀䴀㌀         漀                                         ഀഀ
+  The disk I/O modules will able to be used as reference design for any other  file system modules as well. You will able to find various implementations  on the web other than these samples.਍ഀഀ
+AGREEMENTS਍  吀栀攀猀攀 猀愀洀瀀氀攀 瀀爀漀樀攀挀琀猀 昀漀爀 䘀愀琀䘀猀 洀漀搀甀氀攀 愀爀攀 昀爀攀攀 猀漀昀琀眀愀爀攀 愀渀搀 琀栀攀爀攀 椀猀 一伀ഀ  圀䄀刀刀䄀一吀夀⸀ 夀漀甀 挀愀渀 甀猀攀Ⰰ 洀漀搀椀昀礀 愀渀搀 爀攀搀椀猀琀爀椀戀甀琀攀 椀琀 昀漀爀 瀀攀爀猀漀渀愀氀Ⰰ 渀漀渀ⴀ瀀爀漀昀椀琀ഀ  漀爀 挀漀洀洀攀爀挀椀愀氀 瀀爀漀搀甀挀琀 眀椀琀栀漀甀琀 愀渀礀 爀攀猀琀爀椀挀琀椀漀渀 唀一䐀䔀刀 夀伀唀刀 刀䔀匀倀伀一匀䤀䈀䤀䰀䤀吀夀⸀ഀഀ
+਍刀䔀嘀䤀匀䤀伀一 䠀䤀匀吀伀刀夀ഀഀ
+  Apr 29, 2006  First release.  Aug 19, 2006  MMC module: Fixed a bug that disk_initialize() never time-out when card does not go ready.  Oct 12, 2006  CF module: Fixed a bug that disk_initialize() can fail at 3.3V.਍  伀挀琀 ㈀㈀Ⰰ ㈀　　㘀  䄀搀搀攀搀 愀 猀愀洀瀀氀攀 瀀爀漀樀攀挀琀 昀漀爀 嘀㠀㔀　䔀匀⸀ഀ  䘀攀戀 　㐀Ⰰ ㈀　　㜀  䄀氀氀 洀漀搀甀氀攀猀㨀 䴀漀搀椀昀椀攀搀 昀漀爀 䘀愀琀䘀猀 洀漀搀甀氀攀 刀　⸀　㐀⸀ഀ
+                MMC module: Fixed a bug that disk_ioctl() returns incorrect disk size.  Apr 03, 2007  All modules: Modified for FatFs module R0.04a.਍                䴀䴀䌀 洀漀搀甀氀攀㨀 匀甀瀀瀀漀爀琀攀搀 栀椀最栀 挀愀瀀愀挀椀琀礀 匀䐀 洀攀洀漀爀礀 挀愀爀搀猀⸀ഀ  䴀愀礀 　㔀Ⰰ ㈀　　㜀  䴀䴀䌀 洀漀搀甀氀攀猀㨀 䘀椀砀攀搀 愀 戀甀最 琀栀愀琀 䜀䔀吀开匀䔀䌀吀伀刀开䌀伀唀一吀 瘀椀愀 搀椀猀欀开椀漀挀琀氀⠀⤀ 昀愀椀氀猀 漀渀 䴀䴀䌀⸀ഀ
+  Aug 26, 2007  Added some ioctl sub-functions.  Oct 13, 2007  MMC modules: Fixed send_cmd() sends incorrect command packet.਍  䐀攀挀 ㄀㈀Ⰰ ㈀　　㜀  䄀搀搀攀搀 愀 猀愀洀瀀氀攀 瀀爀漀樀攀挀琀 昀漀爀 䴀椀挀爀漀挀栀椀瀀 倀䤀䌀⸀ഀ  䘀攀戀 　㌀Ⰰ ㈀　　㠀  䄀氀氀 洀漀搀甀氀攀猀㨀 䴀漀搀椀昀椀攀搀 昀漀爀 䘀愀琀䘀猀 洀漀搀甀氀攀 刀　⸀　㔀愀⸀ഀ
+  Apr 01, 2008  Modified main() for FatFs module R0.06.  Oct 18, 2008  Added a sample project for NXP LPC2300.਍  䄀瀀爀 　㄀Ⰰ ㈀　　㤀  䴀漀搀椀昀椀攀搀 昀漀爀 䘀愀琀䘀猀 洀漀搀甀氀攀 刀　⸀　㜀⸀ഀ  䄀瀀爀 ㄀㠀Ⰰ ㈀　　㤀  䴀漀搀椀昀椀攀搀 昀漀爀 䘀愀琀䘀猀 洀漀搀甀氀攀 刀　⸀　㜀愀⸀ഀ
+  Jun 25, 2009  Modified for FatFs module R0.07c.  Jul 13, 2009  Added sample project for Unicoede API.਍  䴀愀礀 ㄀㔀Ⰰ ㈀　㄀　  䴀漀搀椀昀椀攀搀 昀漀爀 䘀愀琀䘀猀 洀漀搀甀氀攀 刀　⸀　㠀⸀ഀ                䄀搀搀攀搀 愀 猀愀洀瀀氀攀 瀀爀漀樀攀挀琀 昀漀爀 刀攀渀攀猀愀猀 匀䠀㈀䄀⸀ഀ
+  Aug 16, 2010  Modified for FatFs module R0.08a.                LPC2300: Added NAND-FTL driver.਍  伀挀琀 ㄀㐀Ⰰ ㈀　㄀　  䄀搀搀攀搀 愀 猀愀洀瀀氀攀 瀀爀漀樀攀挀琀 昀漀爀 最攀渀攀爀椀挀 甀䌀⸀ഀ  一漀瘀 ㈀㔀Ⰰ ㈀　㄀　  䄀嘀刀㨀 䘀椀砀攀搀 猀漀挀欀攀琀 挀漀渀琀爀漀氀猀 漀昀 䴀䴀䌀 搀爀椀瘀攀爀猀⸀ 䄀搀搀攀搀 戀椀琀戀愀渀最椀渀最 䴀䴀䌀 搀爀椀瘀攀爀⸀ഀ
+  Jan 15, 2011  Modified for FatFs module R0.08b.  Feb 06, 2011  Added a sample project for Renesas RX62N.਍  䨀甀渀 ㄀㄀Ⰰ ㈀　㄀㄀  䰀倀䌀㈀㌀　　㨀 唀瀀搀愀琀攀搀 瀀爀漀樀攀挀琀⸀ഀ  䨀甀氀 ㌀㄀Ⰰ ㈀　㄀㄀  䄀搀搀攀搀 䰀倀䌀㄀㜀　　 瀀爀漀樀攀挀琀⸀ഀ
+  Dec 22, 2011  LPC2300: Added JPEG decompressor.  Sep 06, 2011  Modified for FatFs module R0.09.਍  䘀攀戀 　㘀Ⰰ ㈀　㄀㈀  䰀倀䌀㈀㌀　　㨀 唀瀀搀愀琀攀搀 一䄀一䐀ⴀ䘀吀䰀 搀爀椀瘀攀爀⸀ഀ  䴀愀礀 　㤀Ⰰ ㈀　㄀㈀  䄀搀搀攀搀 䘀䴀㌀ 瀀爀漀樀攀挀琀⸀ഀ
+  Jun 08, 2012  AVR: Updated ATA/CFC drivers.                LPC2300: Updated NAND-FTL driver.਍  䄀甀最 ㈀㤀Ⰰ ㈀　㄀㈀  䴀䴀䌀 洀漀搀甀氀攀猀㨀 䘀椀砀攀搀 洀椀猀爀攀挀漀最渀椀稀愀琀椀漀渀 漀昀 挀愀爀搀 猀椀稀攀 最爀愀琀攀爀 琀栀愀渀 ㌀㈀䜀䈀⸀ഀ  䨀愀渀 ㈀㐀Ⰰ ㈀　㄀㌀  䴀漀搀椀昀椀攀搀 昀漀爀 䘀愀琀䘀猀 洀漀搀甀氀攀 刀　⸀　㤀戀⸀ഀ
+  Jun 22, 2013  AVR/PIC24: Updated MMC drivers.  Jul 28, 2013  Added a foolproof project for ATMEL AVR.਍  伀挀琀 　㈀Ⰰ ㈀　㄀㌀  䴀漀搀椀昀椀攀搀 昀漀爀 䘀愀琀䘀猀 洀漀搀甀氀攀 刀　⸀㄀　⸀ഀ  一漀瘀 ㄀㘀Ⰰ ㈀　㄀㌀  䴀䴀䌀 洀漀搀甀氀攀猀㨀 䘀椀砀攀搀 琀爀愀渀猀洀椀猀猀椀漀渀 漀昀 愀 䌀䴀䐀㄀㈀ 挀愀渀 昀愀椀氀⸀ഀ
+  Dec 14, 2013  Added STM32 project.  Jan 15, 2014  Updated for FatFs module R0.10a.਍  䴀愀礀 ㄀㤀Ⰰ ㈀　㄀㐀  唀瀀搀愀琀攀搀 昀漀爀 䘀愀琀䘀猀 洀漀搀甀氀攀 刀　⸀㄀　戀⸀ഀ  䨀甀渀 ㄀㤀Ⰰ ㈀　㄀㐀  䄀搀搀攀搀 ✀搀氀✀ 挀漀洀洀愀渀搀⸀ ⠀圀椀渀㌀㈀ 瀀爀漀樀攀挀琀⤀ഀ
+  Nov 09, 2014  Updated for FatFs module R0.10c.  Nov 26, 2014  Updated ff.c with patch2 applied.਍  䴀愀礀 ㄀㌀Ⰰ ㈀　㄀㔀  唀瀀搀愀琀攀搀 昀漀爀 䘀愀琀䘀猀 洀漀搀甀氀攀 刀　⸀㄀㄀⸀ഀ

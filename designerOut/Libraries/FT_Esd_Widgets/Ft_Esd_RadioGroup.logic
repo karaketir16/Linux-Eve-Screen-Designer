@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<_LogicDocument _uuid="{4e90f0da-02d9-4930-a57b-1aad0a5cdd20}" _locked="false" displayName="ESD Radio Group" comment="Group radio buttons for exclusive selection" category="EsdWidgets" defaultSignal="" icon="" _version="30106" _revision="1">
+    <_ConnectionContainer _uuid="{6c708995-686d-481d-84b5-e1ab92ec4261}" _name="Connections" _locked="false">
+        <_Connection _uuid="{022554e4-f08b-4cfa-8f6b-082e710dcbf4}" _name="Connection" _locked="false" connectionType="SignalSlot" sourceObject="{9b9ffa0e-af18-4382-a0aa-41eeffd8fd22}" sourceConnector="signal" targetObject="{79f0fad7-8928-4b78-9435-86811ebb741f}" targetConnector="_call"/>
+        <_Connection _uuid="{31ce1449-ef34-4973-8643-ce4ed1d58606}" _name="Connection" _locked="false" connectionType="OutputInput" sourceObject="{42a9f44f-05f3-4992-a5fc-67d38a3ec235}" sourceConnector="_return" targetObject="{bba4a55a-54e9-48c4-af12-9bca610dba35}" targetConnector="value"/>
+    </_ConnectionContainer>
+    <_NodeContainer _uuid="{6ee7c768-4116-435b-ade7-1d800e43b7cb}" _name="Nodes" _locked="false">
+        <Ft_Esd_RadioGroup_Reset_Signal _uuid="{79f0fad7-8928-4b78-9435-86811ebb741f}" _name="Reset Signal" _locked="false" _x="33" _y="-52" _color="#303030" _background="#606060"/>
+        <_LogicBlockSlot _uuid="{9b9ffa0e-af18-4382-a0aa-41eeffd8fd22}" _name="Reset" _locked="false" _x="-196" _y="-51" _color="#303030" _background="#606060" _displayName=""/>
+        <_LogicBlockVariable _uuid="{185747ec-d86a-445e-8166-6d07f19a71a8}" _name="Checked" _locked="false" _x="36" _y="10" _color="#303030" _background="#606060" _displayName="" _comment="" _type="void *" _editRole="">
+            <__Properties>
+                <access type="String">Private</access>
+            </__Properties>
+        </_LogicBlockVariable>
+        <_LogicBlockOutput _uuid="{bba4a55a-54e9-48c4-af12-9bca610dba35}" _name="Pointer" _locked="false" _x="254" _y="74" _color="#303030" _background="#606060" _displayName="Radio Group" _comment="" _type="Ft_Esd_RadioGroup *" _editRole=""/>
+        <Ft_Esd_RadioGroup_GetPointer _uuid="{42a9f44f-05f3-4992-a5fc-67d38a3ec235}" _name="Ft_Esd_RadioGroup_GetPointer" _locked="false" _x="33" _y="76" _color="#303030" _background="#606060"/>
+    </_NodeContainer>
+</_LogicDocument>

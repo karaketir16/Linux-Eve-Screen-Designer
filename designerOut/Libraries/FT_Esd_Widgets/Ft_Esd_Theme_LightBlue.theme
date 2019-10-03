@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<_ThemeDocument _uuid="{b16478c1-39e4-4cc9-86b5-c3403b7ca659}" _name="Theme" _locked="false">
+    <__Properties>
+        <Category type="String">EsdTheme_Themes</Category>
+        <ClearColor type="Color">#ebebeb</ClearColor>
+        <BackColor type="Color">#ffffff</BackColor>
+        <TextColor type="Color">#000000</TextColor>
+        <ButtonTextColor type="Color">#fafafa</ButtonTextColor>
+        <DefaultColor type="Color">#717171</DefaultColor>
+        <PrimaryColor type="Color">#2277c7</PrimaryColor>
+    </__Properties>
+</_ThemeDocument>

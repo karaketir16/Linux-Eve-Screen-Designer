@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<_WidgetDocument _uuid="{a78e5123-8c62-4038-8606-857df71414fe}" _locked="false" displayName="ESD Image Rotate" comment="" category="EsdWidgets" defaultSignal="" icon="" _version="40001" _revision="26" purpose="Widget" backToFront="">
+    <_ActorContainer _uuid="{7e978e8c-7793-4360-a47d-b64b371c535c}" _name="Actors" _locked="false"/>
+    <_ConnectionContainer _uuid="{3800af5c-3bed-4f7a-bb80-c706028a92aa}" _name="Connections" _locked="false">
+        <_Connection _uuid="{bd6c72f6-8957-476e-863b-82bbe09ef7c3}" _name="Connection" _locked="false" connectionType="SignalSlot" sourceObject="{70c1a821-4dba-45b7-a585-f8253d3ec1a6}" sourceConnector="signal" targetObject="{b7af1483-5301-49f4-a6a4-3981280e4bea}" targetConnector="_call"/>
+    </_ConnectionContainer>
+    <_NodeContainer _uuid="{9581a7d8-4e19-4beb-8fe5-54ba35d91875}" _name="Nodes" _locked="false">
+        <Ft_Esd_Image_Rotate_Render_Signal _uuid="{b7af1483-5301-49f4-a6a4-3981280e4bea}" _name="Ft_Esd_Image_Rotate_Render_Signal" _locked="false" _x="366" _y="2" _color="#303030" _background="#606060"/>
+        <_LogicBlockSlot _uuid="{70c1a821-4dba-45b7-a585-f8253d3ec1a6}" _name="Render" _locked="false" _x="133" _y="2" _color="#303030" _background="#606060" _displayName=""/>
+        <_LogicBlockVariable _uuid="{222cad74-4679-4433-9953-983172c24e43}" _name="Color" _locked="false" _x="140" _y="74" _color="#303030" _background="#606060" _displayName="" _comment="" _type="ft_argb32_t" _editRole="">
+            <__Properties>
+                <value type="Color">#ffffff</value>
+                <access type="String">Public</access>
+            </__Properties>
+        </_LogicBlockVariable>
+        <_LogicBlockInput _uuid="{6724ff88-4cac-4df3-8345-4504e1a5cd68}" _name="BitmapCell" _locked="false" _x="139" _y="150" _color="#303030" _background="#606060" _displayName="Bitmap Cell" _comment="" _type="Ft_Esd_BitmapCell" _editRole="">
+            <__Properties>
+                <default type="String"></default>
+            </__Properties>
+        </_LogicBlockInput>
+        <_LogicBlockVariable _uuid="{e5a58dee-ebae-4499-9dc4-221550c788f1}" _name="RotateAngle" _locked="false" _x="139" _y="220" _color="#303030" _background="#606060" _displayName="" _comment="" _type="ft_int32_t" _editRole="">
+            <__Properties>
+                <_min type="String">-65536</_min>
+                <_max type="String">65535</_max>
+                <_singleStep type="String">1</_singleStep>
+                <access type="String">Public</access>
+            </__Properties>
+        </_LogicBlockVariable>
+        <_LogicBlockVariable _uuid="{e4ca02db-56dd-46a1-a1f7-331f67876832}" _name="ScaleX" _locked="false" _x="145" _y="302" _color="#303030" _background="#606060" _displayName="" _comment="" _type="ft_int32_f16_t" _editRole="">
+            <__Properties>
+                <value type="double">1</value>
+                <access type="String">Public</access>
+            </__Properties>
+        </_LogicBlockVariable>
+        <_LogicBlockVariable _uuid="{ac2eb2fb-e57c-4ef6-bc30-4ae7bfe057ea}" _name="ScaleY" _locked="false" _x="147" _y="362" _color="#303030" _background="#606060" _displayName="" _comment="" _type="ft_int32_f16_t" _editRole="">
+            <__Properties>
+                <value type="double">1</value>
+                <access type="String">Public</access>
+            </__Properties>
+        </_LogicBlockVariable>
+    </_NodeContainer>
+    <_WidgetContainer _uuid="{10bf58a8-39fe-4ff0-9ad5-0a7155181975}" _name="Widgets" _locked="false">
+        <__Properties>
+            <x type="double">130</x>
+            <y type="double">44</y>
+            <width type="int">400</width>
+            <height type="int">300</height>
+        </__Properties>
+    </_WidgetContainer>
+</_WidgetDocument>

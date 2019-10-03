@@ -1,0 +1,221 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<_WidgetDocument _uuid="{57a2590f-6d63-4ec7-b02f-06a2f26a11e6}" _locked="false" displayName="Scroll Switch Page" comment="Scroll Switch Page layout, requires initialising on start and switch nodes for allocating new widget" category="EsdLayouts" defaultSignal="" icon=":/icons/ui-scroll-pane.png" _version="40001" _revision="404" purpose="Layout" backToFront="true">
+    <_ActorContainer _uuid="{07e3742c-8a69-43ea-823d-16bd1fb0853d}" _name="Actors" _locked="false"/>
+    <_ConnectionContainer _uuid="{a81fb13b-c25e-483a-892c-8c34800357ba}" _name="Connections" _locked="false">
+        <_Connection _uuid="{02dbf93a-19c8-4986-8566-2fe9122aa322}" _name="Connection" _locked="false" connectionType="VariableInput" sourceObject="{8ef70d3f-f839-481f-9593-aa1589e4cc20}" sourceConnector="value" targetObject="{9505dc12-b32b-4f75-8531-af93838f17de}" targetConnector="left"/>
+        <_Connection _uuid="{1d146829-1bf8-4926-a2ed-76e09091b12b}" _name="Connection" _locked="false" connectionType="SignalSlot" sourceObject="{f8e7c058-39f6-4dd7-8d40-6bcd66dc45f7}" sourceConnector="signal" targetObject="{e55c3e98-d9bf-4642-af77-19b671b29d2b}" targetConnector="call"/>
+        <_Connection _uuid="{335eb6dd-98d5-4ce9-9bfb-66b480a93bc1}" _name="Connection" _locked="false" connectionType="VariableVariable" sourceObject="{56049f8f-7484-4691-9c4b-1e367931c628}" sourceConnector="Touching" targetObject="{96aafb27-2bad-4ebc-94cf-f633bdddcc1d}" targetConnector="value"/>
+        <_Connection _uuid="{4ca08744-7919-441b-be0a-6f30e2d89fcd}" _name="Connection" _locked="false" connectionType="SignalSlot" sourceObject="{56049f8f-7484-4691-9c4b-1e367931c628}" sourceConnector="Up" targetObject="{c10a2a8a-49d1-4306-b55d-496176368b66}" targetConnector="_call"/>
+        <_Connection _uuid="{571cdcdd-1de8-4885-9e6d-5f11f14f65a9}" _name="Connection" _locked="false" connectionType="SignalSlot" sourceObject="{4e286a47-c643-46ba-b314-45856fc8581a}" sourceConnector="signal" targetObject="{0cd83b00-d939-4377-9ce1-09a18047d64f}" targetConnector="_call"/>
+        <_Connection _uuid="{59beb480-309a-435f-9bf0-2276a75c7c8e}" _name="Connection" _locked="false" connectionType="SignalSlot" sourceObject="{56049f8f-7484-4691-9c4b-1e367931c628}" sourceConnector="Down" targetObject="{c4783417-550c-499c-b47e-66246be588eb}" targetConnector="_call"/>
+        <_Connection _uuid="{5d6f9865-ed46-46ba-a314-53eb89e30a68}" _name="Connection" _locked="false" connectionType="WriterVariable" sourceObject="{445cd942-b5a6-4715-b470-5376fff2f9fd}" sourceConnector="target" targetObject="{41e76ccf-7787-4979-b83a-60840fc2dd07}" targetConnector="value"/>
+        <_Connection _uuid="{616c9bb1-1f62-4658-bf15-56bee066cc66}" _name="Connection" _locked="false" connectionType="SignalSlot" sourceObject="{9505dc12-b32b-4f75-8531-af93838f17de}" sourceConnector="else" targetObject="{b39a629e-85b9-4002-b982-de1578634242}" targetConnector="write"/>
+        <_Connection _uuid="{67f180f9-040a-4c60-afa4-414aa41e3ea3}" _name="Connection" _locked="false" connectionType="VariableVariable" sourceObject="{b27ec5f6-5f70-43cf-a5a4-80138fba1bba}" sourceConnector="_widgetGlobalWidth" targetObject="{56049f8f-7484-4691-9c4b-1e367931c628}" targetConnector="_widgetWidth"/>
+        <_Connection _uuid="{7147fba2-636d-4131-9d56-74e70967be27}" _name="Connection" _locked="false" connectionType="OutputInput" sourceObject="{3b71a324-5c8f-487f-8641-d3183edb65e4}" sourceConnector="_context" targetObject="{b27ec5f6-5f70-43cf-a5a4-80138fba1bba}" targetConnector="_widgetContainer"/>
+        <_Connection _uuid="{73cdf714-d62a-4d76-b1c1-e0a5632592b6}" _name="Connection" _locked="false" connectionType="VariableInput" sourceObject="{58efb674-f6de-4f69-a25b-29d45d07e2c9}" sourceConnector="value" targetObject="{b39a629e-85b9-4002-b982-de1578634242}" targetConnector="value"/>
+        <_Connection _uuid="{817a0cbd-c171-490a-a0f6-b252c5049753}" _name="Connection" _locked="false" connectionType="VariableInput" sourceObject="{96aafb27-2bad-4ebc-94cf-f633bdddcc1d}" sourceConnector="value" targetObject="{4b498566-8ddd-4497-973c-ca73f4e857f8}" targetConnector="if"/>
+        <_Connection _uuid="{86e2d4ab-dafd-40e2-a8b0-1fe86099ee76}" _name="Connection" _locked="false" connectionType="SignalSlot" sourceObject="{e636b309-7bb1-46de-b45b-64040bb40ea2}" sourceConnector="signal" targetObject="{56dd20ad-baab-4e2f-83b1-29702258446c}" targetConnector="_call"/>
+        <_Connection _uuid="{8e6e4e5f-7614-498b-8c63-7458ea4e8aea}" _name="Connection" _locked="false" connectionType="VariableInput" sourceObject="{b27ec5f6-5f70-43cf-a5a4-80138fba1bba}" sourceConnector="_widgetGlobalHeight" targetObject="{d251b94d-5437-4a9e-b7a8-ca5685e6d3cd}" targetConnector="left"/>
+        <_Connection _uuid="{9b18a49e-9c75-45fb-88d6-1fa863063103}" _name="Connection" _locked="false" connectionType="WriterVariable" sourceObject="{b39a629e-85b9-4002-b982-de1578634242}" sourceConnector="target" targetObject="{56049f8f-7484-4691-9c4b-1e367931c628}" targetConnector="ScrollX"/>
+        <_Connection _uuid="{aa9f5277-c5c7-4624-99cb-b7fb32d56da4}" _name="Connection" _locked="false" connectionType="SignalSlot" sourceObject="{e55c3e98-d9bf-4642-af77-19b671b29d2b}" sourceConnector="then:1" targetObject="{734e5bdd-d506-4d06-b3ac-dade5f4d799a}" targetConnector="_call"/>
+        <_Connection _uuid="{b3b83b80-2681-4721-8ec3-d8fdcf45c828}" _name="Connection" _locked="false" connectionType="SlotSlot" sourceObject="{c10a2a8a-49d1-4306-b55d-496176368b66}" sourceConnector="_call" targetObject="{920bbed8-d034-4a21-988d-84b2b387efc3}" targetConnector="_call"/>
+        <_Connection _uuid="{be617e57-aeb4-4b5a-b7dd-88b045e2421e}" _name="Connection" _locked="false" connectionType="OutputInput" sourceObject="{5be7c115-18ee-411e-8d3a-8f8a0948f414}" sourceConnector="value" targetObject="{56049f8f-7484-4691-9c4b-1e367931c628}" targetConnector="Active_Scroll"/>
+        <_Connection _uuid="{bfd7dd9c-bba4-4d50-b4a0-0ef9d94dc955}" _name="Connection" _locked="false" connectionType="OutputVariable" sourceObject="{d251b94d-5437-4a9e-b7a8-ca5685e6d3cd}" sourceConnector="result" targetObject="{56049f8f-7484-4691-9c4b-1e367931c628}" targetConnector="_widgetHeight"/>
+        <_Connection _uuid="{d07bc59a-35f3-4b4c-b217-a94e4b4152d6}" _name="Connection" _locked="false" connectionType="VariableInput" sourceObject="{56049f8f-7484-4691-9c4b-1e367931c628}" sourceConnector="ScrollX" targetObject="{445cd942-b5a6-4715-b470-5376fff2f9fd}" targetConnector="value"/>
+        <_Connection _uuid="{e701fc8f-0605-4559-bb8c-4a1fe9dbe57b}" _name="Connection" _locked="false" connectionType="SignalSlot" sourceObject="{e55c3e98-d9bf-4642-af77-19b671b29d2b}" sourceConnector="then:2" targetObject="{4b498566-8ddd-4497-973c-ca73f4e857f8}" targetConnector="call"/>
+        <_Connection _uuid="{f06a5dec-2cc4-4ec5-bb49-d21d57bd5a95}" _name="Connection" _locked="false" connectionType="SignalSlot" sourceObject="{4b498566-8ddd-4497-973c-ca73f4e857f8}" sourceConnector="else" targetObject="{9505dc12-b32b-4f75-8531-af93838f17de}" targetConnector="call"/>
+        <_Connection _uuid="{f6e06541-8dee-4840-aadd-077e81eaffc1}" _name="Connection" _locked="false" connectionType="SignalSlot" sourceObject="{e55c3e98-d9bf-4642-af77-19b671b29d2b}" sourceConnector="then:0" targetObject="{445cd942-b5a6-4715-b470-5376fff2f9fd}" targetConnector="write"/>
+    </_ConnectionContainer>
+    <_NodeContainer _uuid="{07914760-c823-4c1c-99f6-631f300f42bf}" _name="Nodes" _locked="false">
+        <_LogicBlockSlot _uuid="{e636b309-7bb1-46de-b45b-64040bb40ea2}" _name="Initialise" _locked="false" _x="-2378" _y="-548" _color="#303030" _background="#606060" _displayName=""/>
+        <Ft_Esd_ScrollSwitch_SS_Initialise _uuid="{56dd20ad-baab-4e2f-83b1-29702258446c}" _name="ScrollSwitch_SS_Initialise" _locked="false" _x="-2378" _y="-487" _color="#b4b4b4" _background="#322925"/>
+        <_LogicBlockInput _uuid="{8b248fb5-06d3-4c2d-aac3-ed35f7bb4e47}" _name="InitialPrevious" _locked="false" _x="-2378" _y="-429" _color="#303030" _background="#606060" _displayName="Initial Previous " _comment="Initial Previous Page Object Pointer" _type="Ft_Esd_Widget *" _editRole=""/>
+        <_LogicBlockInput _uuid="{fba56856-bd45-446d-b244-fa1e5bcb9da5}" _name="InitialCurrent" _locked="false" _x="-2378" _y="-366" _color="#303030" _background="#606060" _displayName="Initial Current" _comment="Initial Current Page Object Pointer" _type="Ft_Esd_Widget *" _editRole=""/>
+        <_LogicBlockInput _uuid="{7798b9b1-3226-4cfc-a619-b3da9019cfe9}" _name="InitialNext" _locked="false" _x="-2378" _y="-303" _color="#303030" _background="#606060" _displayName="Initial Next" _comment="Initial Next Page Object Pointer" _type="Ft_Esd_Widget *" _editRole=""/>
+        <_LogicBlockInput _uuid="{84426368-dbe5-4627-a638-b0775f074178}" _name="InitialIndex" _locked="false" _x="-2378" _y="-239" _color="#303030" _background="#606060" _displayName="Initial Index" _comment="Initial Current Index" _type="int" _editRole="">
+            <__Properties>
+                <_min type="String">0</_min>
+                <default type="int">1</default>
+            </__Properties>
+        </_LogicBlockInput>
+        <_LogicBlockInput _uuid="{5be7c115-18ee-411e-8d3a-8f8a0948f414}" _name="Active Scroll" _locked="false" _x="-2378" _y="-70" _color="#303030" _background="#606060" _displayName="Active Scroll" _comment="Active Scroll overrides on child widget tag is 255" _type="ft_bool_t" _editRole="">
+            <__Properties>
+                <default type="bool">false</default>
+            </__Properties>
+        </_LogicBlockInput>
+        <_LogicBlockSlot _uuid="{f8e7c058-39f6-4dd7-8d40-6bcd66dc45f7}" _name="Update" _locked="false" _x="-1694" _y="-17" _color="#303030" _background="#ff0000" _displayName=""/>
+        <_LogicBlockVariable _uuid="{2e34f0a3-93c3-4f52-be7b-cb00495b841a}" _name="Looping" _locked="false" _x="-2378" _y="6" _color="#303030" _background="#606060" _displayName="Loop Pages" _comment="Enable switch looping" _type="ft_bool_t" _editRole="">
+            <__Properties>
+                <value type="bool">true</value>
+                <access type="String">Public</access>
+            </__Properties>
+        </_LogicBlockVariable>
+        <Ft_Esd_ScrollSwitch_Touch_Down _uuid="{c4783417-550c-499c-b47e-66246be588eb}" _name="ScrollSwitch_Touch_Down" _locked="false" _x="-716" _y="47" _color="#b4b4b4" _background="#322925"/>
+        <_LogicBlockVariable _uuid="{7d8d13c7-51cf-4fe3-b242-26fe2c7ba5dc}" _name="Count" _locked="false" _x="-2378" _y="70" _color="#303030" _background="#606060" _displayName="Count" _comment="Page Count" _type="int" _editRole="">
+            <__Properties>
+                <_min type="String">3</_min>
+                <_max type="String">20</_max>
+                <value type="int">4</value>
+                <access type="String">Public</access>
+            </__Properties>
+        </_LogicBlockVariable>
+        <_LogicSequence _uuid="{e55c3e98-d9bf-4642-af77-19b671b29d2b}" _name="Sequence 2" _locked="false" _x="-1365" _y="100" _color="#303030" _background="#606060" count="3"/>
+        <Ft_Esd_ScrollSwitch_PreUpdate_Widget _uuid="{920bbed8-d034-4a21-988d-84b2b387efc3}" _name="Ft_Esd_ScrollSwitch_PreUpdate_Widget" _locked="false" _x="-388" _y="122" _color="#303030" _background="#606060"/>
+        <Ft_Esd_ScrollSwitch_Touch_Up _uuid="{c10a2a8a-49d1-4306-b55d-496176368b66}" _name="ScrollSwitch_Touch_Up" _locked="false" _x="-716" _y="122" _color="#b4b4b4" _background="#322925"/>
+        <_LogicBlockVariable _uuid="{4b5024bb-36c4-483a-93d8-9986d00a8883}" _name="Spacing" _locked="false" _x="-2378" _y="148" _color="#303030" _background="#606060" _displayName="Spacing" _comment="Spacing between pages" _type="int" _editRole="">
+            <__Properties>
+                <_min type="String">0</_min>
+                <_max type="String">800</_max>
+                <value type="int">5</value>
+                <access type="String">Public</access>
+            </__Properties>
+        </_LogicBlockVariable>
+        <_LogicBlockVariable _uuid="{96aafb27-2bad-4ebc-94cf-f633bdddcc1d}" _name="Touching" _locked="false" _x="-1694" _y="200" _color="#303030" _background="#606060" _displayName="" _comment="" _type="ft_bool_t" _editRole="">
+            <__Properties>
+                <access type="String">Private</access>
+            </__Properties>
+        </_LogicBlockVariable>
+        <_LogicBlockVariable _uuid="{df9f6361-23ac-492e-8b56-42dc2cc42526}" _name="Sensitivity" _locked="false" _x="-2378" _y="207" _color="#303030" _background="#606060" _displayName="Sensitivity" _comment="Switch Sensitivity scale from 0.25 to 4.0" _type="float" _editRole="">
+            <__Properties>
+                <_min type="String">0.05</_min>
+                <_max type="String">20</_max>
+                <_singleStep type="String">0.1</_singleStep>
+                <value type="double">1.5</value>
+                <access type="String">Public</access>
+            </__Properties>
+        </_LogicBlockVariable>
+        <_LogicVariableWriter _uuid="{445cd942-b5a6-4715-b470-5376fff2f9fd}" _name="Update ScrollX" _locked="false" _x="-1365" _y="251" _color="#303030" _background="#606060" _comment="" _type="int" _editRole=""/>
+        <_LogicBlockVariable _uuid="{2864039c-ee2a-4a11-9237-01a1681f9017}" _name="SwitchSpeed" _locked="false" _x="-2380" _y="266" _color="#303030" _background="#606060" _displayName="Switch Speed" _comment="Switch Speed in scale of 1 to 16." _type="int" _editRole="">
+            <__Properties>
+                <_min type="String">1</_min>
+                <_max type="String">16</_max>
+                <value type="int">4</value>
+                <access type="String">Public</access>
+            </__Properties>
+        </_LogicBlockVariable>
+        <_LogicOperatorBinary _uuid="{d251b94d-5437-4a9e-b7a8-ca5685e6d3cd}" _name="Binary Operator" _locked="false" _x="-2380" _y="330" _color="#303030" _background="#606060" _comment="" _type="int" _editRole="">
+            <__Properties>
+                <operator type="String">-</operator>
+                <right type="int">40</right>
+            </__Properties>
+        </_LogicOperatorBinary>
+        <_LogicCondition _uuid="{4b498566-8ddd-4497-973c-ca73f4e857f8}" _name="Update new scroll x" _locked="false" _x="-1365" _y="346" _color="#303030" _background="#606060"/>
+        <_WidgetInterface _uuid="{b27ec5f6-5f70-43cf-a5a4-80138fba1bba}" _name="Widget Interface" _locked="false" _x="-2383" _y="397" _color="#303030" _background="#606060"/>
+        <_LogicBlockVariable _uuid="{c393f1f7-40f7-473b-9fdd-f1fb0c743d5a}" _name="ScrollXStart" _locked="false" _x="-1694" _y="409" _color="#303030" _background="#606060" _displayName="" _comment="" _type="int" _editRole="">
+            <__Properties>
+                <access type="String">Private</access>
+            </__Properties>
+        </_LogicBlockVariable>
+        <_LogicConditionBinary _uuid="{9505dc12-b32b-4f75-8531-af93838f17de}" _name="Binary Condition" _locked="false" _x="-1365" _y="435" _color="#303030" _background="#606060" _comment="" _type="int" _editRole="">
+            <__Properties>
+                <operator type="String">==</operator>
+                <right type="int">0</right>
+            </__Properties>
+        </_LogicConditionBinary>
+        <_LogicBlockVariable _uuid="{41e76ccf-7787-4979-b83a-60840fc2dd07}" _name="ScrollX" _locked="false" _x="-1694" _y="489" _color="#303030" _background="#606060" _displayName="" _comment="" _type="int" _editRole="">
+            <__Properties>
+                <access type="String">Private</access>
+            </__Properties>
+        </_LogicBlockVariable>
+        <_LogicVariableWriter _uuid="{b39a629e-85b9-4002-b982-de1578634242}" _name="Set Variable" _locked="false" _x="-1365" _y="521" _color="#303030" _background="#606060" _comment="" _type="int" _editRole=""/>
+        <Ft_Esd_ScrollSwitch_Update_Handle _uuid="{734e5bdd-d506-4d06-b3ac-dade5f4d799a}" _name="Ft_Esd_ScrollSwitch_Update_Handle" _locked="false" _x="-716" _y="533" _color="#303030" _background="#606060"/>
+        <_LogicBlockSignal _uuid="{d2381bb9-b831-4667-a1bc-a3e4babd28af}" _name="NewPage" _locked="false" _x="-388" _y="533" _color="#303030" _background="#606060" _displayName="New Page"/>
+        <_LogicBlockVariable _uuid="{2a99dbba-7673-447a-9d05-4ac68d093c87}" _name="ScrollXTarget" _locked="false" _x="-1694" _y="569" _color="#303030" _background="#606060" _displayName="" _comment="" _type="int" _editRole="">
+            <__Properties>
+                <access type="String">Private</access>
+            </__Properties>
+        </_LogicBlockVariable>
+        <_LogicBlockVariable _uuid="{58efb674-f6de-4f69-a25b-29d45d07e2c9}" _name="NewScrollX" _locked="false" _x="-1694" _y="650" _color="#303030" _background="#606060" _displayName="" _comment="" _type="int" _editRole="">
+            <__Properties>
+                <access type="String">Private</access>
+            </__Properties>
+        </_LogicBlockVariable>
+        <Ft_Esd_ScrollSwitch_Render_Signal _uuid="{0cd83b00-d939-4377-9ce1-09a18047d64f}" _name="Render Signal" _locked="false" _x="-716" _y="685" _color="#303030" _background="#606060"/>
+        <_LogicBlockSlot _uuid="{4e286a47-c643-46ba-b314-45856fc8581a}" _name="Render" _locked="false" _x="-1040" _y="689" _color="#303030" _background="#606060" _displayName=""/>
+        <_LogicBlockVariable _uuid="{5afa025f-5439-4be1-b35c-5f4d4618b917}" _name="Overflow" _locked="false" _x="-1694" _y="730" _color="#303030" _background="#606060" _displayName="" _comment="" _type="ft_int16_t" _editRole="">
+            <__Properties>
+                <value type="bool">false</value>
+                <access type="String">Private</access>
+            </__Properties>
+        </_LogicBlockVariable>
+        <_LogicBlockInput _uuid="{c3bb1ba5-d90e-47d4-bc73-e3c9d63eac01}" _name="Spinner" _locked="false" _x="-2382" _y="792" _color="#303030" _background="#606060" _displayName="Spinner" _comment="Set true to show spinner" _type="ft_bool_t" _editRole="">
+            <__Properties>
+                <default type="bool">false</default>
+            </__Properties>
+        </_LogicBlockInput>
+        <_LogicBlockVariable _uuid="{8ef70d3f-f839-481f-9593-aa1589e4cc20}" _name="State" _locked="false" _x="-1693" _y="792" _color="#303030" _background="#606060" _displayName="" _comment="" _type="int" _editRole="">
+            <__Properties>
+                <access type="String">Private</access>
+            </__Properties>
+        </_LogicBlockVariable>
+        <_LogicBlockVariable _uuid="{73bd6989-57c4-45cb-b377-92eeed7fab88}" _name="RemovingWidget" _locked="false" _x="-2380" _y="1041" _color="#303030" _background="#606060" _displayName="" _comment="" _type="Ft_Esd_Widget *" _editRole="">
+            <__Properties>
+                <access type="String">Private</access>
+            </__Properties>
+        </_LogicBlockVariable>
+        <_LogicBlockVariable _uuid="{1c722b7c-0765-481b-a79e-78d73e2645ec}" _name="Previous" _locked="false" _x="-2381" _y="1112" _color="#303030" _background="#606060" _displayName="Previous Page" _comment="Previous Page Object Pointer" _type="Ft_Esd_Widget *" _editRole="">
+            <__Properties>
+                <access type="String">ReadOnly</access>
+            </__Properties>
+        </_LogicBlockVariable>
+        <_LogicBlockVariable _uuid="{12f67bf7-766f-4be0-b23d-b34d97a14006}" _name="Current" _locked="false" _x="-2381" _y="1187" _color="#303030" _background="#606060" _displayName="Current Page" _comment="Current Page Object Pointer" _type="Ft_Esd_Widget *" _editRole="">
+            <__Properties>
+                <access type="String">ReadOnly</access>
+            </__Properties>
+        </_LogicBlockVariable>
+        <_LogicBlockVariable _uuid="{9ee3753d-13c8-454a-8929-79921a9c8cf8}" _name="Next" _locked="false" _x="-2381" _y="1263" _color="#303030" _background="#606060" _displayName="Next Page" _comment="Next Page Object Pointer" _type="Ft_Esd_Widget *" _editRole="">
+            <__Properties>
+                <access type="String">ReadOnly</access>
+            </__Properties>
+        </_LogicBlockVariable>
+        <_LogicBlockInput _uuid="{e3ef34c5-1418-4b22-a26c-e1b800813b3a}" _name="New" _locked="false" _x="-2381" _y="1338" _color="#303030" _background="#606060" _displayName="New Page" _comment="Input New Page Object Pointer " _type="Ft_Esd_Widget *" _editRole=""/>
+        <_LogicBlockVariable _uuid="{6fcd35cc-1df0-4914-8b64-347f83f5ad90}" _name="Index" _locked="false" _x="-2381" _y="1414" _color="#303030" _background="#606060" _displayName="Current Index" _comment="Current Page Index" _type="int" _editRole="">
+            <__Properties>
+                <value type="int">1</value>
+                <access type="String">ReadOnly</access>
+            </__Properties>
+        </_LogicBlockVariable>
+        <_LogicBlockVariable _uuid="{af41fbae-c508-4fd8-a2d2-ac374008da7f}" _name="NewIndex" _locked="false" _x="-2381" _y="1490" _color="#303030" _background="#606060" _displayName="New Index" _comment="New Page Index" _type="int" _editRole="">
+            <__Properties>
+                <value type="int">1</value>
+                <access type="String">ReadOnly</access>
+            </__Properties>
+        </_LogicBlockVariable>
+    </_NodeContainer>
+    <_WidgetContainer _uuid="{31a4057e-30ba-4035-81fe-dab3eab2d00c}" _name="Widgets" _locked="false">
+        <__Properties>
+            <x type="double">0</x>
+            <y type="double">0</y>
+            <width type="double">318</width>
+            <height type="double">478</height>
+        </__Properties>
+        <Ft_Esd_ScrollPanel _super="_Widget" _uuid="{56049f8f-7484-4691-9c4b-1e367931c628}" _name="ScrollPanel" _locked="false" _x="-2012" _y="-17" _color="#8544a5" _background="#ffffff" _z="101">
+            <__Properties>
+                <_widgetActive type="bool">true</_widgetActive>
+                <_widgetX type="double">-2</_widgetX>
+                <_widgetY type="double">41</_widgetY>
+                <_widgetWidth type="double">322</_widgetWidth>
+                <_widgetHeight type="double">431</_widgetHeight>
+                <ShowPanel type="String">true</ShowPanel>
+                <Active_Scroll type="bool">false</Active_Scroll>
+                <RaiseBorder type="String">true</RaiseBorder>
+                <Theme type="String">Ft_Esd_Theme_LightBlue</Theme>
+                <ScrollX type="int">0</ScrollX>
+                <Align type="String">ESD_ALIGN_TOPLEFT</Align>
+                <ScrollBars type="String">ESD_VISIBLE_NEVER</ScrollBars>
+                <TouchScroll type="String">true</TouchScroll>
+                <Radius type="String">4</Radius>
+                <ScrollBarSize type="String">24</ScrollBarSize>
+            </__Properties>
+            <Ft_Esd_Layout_Fixed _super="_Widget" _uuid="{3b71a324-5c8f-487f-8641-d3183edb65e4}" _name="FixedPositioning" _locked="false" _x="-2382" _y="650" _color="#8544a5" _background="#606060" _z="0">
+                <__Properties>
+                    <_widgetActive type="bool">true</_widgetActive>
+                    <_widgetX type="int">0</_widgetX>
+                    <_widgetY type="int">0</_widgetY>
+                    <_widgetWidth type="double">1016</_widgetWidth>
+                    <_widgetHeight type="double">390</_widgetHeight>
+                </__Properties>
+            </Ft_Esd_Layout_Fixed>
+        </Ft_Esd_ScrollPanel>
+    </_WidgetContainer>
+</_WidgetDocument>

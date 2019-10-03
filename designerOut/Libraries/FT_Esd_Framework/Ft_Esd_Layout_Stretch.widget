@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<_WidgetDocument _uuid="{7919a2df-d373-4284-a605-1418d19dd184}" _locked="false" displayName="Stretch" comment="" category="EsdLayouts" defaultSignal="" icon=":/icons/fill-270.png" _version="40001" _revision="12" purpose="Layout" backToFront="true">
+    <_ActorContainer _uuid="{684582ec-3e21-47e8-9b80-2560a02c63ff}" _name="Actors" _locked="false"/>
+    <_ConnectionContainer _uuid="{16c38464-2a71-4f4f-8e2d-7b0775326103}" _name="Connections" _locked="false"/>
+    <_NodeContainer _uuid="{c8f7a34b-4f9a-44d4-bab7-97a2964ff4f9}" _name="Nodes" _locked="false">
+        <_LogicBlockVariable _uuid="{ef7e9c1a-1a3b-4ead-b650-02887ce97f11}" _name="Weight" _locked="false" _x="-72" _y="12" _color="#303030" _background="#606060" _displayName="" _comment="" _type="ft_int16_t" _editRole="">
+            <__Properties>
+                <value type="int">1</value>
+                <access type="String">Public</access>
+            </__Properties>
+        </_LogicBlockVariable>
+    </_NodeContainer>
+    <_WidgetContainer _uuid="{2838393d-7602-486f-9445-30f9bd1a343d}" _name="Widgets" _locked="false">
+        <__Properties>
+            <x type="double">0</x>
+            <y type="double">0</y>
+            <width type="int">50</width>
+            <height type="int">50</height>
+        </__Properties>
+    </_WidgetContainer>
+</_WidgetDocument>

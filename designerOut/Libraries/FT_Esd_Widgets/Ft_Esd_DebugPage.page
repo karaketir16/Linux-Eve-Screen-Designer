@@ -1,0 +1,53 @@
+<!DOCTYPE _PageDocument>
+<_PageDocument displayName="" category="" _uuid="{4685f0cc-0f70-4346-b957-1eeb5ad22186}" icon="" _locked="false">
+  <_ConnectionContainer _name="Connections" _uuid="{8b711e4a-518b-45ae-9431-a3bee3875b43}" _locked="false">
+    <_Connection _name="Connection" sourceObject="{8fc7e6c7-470a-47e8-8dd6-7241ce6f2ce9}" targetObject="{41eef459-c0db-41fb-ae19-45763234ad76}" sourceConnector="signal" _uuid="{1cb5b3e9-df43-49d4-b47a-62108e2ecfe4}" connectionType="SignalSlot" _locked="false" targetConnector="Update"/>
+    <_Connection _name="Connection" sourceObject="{c764d078-0275-49dc-9275-741e05d13914}" targetObject="{41eef459-c0db-41fb-ae19-45763234ad76}" sourceConnector="signal" _uuid="{29bd245f-bec5-45dc-b2ac-2cf1d3c0603b}" connectionType="SignalSlot" _locked="false" targetConnector="End"/>
+    <_Connection _name="Connection" sourceObject="{41eef459-c0db-41fb-ae19-45763234ad76}" targetObject="{0dfa8640-0b42-4180-9394-15823df79642}" sourceConnector="CurrentTag" _uuid="{54ee6175-7a1d-490f-9176-29421dbe7f69}" connectionType="OutputInput" _locked="false" targetConnector="Value"/>
+    <_Connection _name="Connection" sourceObject="{b91f00a9-1a1d-4ae5-8655-5c960e7d3127}" targetObject="{9a88c9db-edde-4f4b-9af9-5cb81c3229b8}" sourceConnector="Pushed" _uuid="{62c26940-7096-4f83-b972-e0b8066bd4f4}" connectionType="SignalSlot" _locked="false" targetConnector="slot"/>
+    <_Connection _name="Connection" sourceObject="{853c0b90-7af4-4783-b9ce-c238fe04dfde}" targetObject="{41eef459-c0db-41fb-ae19-45763234ad76}" sourceConnector="signal" _uuid="{649b3064-2582-4752-87f4-9ae711fd6edf}" connectionType="SignalSlot" _locked="false" targetConnector="Start"/>
+  </_ConnectionContainer>
+  <_NodeContainer _name="Nodes" _uuid="{8944b942-8080-4e97-b5da-ac198d2785b5}" _locked="false">
+    <_LogicBlockSlot _y="145" _name="End" _x="-206" _displayName="" _uuid="{c764d078-0275-49dc-9275-741e05d13914}" _locked="false"/>
+    <_LogicBlockSignal _y="74" _name="Exit" _x="866" _displayName="" _uuid="{9a88c9db-edde-4f4b-9af9-5cb81c3229b8}" _locked="false"/>
+    <_LogicBlockSlot _y="50" _name="Start" _x="-206" _displayName="" _uuid="{853c0b90-7af4-4783-b9ce-c238fe04dfde}" _locked="false"/>
+    <Ft_Esd_TouchTag _y="64" _name="Touch Tag" _x="139" _uuid="{41eef459-c0db-41fb-ae19-45763234ad76}" _locked="false"/>
+    <_LogicBlockSlot _y="98" _name="Update" _x="-206" _displayName="" _uuid="{8fc7e6c7-470a-47e8-8dd6-7241ce6f2ce9}" _locked="false"/>
+  </_NodeContainer>
+  <_WidgetContainer _name="Widgets" _uuid="{4b37e476-823d-4196-adf3-497798076287}" _locked="false">
+    <Ft_Esd_Label _y="222" _name="ESD Label" _x="-191" _uuid="{f5e2fc63-b799-4c9b-8d0e-960eb4c89033}" _locked="false">
+      <__Properties>
+        <Text type="String">Current Tag:</Text>
+        <X type="int">12</X>
+        <Y type="int">84</Y>
+      </__Properties>
+    </Ft_Esd_Label>
+    <Ft_Esd_NumericLabel _y="223" _name="ESD NumericLabel" _x="46" _uuid="{0dfa8640-0b42-4180-9394-15823df79642}" _locked="false">
+      <__Properties>
+        <X type="int">138</X>
+        <Y type="int">83</Y>
+      </__Properties>
+    </Ft_Esd_NumericLabel>
+    <Ft_Esd_NumericLabel _y="382" _name="ESD NumericLabel" _x="42" _uuid="{82888da4-89dc-488f-a146-a07df16ea38a}" _locked="false">
+      <__Properties>
+        <X type="int">139</X>
+        <Y type="int">126</Y>
+      </__Properties>
+    </Ft_Esd_NumericLabel>
+    <Ft_Esd_PushButton _y="61" _name="Exit Button" _x="583" _uuid="{b91f00a9-1a1d-4ae5-8655-5c960e7d3127}" _locked="false">
+      <__Properties>
+        <Primary type="bool">false</Primary>
+        <Text type="String">Exit</Text>
+        <X type="int">11</X>
+        <Y type="int">8</Y>
+      </__Properties>
+    </Ft_Esd_PushButton>
+    <Ft_Esd_Label _y="380" _name="Test Tag:" _x="-191" _uuid="{543644b7-0614-41cd-9ad2-2966fed90865}" _locked="false">
+      <__Properties>
+        <Text type="String">Test Tag:</Text>
+        <X type="int">12</X>
+        <Y type="int">126</Y>
+      </__Properties>
+    </Ft_Esd_Label>
+  </_WidgetContainer>
+</_PageDocument>

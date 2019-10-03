@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<_WidgetDocument _uuid="{f2a893d0-5694-429a-befb-1aade6d92908}" _locked="false" displayName="Gradient Widget" comment="" category="EsdBasicWidegts" defaultSignal="" icon="" _version="30110" _revision="10" purpose="Widget" backToFront="">
+    <_ActorContainer _uuid="{49ce0d78-1b4b-47fb-8092-305d4d661302}" _name="Actors" _locked="false"/>
+    <_ConnectionContainer _uuid="{e55bdce8-0623-4a28-a11b-dcf98a491e5c}" _name="Connections" _locked="false">
+        <_Connection _uuid="{28a3c61c-792a-444a-8a92-e11212af31cb}" _name="Connection" _locked="false" connectionType="VariableInput" sourceObject="{72cc5dcc-8465-4e90-9901-76ad99d42695}" sourceConnector="_widgetGlobalWidth" targetObject="{06eeaf3f-b055-4002-a3e5-b2ea5b5336e1}" targetConnector="width"/>
+        <_Connection _uuid="{4d0fe654-7a18-4d83-9e01-fe2afbdf2cc7}" _name="Connection" _locked="false" connectionType="OutputInput" sourceObject="{38d99b29-2edc-4fc9-ae51-37617d896883}" sourceConnector="value" targetObject="{06eeaf3f-b055-4002-a3e5-b2ea5b5336e1}" targetConnector="direction"/>
+        <_Connection _uuid="{735c824d-d4ad-4752-a72d-9c61d0639256}" _name="Connection" _locked="false" connectionType="VariableInput" sourceObject="{72cc5dcc-8465-4e90-9901-76ad99d42695}" sourceConnector="_widgetGlobalHeight" targetObject="{06eeaf3f-b055-4002-a3e5-b2ea5b5336e1}" targetConnector="height"/>
+        <_Connection _uuid="{7b1a6bf0-0422-4614-9219-8ba910ceeb23}" _name="Connection" _locked="false" connectionType="OutputInput" sourceObject="{9fbfb8cf-e365-400a-b737-182b73fa1fe4}" sourceConnector="value" targetObject="{06eeaf3f-b055-4002-a3e5-b2ea5b5336e1}" targetConnector="color1"/>
+        <_Connection _uuid="{80351ddc-54b7-4155-9175-774f7bb16f28}" _name="Connection" _locked="false" connectionType="OutputInput" sourceObject="{93e78ff6-77d0-483e-a421-b416151a717c}" sourceConnector="value" targetObject="{06eeaf3f-b055-4002-a3e5-b2ea5b5336e1}" targetConnector="color2"/>
+        <_Connection _uuid="{eb03dc2f-6199-4933-b254-93a686b29b8f}" _name="Connection" _locked="false" connectionType="VariableInput" sourceObject="{72cc5dcc-8465-4e90-9901-76ad99d42695}" sourceConnector="_widgetGlobalY" targetObject="{06eeaf3f-b055-4002-a3e5-b2ea5b5336e1}" targetConnector="y"/>
+        <_Connection _uuid="{f6b5b654-edad-4da2-a643-d9b174fab7bc}" _name="Connection" _locked="false" connectionType="VariableInput" sourceObject="{72cc5dcc-8465-4e90-9901-76ad99d42695}" sourceConnector="_widgetGlobalX" targetObject="{06eeaf3f-b055-4002-a3e5-b2ea5b5336e1}" targetConnector="x"/>
+    </_ConnectionContainer>
+    <_NodeContainer _uuid="{b7333479-e1d3-4742-be63-93e637ae7895}" _name="Nodes" _locked="false">
+        <_LogicBlockInput _uuid="{9fbfb8cf-e365-400a-b737-182b73fa1fe4}" _name="color1" _locked="false" _x="127" _y="-675" _color="#303030" _background="#606060" _displayName="start color" _comment="" _type="ft_argb32_t" _editRole="">
+            <__Properties>
+                <default type="Color">#fa9943</default>
+            </__Properties>
+        </_LogicBlockInput>
+        <_LogicBlockInput _uuid="{93e78ff6-77d0-483e-a421-b416151a717c}" _name="color2" _locked="false" _x="127" _y="-609" _color="#303030" _background="#606060" _displayName="end color" _comment="" _type="ft_argb32_t" _editRole="">
+            <__Properties>
+                <default type="Color">#29a123</default>
+            </__Properties>
+        </_LogicBlockInput>
+        <_LogicBlockInput _uuid="{38d99b29-2edc-4fc9-ae51-37617d896883}" _name="direction" _locked="false" _x="127" _y="-541" _color="#303030" _background="#606060" _displayName="" _comment="" _type="int" _editRole="">
+            <__Properties>
+                <default type="int">78</default>
+            </__Properties>
+        </_LogicBlockInput>
+        <Ft_Esd_Render_Rectangle_Gradient _uuid="{06eeaf3f-b055-4002-a3e5-b2ea5b5336e1}" _name="ESD Gradient Rectangle (Integer)" _locked="false" _x="665" _y="-540" _color="#62af21" _background="#606060" _z="0">
+            <__Properties>
+                <_active type="bool">true</_active>
+                <x type="double">54</x>
+                <y type="double">120</y>
+                <width type="double">191</width>
+                <height type="double">143</height>
+                <color1 type="String">#FF3F3F3F</color1>
+                <color2 type="String">#FFFFFFFF</color2>
+                <direction type="int">95</direction>
+            </__Properties>
+        </Ft_Esd_Render_Rectangle_Gradient>
+        <_WidgetInterface _uuid="{72cc5dcc-8465-4e90-9901-76ad99d42695}" _name="Widget Interface" _locked="false" _x="127" _y="-450" _color="#303030" _background="#606060"/>
+    </_NodeContainer>
+    <_WidgetContainer _uuid="{3ab9f735-cd7e-4d46-8d3e-c794bf9a1b30}" _name="Widgets" _locked="false">
+        <__Properties>
+            <width type="int">400</width>
+            <height type="int">300</height>
+        </__Properties>
+    </_WidgetContainer>
+</_WidgetDocument>

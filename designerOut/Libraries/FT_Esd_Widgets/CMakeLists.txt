@@ -1,0 +1,15 @@
+
+FILE(GLOB SRCS *.c)
+FILE(GLOB HDRS *.h)
+SOURCE_GROUP("" FILES ${SRCS} ${HDRS})
+
+ADD_LIBRARY(FT_Esd_Widgets
+	${SRCS}
+	${HDRS}
+)
+
+TARGET_LINK_LIBRARIES(FT_Esd_Widgets
+	FT_Esd_Framework
+)
+
+SET_TARGET_PROPERTIES(FT_Esd_Widgets PROPERTIES FOLDER "[X] Distrib Libraries")

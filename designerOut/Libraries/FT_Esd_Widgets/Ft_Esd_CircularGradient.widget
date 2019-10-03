@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<_WidgetDocument _uuid="{55163c6e-0d66-472c-b5a1-6c19e76669f0}" _locked="false" displayName="ESD Circular Gradient" comment="" category="EsdBasicWidegts" defaultSignal="" icon="" _version="40001" _revision="136" purpose="Widget" backToFront="">
+    <_ActorContainer _uuid="{119483aa-73a5-4990-9495-d987c0d997ef}" _name="Actors" _locked="false"/>
+    <_ConnectionContainer _uuid="{989c7aeb-7e53-43b6-9e2f-8aee52b10571}" _name="Connections" _locked="false">
+        <_Connection _uuid="{0090fc14-9d9f-4fe4-9761-a79dbece779e}" _name="Connection" _locked="false" connectionType="VariableInput" sourceObject="{7c977533-2b29-47b3-870c-a269ffd7ac43}" sourceConnector="_widgetGlobalX" targetObject="{c8777b45-ebb6-4957-8071-d93f5ec7268c}" targetConnector="x0"/>
+        <_Connection _uuid="{26572f00-44fa-44d5-9e6d-479f1c149ae3}" _name="Connection" _locked="false" connectionType="SignalSlot" sourceObject="{f7fdef15-23bc-4a73-b5b6-8a5928d68901}" sourceConnector="signal" targetObject="{c8777b45-ebb6-4957-8071-d93f5ec7268c}" targetConnector="_call"/>
+        <_Connection _uuid="{307c46cd-cb3e-4c0c-9cd6-4f72c0f1390e}" _name="Connection" _locked="false" connectionType="VariableInput" sourceObject="{7c977533-2b29-47b3-870c-a269ffd7ac43}" sourceConnector="_widgetGlobalY" targetObject="{ee16d12e-3c5a-4f1b-9635-2f163201b42c}" targetConnector="left"/>
+        <_Connection _uuid="{4e63cc18-9fbe-4bba-a1c4-fe51de4a4957}" _name="Connection" _locked="false" connectionType="VariableInput" sourceObject="{7c977533-2b29-47b3-870c-a269ffd7ac43}" sourceConnector="_widgetGlobalY" targetObject="{c8777b45-ebb6-4957-8071-d93f5ec7268c}" targetConnector="y0"/>
+        <_Connection _uuid="{57a4902f-5b7b-419b-883f-15407c0b02e6}" _name="Connection" _locked="false" connectionType="VariableInput" sourceObject="{7c977533-2b29-47b3-870c-a269ffd7ac43}" sourceConnector="_widgetGlobalWidth" targetObject="{cadb7d5e-a761-4215-9f54-1ade7721a06e}" targetConnector="right"/>
+        <_Connection _uuid="{683be469-e940-45cc-8877-657f39c93188}" _name="Connection" _locked="false" connectionType="OutputInput" sourceObject="{539ee897-d5ae-46f8-a336-b3c904191234}" sourceConnector="value" targetObject="{c8777b45-ebb6-4957-8071-d93f5ec7268c}" targetConnector="color2"/>
+        <_Connection _uuid="{78e044bc-5440-4e21-a40c-f89de3e19a8c}" _name="Connection" _locked="false" connectionType="OutputInput" sourceObject="{f66f2d17-bf1e-400c-a058-a8f705743419}" sourceConnector="value" targetObject="{c8777b45-ebb6-4957-8071-d93f5ec7268c}" targetConnector="gradientType"/>
+        <_Connection _uuid="{939218cd-4cad-49ee-bd07-02650851767a}" _name="Connection" _locked="false" connectionType="OutputInput" sourceObject="{ee16d12e-3c5a-4f1b-9635-2f163201b42c}" sourceConnector="result" targetObject="{c8777b45-ebb6-4957-8071-d93f5ec7268c}" targetConnector="y1"/>
+        <_Connection _uuid="{a19868e1-36e0-4472-b667-3633509b4700}" _name="Connection" _locked="false" connectionType="VariableInput" sourceObject="{7c977533-2b29-47b3-870c-a269ffd7ac43}" sourceConnector="_widgetGlobalHeight" targetObject="{ee16d12e-3c5a-4f1b-9635-2f163201b42c}" targetConnector="right"/>
+        <_Connection _uuid="{a4e5de6a-87e7-4eaf-af40-7e6bc4ee5733}" _name="Connection" _locked="false" connectionType="VariableInput" sourceObject="{7c977533-2b29-47b3-870c-a269ffd7ac43}" sourceConnector="_widgetGlobalX" targetObject="{cadb7d5e-a761-4215-9f54-1ade7721a06e}" targetConnector="left"/>
+        <_Connection _uuid="{e9cba260-82e3-4de3-9e18-dfeedf642812}" _name="Connection" _locked="false" connectionType="OutputInput" sourceObject="{cadb7d5e-a761-4215-9f54-1ade7721a06e}" sourceConnector="result" targetObject="{c8777b45-ebb6-4957-8071-d93f5ec7268c}" targetConnector="x1"/>
+        <_Connection _uuid="{fc4a8dcf-88fc-4859-a2b5-d3dffeeeef83}" _name="Connection" _locked="false" connectionType="OutputInput" sourceObject="{27d979c8-62b1-4ffd-8b75-9f8b1887a3c1}" sourceConnector="value" targetObject="{c8777b45-ebb6-4957-8071-d93f5ec7268c}" targetConnector="color1"/>
+    </_ConnectionContainer>
+    <_NodeContainer _uuid="{da318db3-ef54-4129-9a98-41205be9f612}" _name="Nodes" _locked="false">
+        <Circular_Gradient_Widget_Render_Circular _uuid="{c8777b45-ebb6-4957-8071-d93f5ec7268c}" _name="Render_Circular" _locked="false" _x="451" _y="-747" _color="#303030" _background="#606060">
+            <__Properties>
+                <x0 type="String">0</x0>
+                <y0 type="String">0</y0>
+                <x1 type="int">600</x1>
+                <y1 type="int">400</y1>
+                <color1 type="Color">#ffff00</color1>
+                <color2 type="Color">#1f2aef</color2>
+                <gradientType type="String">ESD_PYTHAGOREAN</gradientType>
+            </__Properties>
+        </Circular_Gradient_Widget_Render_Circular>
+        <_LogicBlockSlot _uuid="{f7fdef15-23bc-4a73-b5b6-8a5928d68901}" _name="Render" _locked="false" _x="127" _y="-728" _color="#303030" _background="#606060" _displayName=""/>
+        <_LogicBlockInput _uuid="{27d979c8-62b1-4ffd-8b75-9f8b1887a3c1}" _name="Outer color" _locked="false" _x="127" _y="-675" _color="#303030" _background="#606060" _displayName="Outer color" _comment="" _type="ft_argb32_t" _editRole="">
+            <__Properties>
+                <default type="Color">#1b06fa</default>
+            </__Properties>
+        </_LogicBlockInput>
+        <_LogicBlockInput _uuid="{539ee897-d5ae-46f8-a336-b3c904191234}" _name="Inner color" _locked="false" _x="127" _y="-609" _color="#303030" _background="#606060" _displayName="Inner color" _comment="" _type="ft_argb32_t" _editRole="">
+            <__Properties>
+                <default type="Color">#f8ef86</default>
+            </__Properties>
+        </_LogicBlockInput>
+        <_LogicOperatorBinary _uuid="{cadb7d5e-a761-4215-9f54-1ade7721a06e}" _name="x1" _locked="false" _x="888" _y="-554" _color="#303030" _background="#606060" _comment="" _type="int" _editRole="">
+            <__Properties>
+                <operator type="String">+</operator>
+            </__Properties>
+        </_LogicOperatorBinary>
+        <_LogicBlockInput _uuid="{f66f2d17-bf1e-400c-a058-a8f705743419}" _name="Gradient Type" _locked="false" _x="127" _y="-546" _color="#303030" _background="#606060" _displayName="Gradient Type" _comment="" _type="Esd_CircularGradientType" _editRole="">
+            <__Properties>
+                <default type="String">ESD_PYTHAGOREAN</default>
+            </__Properties>
+        </_LogicBlockInput>
+        <_WidgetInterface _uuid="{7c977533-2b29-47b3-870c-a269ffd7ac43}" _name="Widget Interface" _locked="false" _x="127" _y="-485" _color="#303030" _background="#606060"/>
+        <_LogicOperatorBinary _uuid="{ee16d12e-3c5a-4f1b-9635-2f163201b42c}" _name="y1" _locked="false" _x="902" _y="-387" _color="#303030" _background="#606060" _comment="" _type="int" _editRole="">
+            <__Properties>
+                <operator type="String">+</operator>
+            </__Properties>
+        </_LogicOperatorBinary>
+    </_NodeContainer>
+    <_WidgetContainer _uuid="{e9c00117-cb7f-4709-b4f1-a2482d06007c}" _name="Widgets" _locked="false">
+        <__Properties>
+            <x type="double">173</x>
+            <y type="double">75</y>
+            <width type="double">320</width>
+            <height type="double">315</height>
+        </__Properties>
+    </_WidgetContainer>
+</_WidgetDocument>

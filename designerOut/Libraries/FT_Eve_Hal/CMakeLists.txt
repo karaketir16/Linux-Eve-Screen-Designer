@@ -1,0 +1,15 @@
+
+FILE(GLOB SRCS *.c Src/*.c)
+FILE(GLOB HDRS *.h Hdr/*.h Hdr/MSVC_Emulator/*.h)
+SOURCE_GROUP("" FILES ${SRCS} ${HDRS})
+
+ADD_LIBRARY(FT_Eve_Hal
+	${SRCS}
+	${HDRS}
+)
+
+TARGET_LINK_LIBRARIES(FT_Eve_Hal
+	${BT8XXEMU_LIBRARY}
+)
+
+SET_TARGET_PROPERTIES(FT_Eve_Hal PROPERTIES FOLDER "[X] Distrib Libraries")

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<_ActorDocument _uuid="{af23f9db-9a83-4120-8bf8-a733cc8a9d81}" _locked="false" displayName="ESD Timer" comment="ESD built-in actor to trigger event repeatedly in fixed intervals of time" category="EsdUtilities" defaultSignal="Fired" icon=":/icons/clock.png" _version="30110" _revision="2">
+    <_ActorContainer _uuid="{6f8e320b-fac4-46ce-b119-c6303332d1e8}" _name="Actors" _locked="false"/>
+    <_ConnectionContainer _uuid="{c587b92f-9d6e-4bb0-a566-35e81be318a8}" _name="Connections" _locked="false">
+        <_Connection _uuid="{17581e47-f460-4261-8847-c7413d1ee72f}" _name="Connection" _locked="false" connectionType="SignalSlot" sourceObject="{4347574e-ddfc-4e10-91aa-9fa683df904d}" sourceConnector="signal" targetObject="{6db25358-377c-4fdd-996a-85abcb15865d}" targetConnector="_call"/>
+        <_Connection _uuid="{6aef9930-c122-4f9a-9e06-e670e34e34cc}" _name="Connection" _locked="false" connectionType="SignalSlot" sourceObject="{b25b276f-4202-435e-aeb6-652fca48ddc4}" sourceConnector="signal" targetObject="{7b5544d4-4680-4c7a-9781-4e78f8011f5b}" targetConnector="_call"/>
+        <_Connection _uuid="{71259598-4e05-4ab2-84c0-c142eafda9f3}" _name="Connection" _locked="false" connectionType="SignalSlot" sourceObject="{01ce4cbd-8b73-44bc-adf5-58493c51f4db}" sourceConnector="signal" targetObject="{6db25358-377c-4fdd-996a-85abcb15865d}" targetConnector="_call"/>
+    </_ConnectionContainer>
+    <_NodeContainer _uuid="{308ca093-1a9b-4c0d-9674-1452fbba059b}" _name="Nodes" _locked="false">
+        <Ft_Esd_Timer_Run_Signal _uuid="{7b5544d4-4680-4c7a-9781-4e78f8011f5b}" _name="Run Signal" _locked="false" _x="-729" _y="-128" _color="#303030" _background="#606060"/>
+        <_LogicBlockSlot _uuid="{b25b276f-4202-435e-aeb6-652fca48ddc4}" _name="Run" _locked="false" _x="-976" _y="-126" _color="#303030" _background="#606060" _displayName=""/>
+        <_LogicBlockSlot _uuid="{01ce4cbd-8b73-44bc-adf5-58493c51f4db}" _name="Halt" _locked="false" _x="-975" _y="-74" _color="#303030" _background="#606060" _displayName=""/>
+        <_LogicBlockSignal _uuid="{18aa57b3-8cc4-456e-9759-db6c22064963}" _name="Fired" _locked="false" _x="-433" _y="-1" _color="#303030" _background="#606060" _displayName=""/>
+        <_LogicBlockVariable _uuid="{8ab5bc89-300a-417e-970c-f9bb9529903d}" _name="TimeoutMs" _locked="false" _x="-975" _y="11" _color="#303030" _background="#606060" _displayName="" _comment="Time in milliseconds for the timer to fire" _type="int" _editRole="">
+            <__Properties>
+                <value type="int">1000</value>
+                <access type="String">Public</access>
+            </__Properties>
+        </_LogicBlockVariable>
+        <_LogicBlockVariable _uuid="{b9cbe645-f5c2-49f0-8119-c413ee40897c}" _name="Repeat" _locked="false" _x="-976" _y="69" _color="#303030" _background="#606060" _displayName="" _comment="Whether the timer repeats after it is fired" _type="ft_bool_t" _editRole="">
+            <__Properties>
+                <access type="String">Public</access>
+            </__Properties>
+        </_LogicBlockVariable>
+        <Ft_Esd_Timer_End_Signal _uuid="{6db25358-377c-4fdd-996a-85abcb15865d}" _name="End Signal" _locked="false" _x="-717" _y="167" _color="#303030" _background="#606060"/>
+        <_LogicBlockSlot _uuid="{4347574e-ddfc-4e10-91aa-9fa683df904d}" _name="End" _locked="false" _x="-978" _y="173" _color="#303030" _background="#606060" _displayName=""/>
+    </_NodeContainer>
+</_ActorDocument>

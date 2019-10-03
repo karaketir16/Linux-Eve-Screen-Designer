@@ -1,0 +1,450 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<_WidgetDocument _uuid="{06d03d08-20ab-4a83-9157-e5f14536ff26}" _locked="false" displayName="ESD Circular Slider" comment="" category="EsdWidgets" defaultSignal="" icon="" _version="40001" _revision="288" purpose="Widget" backToFront="">
+    <_ActorContainer _uuid="{0c3c5413-5c77-42ff-a305-8eb0eb29bc60}" _name="Actors" _locked="false">
+        <Ft_Esd_Timer _uuid="{2ef1fffd-ed11-4dd3-a9ce-407ff720aba7}" _name="ESD Timer" _locked="false" _x="-47" _y="-174" _color="#dec32e" _background="#606060">
+            <__Properties>
+                <_active type="bool">true</_active>
+                <TimeoutMs type="int">300</TimeoutMs>
+            </__Properties>
+        </Ft_Esd_Timer>
+        <Ft_Esd_TouchTag _uuid="{979cdda2-398a-40e4-93d0-5ed77ee7d498}" _name="Touch Tag" _locked="false" _x="-497" _y="737" _color="#dec32e" _background="#606060">
+            <__Properties>
+                <_active type="bool">true</_active>
+            </__Properties>
+        </Ft_Esd_TouchTag>
+    </_ActorContainer>
+    <_ConnectionContainer _uuid="{65c61fdb-9f92-44fe-97d9-daa03cdc1a67}" _name="Connections" _locked="false">
+        <_Connection _uuid="{02afd0ef-0f95-43e8-892d-7499913d2991}" _name="Connection" _locked="false" connectionType="SignalSlot" sourceObject="{05155a22-4f03-4ce7-ac60-7282ab06ec0f}" sourceConnector="then:1" targetObject="{48b433b9-c7c2-462f-a9e3-07165776d7a9}" targetConnector="write"/>
+        <_Connection _uuid="{06f733d7-8e6e-43f2-b152-84f18889b164}" _name="Connection" _locked="false" connectionType="OutputVariable" sourceObject="{0f07dcb4-e82e-426c-a5c5-742e3f7ac597}" sourceConnector="result" targetObject="{0cd2a1d7-55a5-48fd-9b57-d0a6712d62a1}" targetConnector="_widgetHeight"/>
+        <_Connection _uuid="{11eb83fa-6971-43f1-a334-042078cf90fb}" _name="Connection" _locked="false" connectionType="InputInput" sourceObject="{3b6e394d-0d8e-464a-a2e5-8738f1b20280}" sourceConnector="RingWidth" targetObject="{1da80cad-1147-4877-a295-09720e89ec36}" targetConnector="right"/>
+        <_Connection _uuid="{12f84471-6183-4866-b9ad-8594c36c1d71}" _name="Connection" _locked="false" connectionType="SlotSlot" sourceObject="{d45308b4-9303-47d7-abde-1f5f2de1f5b6}" sourceConnector="write" targetObject="{6e1c6e8d-cad6-455c-ad9f-9d86d9812bab}" targetConnector="write"/>
+        <_Connection _uuid="{157916de-aea5-4cb8-937e-091febaa8ad2}" _name="Connection" _locked="false" connectionType="OutputVariable" sourceObject="{14d91ee7-6afc-4920-bef3-13e90c367903}" sourceConnector="result" targetObject="{0cd2a1d7-55a5-48fd-9b57-d0a6712d62a1}" targetConnector="_widgetActive"/>
+        <_Connection _uuid="{16622858-65b8-4a54-8e64-9c292a364f19}" _name="Connection" _locked="false" connectionType="OutputInput" sourceObject="{9d82227c-2a20-416c-a354-302053925456}" sourceConnector="result" targetObject="{ee888163-0cfd-499b-80b5-1996bc5caff6}" targetConnector="right"/>
+        <_Connection _uuid="{1834af9b-7f37-438a-baf6-1626b4a73441}" _name="Connection" _locked="false" connectionType="OutputInput" sourceObject="{1444e921-7687-4425-8864-9d4328ad861c}" sourceConnector="value" targetObject="{3b6e394d-0d8e-464a-a2e5-8738f1b20280}" targetConnector="InnerBorder"/>
+        <_Connection _uuid="{196c857d-0dda-4d0f-8294-b9ebbfddd75b}" _name="Connection" _locked="false" connectionType="VariableVariable" sourceObject="{0cd2a1d7-55a5-48fd-9b57-d0a6712d62a1}" sourceConnector="Border" targetObject="{937a500a-a1e6-4802-9b24-f60505f9d3c9}" targetConnector="Border"/>
+        <_Connection _uuid="{1d8a082a-63c4-4cb9-b8fa-dfb38c07c27d}" _name="Connection" _locked="false" connectionType="SignalSlot" sourceObject="{00afc092-883f-49e4-972b-b83e65f1a07f}" sourceConnector="signal" targetObject="{05155a22-4f03-4ce7-ac60-7282ab06ec0f}" targetConnector="call"/>
+        <_Connection _uuid="{1fefd541-0803-4c8d-92a7-145c5d3bd753}" _name="Connection" _locked="false" connectionType="InputInput" sourceObject="{3b6e394d-0d8e-464a-a2e5-8738f1b20280}" sourceConnector="OuterBorder" targetObject="{1da80cad-1147-4877-a295-09720e89ec36}" targetConnector="left"/>
+        <_Connection _uuid="{20b662b2-f092-45d1-ba56-c7ba91d9d63d}" _name="Connection" _locked="false" connectionType="SignalSlot" sourceObject="{979cdda2-398a-40e4-93d0-5ed77ee7d498}" sourceConnector="Up" targetObject="{2ef1fffd-ed11-4dd3-a9ce-407ff720aba7}" targetConnector="Run"/>
+        <_Connection _uuid="{212f11ee-a6aa-49cf-b751-c9dc1f71193c}" _name="Connection" _locked="false" connectionType="VariableInput" sourceObject="{12563046-2afe-4cc4-85b5-9f4a081d1c67}" sourceConnector="value" targetObject="{e00f437f-611c-467b-93df-9ad5ff68cce9}" targetConnector="left"/>
+        <_Connection _uuid="{22273962-feef-4306-80e1-2ce4d139d59d}" _name="Connection" _locked="false" connectionType="VariableInput" sourceObject="{597ecd73-e033-4259-9720-5216967fb398}" sourceConnector="value" targetObject="{e00f437f-611c-467b-93df-9ad5ff68cce9}" targetConnector="right"/>
+        <_Connection _uuid="{27e354d5-baf0-45ba-914d-2153de89fdfe}" _name="Connection" _locked="false" connectionType="OutputInput" sourceObject="{6d7a74c1-a6c9-4a5a-a238-716e32ce8088}" sourceConnector="value" targetObject="{cb0f4709-3234-4a4e-9db6-ed4fb52afdb1}" targetConnector="results:0"/>
+        <_Connection _uuid="{2996b68d-aa9a-4565-ab28-502943f10c77}" _name="Connection" _locked="false" connectionType="SignalSlot" sourceObject="{e00f437f-611c-467b-93df-9ad5ff68cce9}" sourceConnector="then" targetObject="{64271824-81f4-492b-9b08-d00c2bbbd7ca}" targetConnector="write"/>
+        <_Connection _uuid="{2f711b3d-4d11-4c8c-9ecd-21d267e3b9d9}" _name="Connection" _locked="false" connectionType="WriterVariable" sourceObject="{64271824-81f4-492b-9b08-d00c2bbbd7ca}" sourceConnector="target" targetObject="{597ecd73-e033-4259-9720-5216967fb398}" targetConnector="value"/>
+        <_Connection _uuid="{32e2585f-cbda-4046-99aa-2a6f10a8a3f1}" _name="Connection" _locked="false" connectionType="WriterVariable" sourceObject="{d45308b4-9303-47d7-abde-1f5f2de1f5b6}" sourceConnector="target" targetObject="{e70afdbb-886b-449c-9491-4a08a0b029b6}" targetConnector="value"/>
+        <_Connection _uuid="{348e86b6-c2a9-44fb-9265-4f56f54f70f3}" _name="Connection" _locked="false" connectionType="OutputInput" sourceObject="{957c1a8e-1015-4aaf-897b-bd28f1fb67b3}" sourceConnector="result" targetObject="{48b433b9-c7c2-462f-a9e3-07165776d7a9}" targetConnector="value"/>
+        <_Connection _uuid="{3574c441-5ce8-42eb-a823-7676e6d451e4}" _name="Connection" _locked="false" connectionType="VariableVariable" sourceObject="{0cd2a1d7-55a5-48fd-9b57-d0a6712d62a1}" sourceConnector="_widgetHeight" targetObject="{937a500a-a1e6-4802-9b24-f60505f9d3c9}" targetConnector="_widgetHeight"/>
+        <_Connection _uuid="{35e8d1ad-e2ac-450f-b23f-ec22f2285178}" _name="Connection" _locked="false" connectionType="OutputVariable" sourceObject="{ee888163-0cfd-499b-80b5-1996bc5caff6}" sourceConnector="result" targetObject="{0cd2a1d7-55a5-48fd-9b57-d0a6712d62a1}" targetConnector="_widgetWidth"/>
+        <_Connection _uuid="{39c2807e-bb0b-4e65-b384-28c7256695c6}" _name="Connection" _locked="false" connectionType="SignalSlot" sourceObject="{979cdda2-398a-40e4-93d0-5ed77ee7d498}" sourceConnector="Down" targetObject="{2ef1fffd-ed11-4dd3-a9ce-407ff720aba7}" targetConnector="Halt"/>
+        <_Connection _uuid="{3e2fea0a-c8f5-4572-8497-b83d8cf6615e}" _name="Connection" _locked="false" connectionType="VariableInput" sourceObject="{098f33b7-ccea-4e7d-9918-dd1b921d1719}" sourceConnector="value" targetObject="{8d7fa607-6ac5-4e94-85d8-b3e5f1a39ec1}" targetConnector="right"/>
+        <_Connection _uuid="{402a4ff9-4d5f-4b99-97d4-0dec7717ea61}" _name="Connection" _locked="false" connectionType="OutputInput" sourceObject="{a48e3e3d-67b2-44d9-a3a1-e3c0192b8e10}" sourceConnector="value" targetObject="{3b6e394d-0d8e-464a-a2e5-8738f1b20280}" targetConnector="BackgroundColor"/>
+        <_Connection _uuid="{41cb3ef6-a5bb-4ee0-9a23-19cb519869a2}" _name="Connection" _locked="false" connectionType="VariableVariable" sourceObject="{0cd2a1d7-55a5-48fd-9b57-d0a6712d62a1}" sourceConnector="_widgetY" targetObject="{937a500a-a1e6-4802-9b24-f60505f9d3c9}" targetConnector="_widgetY"/>
+        <_Connection _uuid="{435916d6-b4dc-4572-9141-7a17de14b294}" _name="Connection" _locked="false" connectionType="WriterVariable" sourceObject="{6e1c6e8d-cad6-455c-ad9f-9d86d9812bab}" sourceConnector="target" targetObject="{80ad5f15-d6ee-44ae-8bbe-52c6bc47bc8d}" targetConnector="value"/>
+        <_Connection _uuid="{43797756-5802-47a9-837b-565a442109fb}" _name="Connection" _locked="false" connectionType="OutputInput" sourceObject="{979cdda2-398a-40e4-93d0-5ed77ee7d498}" sourceConnector="Tag" targetObject="{6def2eb2-655e-42ed-bf40-06510c72dc20}" targetConnector="Tag"/>
+        <_Connection _uuid="{52a99e58-666c-4e44-9265-e51c88ceb706}" _name="Connection" _locked="false" connectionType="SignalSlot" sourceObject="{0b00f66e-2369-4ee1-a9d0-1be1d1141eb0}" sourceConnector="ForwardRender" targetObject="{2a358678-b26e-4c5b-b775-1d7a8bb0c9e1}" targetConnector="call"/>
+        <_Connection _uuid="{56a9fb2b-4910-45ec-b92f-149f4b8e041c}" _name="Connection" _locked="false" connectionType="OutputInput" sourceObject="{b6bf0476-d619-4a33-8a09-4ec3e05cb3db}" sourceConnector="value" targetObject="{3b6e394d-0d8e-464a-a2e5-8738f1b20280}" targetConnector="RingWidth"/>
+        <_Connection _uuid="{59716bb4-e9c8-403b-8c9a-9284a8afd10d}" _name="Connection" _locked="false" connectionType="OutputInput" sourceObject="{0b00f66e-2369-4ee1-a9d0-1be1d1141eb0}" sourceConnector="GlobalHeight" targetObject="{0f07dcb4-e82e-426c-a5c5-742e3f7ac597}" targetConnector="left"/>
+        <_Connection _uuid="{59c82cbe-fc0d-4f62-ac79-f78c73bff3da}" _name="Connection" _locked="false" connectionType="OutputInput" sourceObject="{6d7a74c1-a6c9-4a5a-a238-716e32ce8088}" sourceConnector="value" targetObject="{cb0f4709-3234-4a4e-9db6-ed4fb52afdb1}" targetConnector="default"/>
+        <_Connection _uuid="{5aa02548-468e-4fd0-b15e-a7e01569ebbd}" _name="Connection" _locked="false" connectionType="VariableInput" sourceObject="{597ecd73-e033-4259-9720-5216967fb398}" sourceConnector="value" targetObject="{14d91ee7-6afc-4920-bef3-13e90c367903}" targetConnector="right"/>
+        <_Connection _uuid="{5f568c88-21e7-478d-a0a5-a6b796a15693}" _name="Connection" _locked="false" connectionType="VariableInput" sourceObject="{40b32bbc-9f96-4320-b52a-b4ecb7348180}" sourceConnector="value" targetObject="{b761dc8b-ab75-4c39-88c0-67f940b00bee}" targetConnector="results:1"/>
+        <_Connection _uuid="{66d2fcaf-a990-4a41-9d3e-96df179267ae}" _name="Connection" _locked="false" connectionType="OutputVariable" sourceObject="{35598756-dc5f-4800-91b6-f2a9d39979f0}" sourceConnector="value" targetObject="{0cd2a1d7-55a5-48fd-9b57-d0a6712d62a1}" targetConnector="Origin"/>
+        <_Connection _uuid="{671df6be-abc1-4f88-b9d9-22842ed705ea}" _name="Connection" _locked="false" connectionType="WriterVariable" sourceObject="{d45308b4-9303-47d7-abde-1f5f2de1f5b6}" sourceConnector="target" targetObject="{0e1f293c-ba6a-43f5-b36b-08053cee3702}" targetConnector="value"/>
+        <_Connection _uuid="{68c70aa1-954c-4090-ac83-1fb1cda01f07}" _name="Connection" _locked="false" connectionType="OutputInput" sourceObject="{0b00f66e-2369-4ee1-a9d0-1be1d1141eb0}" sourceConnector="GlobalWidth" targetObject="{ee888163-0cfd-499b-80b5-1996bc5caff6}" targetConnector="left"/>
+        <_Connection _uuid="{6fc1703f-f3a5-4ebf-8ce7-108af5eb19f5}" _name="Connection" _locked="false" connectionType="VariableInput" sourceObject="{40b32bbc-9f96-4320-b52a-b4ecb7348180}" sourceConnector="value" targetObject="{6e1c6e8d-cad6-455c-ad9f-9d86d9812bab}" targetConnector="value"/>
+        <_Connection _uuid="{70203df7-938c-4f93-b8be-46674a89337d}" _name="Connection" _locked="false" connectionType="VariableInput" sourceObject="{12563046-2afe-4cc4-85b5-9f4a081d1c67}" sourceConnector="value" targetObject="{64271824-81f4-492b-9b08-d00c2bbbd7ca}" targetConnector="value"/>
+        <_Connection _uuid="{71ed9a9e-a611-4ca1-bbfb-f19829949d24}" _name="Connection" _locked="false" connectionType="VariableVariable" sourceObject="{0cd2a1d7-55a5-48fd-9b57-d0a6712d62a1}" sourceConnector="Color" targetObject="{937a500a-a1e6-4802-9b24-f60505f9d3c9}" targetConnector="Color"/>
+        <_Connection _uuid="{768d07e3-949d-4e09-a53f-e732e52fb7ac}" _name="Connection" _locked="false" connectionType="SignalSlot" sourceObject="{05155a22-4f03-4ce7-ac60-7282ab06ec0f}" sourceConnector="then:0" targetObject="{e00f437f-611c-467b-93df-9ad5ff68cce9}" targetConnector="call"/>
+        <_Connection _uuid="{76f37e5a-fd10-4362-87ef-51362ccbf718}" _name="Connection" _locked="false" connectionType="OutputInput" sourceObject="{979cdda2-398a-40e4-93d0-5ed77ee7d498}" sourceConnector="Touching" targetObject="{2a358678-b26e-4c5b-b775-1d7a8bb0c9e1}" targetConnector="if"/>
+        <_Connection _uuid="{77498a92-ad4f-4492-a200-82958c265c65}" _name="Connection" _locked="false" connectionType="InputVariable" sourceObject="{3b6e394d-0d8e-464a-a2e5-8738f1b20280}" sourceConnector="InnerBorder" targetObject="{0cd2a1d7-55a5-48fd-9b57-d0a6712d62a1}" targetConnector="Border"/>
+        <_Connection _uuid="{7d137d57-3220-4873-85ca-e34092ebde1b}" _name="Connection" _locked="false" connectionType="VariableVariable" sourceObject="{0cd2a1d7-55a5-48fd-9b57-d0a6712d62a1}" sourceConnector="_widgetX" targetObject="{937a500a-a1e6-4802-9b24-f60505f9d3c9}" targetConnector="_widgetX"/>
+        <_Connection _uuid="{88f94130-6d38-4b42-bf45-968a70561b41}" _name="Connection" _locked="false" connectionType="WriterVariable" sourceObject="{2fda957d-91db-46cb-a114-ce443171259a}" sourceConnector="target" targetObject="{b7941548-9b28-4af3-99ad-83367e558647}" targetConnector="value"/>
+        <_Connection _uuid="{8a0eab49-29ee-4e18-bd2a-67277fe77576}" _name="Connection" _locked="false" connectionType="OutputVariable" sourceObject="{4f52a146-392f-4384-addf-e82c8a054a88}" sourceConnector="result" targetObject="{0cd2a1d7-55a5-48fd-9b57-d0a6712d62a1}" targetConnector="Angle"/>
+        <_Connection _uuid="{904c4475-922d-41f1-9069-f3332402b149}" _name="Connection" _locked="false" connectionType="OutputInput" sourceObject="{979cdda2-398a-40e4-93d0-5ed77ee7d498}" sourceConnector="Tag" targetObject="{b7f0441e-45d9-4c2b-a329-a0c90660d606}" targetConnector="tag"/>
+        <_Connection _uuid="{9201a79c-df70-4b86-a0ba-74bedc2f2bbf}" _name="Connection" _locked="false" connectionType="OutputInput" sourceObject="{bb6dbc34-9378-4d5e-9fa5-9b787687625d}" sourceConnector="result" targetObject="{4f52a146-392f-4384-addf-e82c8a054a88}" targetConnector="left"/>
+        <_Connection _uuid="{93a3dd0a-d452-4821-9039-4b1d7a347fd8}" _name="Connection" _locked="false" connectionType="OutputVariable" sourceObject="{0b00f66e-2369-4ee1-a9d0-1be1d1141eb0}" sourceConnector="GlobalWidth" targetObject="{3b6e394d-0d8e-464a-a2e5-8738f1b20280}" targetConnector="_widgetWidth"/>
+        <_Connection _uuid="{94cecac7-6cd0-4a8f-9466-8cf899d58a60}" _name="Connection" _locked="false" connectionType="VariableVariable" sourceObject="{0cd2a1d7-55a5-48fd-9b57-d0a6712d62a1}" sourceConnector="_widgetWidth" targetObject="{937a500a-a1e6-4802-9b24-f60505f9d3c9}" targetConnector="_widgetWidth"/>
+        <_Connection _uuid="{97dc6aec-619c-4b03-8fa5-fdaa6ded14b4}" _name="Connection" _locked="false" connectionType="OutputVariable" sourceObject="{d81a4f37-c823-40b4-ad0b-bd5d865072db}" sourceConnector="value" targetObject="{0cd2a1d7-55a5-48fd-9b57-d0a6712d62a1}" targetConnector="IsClockwise"/>
+        <_Connection _uuid="{97e9eaed-3df8-48ea-97af-1297e863b4c3}" _name="Connection" _locked="false" connectionType="OutputVariable" sourceObject="{0b00f66e-2369-4ee1-a9d0-1be1d1141eb0}" sourceConnector="GlobalWidth" targetObject="{64efbe8a-ba7e-49b8-87f8-8b7466429f9e}" targetConnector="_widgetWidth"/>
+        <_Connection _uuid="{99a0f6f9-132a-48b6-a20d-6c1b569a1fb4}" _name="Connection" _locked="false" connectionType="VariableInput" sourceObject="{098f33b7-ccea-4e7d-9918-dd1b921d1719}" sourceConnector="value" targetObject="{bb6dbc34-9378-4d5e-9fa5-9b787687625d}" targetConnector="left"/>
+        <_Connection _uuid="{9abf297d-d2e2-4a52-ba68-4a44886cef56}" _name="Connection" _locked="false" connectionType="OutputVariable" sourceObject="{79958b92-aa66-4516-9516-0d330544754f}" sourceConnector="result" targetObject="{937a500a-a1e6-4802-9b24-f60505f9d3c9}" targetConnector="_widgetActive"/>
+        <_Connection _uuid="{9afe195c-6bbc-4190-b127-6abb75bc7bdf}" _name="Connection" _locked="false" connectionType="InputVariable" sourceObject="{3b6e394d-0d8e-464a-a2e5-8738f1b20280}" sourceConnector="Angle" targetObject="{8813f0d5-8ec3-4fd9-a13a-4bb2b6457fde}" targetConnector="value"/>
+        <_Connection _uuid="{9e4558fa-af2a-4172-b47f-61d011316f6a}" _name="Connection" _locked="false" connectionType="OutputInput" sourceObject="{cb0f4709-3234-4a4e-9db6-ed4fb52afdb1}" sourceConnector="result" targetObject="{3b6e394d-0d8e-464a-a2e5-8738f1b20280}" targetConnector="BorderColor"/>
+        <_Connection _uuid="{a0169480-05e5-4d75-ac76-8648fe338ad1}" _name="Connection" _locked="false" connectionType="OutputInput" sourceObject="{f13c9cc9-76cf-4f6d-ada2-d2c1a6bf06dc}" sourceConnector="result" targetObject="{cb0f4709-3234-4a4e-9db6-ed4fb52afdb1}" targetConnector="results:1"/>
+        <_Connection _uuid="{a054752d-05b6-4e13-8650-9c8acdef418c}" _name="Connection" _locked="false" connectionType="OutputInput" sourceObject="{b761dc8b-ab75-4c39-88c0-67f940b00bee}" sourceConnector="result" targetObject="{3b6e394d-0d8e-464a-a2e5-8738f1b20280}" targetConnector="Angle"/>
+        <_Connection _uuid="{a0ff65fd-c1c7-4580-926a-65541751cf09}" _name="Connection" _locked="false" connectionType="OutputInput" sourceObject="{8d7fa607-6ac5-4e94-85d8-b3e5f1a39ec1}" sourceConnector="result" targetObject="{957c1a8e-1015-4aaf-897b-bd28f1fb67b3}" targetConnector="left"/>
+        <_Connection _uuid="{a39c725e-7158-43e8-a646-857f5a55a886}" _name="Connection" _locked="false" connectionType="VariableInput" sourceObject="{b7941548-9b28-4af3-99ad-83367e558647}" sourceConnector="value" targetObject="{3b6e394d-0d8e-464a-a2e5-8738f1b20280}" targetConnector="Origin"/>
+        <_Connection _uuid="{a507b031-5845-407a-ac7c-4f3665dd56f0}" _name="Connection" _locked="false" connectionType="OutputInput" sourceObject="{1da80cad-1147-4877-a295-09720e89ec36}" sourceConnector="result" targetObject="{9d82227c-2a20-416c-a354-302053925456}" targetConnector="left"/>
+        <_Connection _uuid="{a54be5cc-215f-44a0-b58a-c626b7bff776}" _name="Connection" _locked="false" connectionType="SignalSlot" sourceObject="{979cdda2-398a-40e4-93d0-5ed77ee7d498}" sourceConnector="Down" targetObject="{d45308b4-9303-47d7-abde-1f5f2de1f5b6}" targetConnector="write"/>
+        <_Connection _uuid="{a5b9de6f-79d4-4107-9950-9a94fdd619d7}" _name="Connection" _locked="false" connectionType="SignalSlot" sourceObject="{2a358678-b26e-4c5b-b775-1d7a8bb0c9e1}" sourceConnector="then" targetObject="{b7f0441e-45d9-4c2b-a329-a0c90660d606}" targetConnector="_call"/>
+        <_Connection _uuid="{a880fbcb-c9be-4103-8272-90b8cd94f774}" _name="Connection" _locked="false" connectionType="OutputVariable" sourceObject="{176e29e6-52b2-47cf-8042-f85997916348}" sourceConnector="value" targetObject="{0cd2a1d7-55a5-48fd-9b57-d0a6712d62a1}" targetConnector="Color"/>
+        <_Connection _uuid="{aa26db47-1c63-437f-b6d4-f6cc7bd6c7ac}" _name="Connection" _locked="false" connectionType="OutputInput" sourceObject="{9d82227c-2a20-416c-a354-302053925456}" sourceConnector="result" targetObject="{0f07dcb4-e82e-426c-a5c5-742e3f7ac597}" targetConnector="right"/>
+        <_Connection _uuid="{b0bf6106-bfae-41aa-b666-318769906782}" _name="Connection" _locked="false" connectionType="OutputVariable" sourceObject="{1da80cad-1147-4877-a295-09720e89ec36}" sourceConnector="result" targetObject="{0cd2a1d7-55a5-48fd-9b57-d0a6712d62a1}" targetConnector="_widgetY"/>
+        <_Connection _uuid="{b4f54fcb-2fde-409a-b12c-9db6147d0b46}" _name="Connection" _locked="false" connectionType="VariableInput" sourceObject="{098f33b7-ccea-4e7d-9918-dd1b921d1719}" sourceConnector="value" targetObject="{14d91ee7-6afc-4920-bef3-13e90c367903}" targetConnector="left"/>
+        <_Connection _uuid="{bd1c1a62-3adf-4c78-8f41-93cf4fdffbe5}" _name="Connection" _locked="false" connectionType="WriterVariable" sourceObject="{2fda957d-91db-46cb-a114-ce443171259a}" sourceConnector="target" targetObject="{9ff1136e-aac5-4895-bdad-903d6e786fa0}" targetConnector="value"/>
+        <_Connection _uuid="{c044ec4d-fbbf-49ca-919e-17fd64cb29fa}" _name="Connection" _locked="false" connectionType="OutputVariable" sourceObject="{0b00f66e-2369-4ee1-a9d0-1be1d1141eb0}" sourceConnector="GlobalHeight" targetObject="{64efbe8a-ba7e-49b8-87f8-8b7466429f9e}" targetConnector="_widgetHeight"/>
+        <_Connection _uuid="{c65999bf-92f6-42ca-9fc6-f42d752b1bf7}" _name="Connection" _locked="false" connectionType="VariableInput" sourceObject="{e70afdbb-886b-449c-9491-4a08a0b029b6}" sourceConnector="value" targetObject="{b761dc8b-ab75-4c39-88c0-67f940b00bee}" targetConnector="value"/>
+        <_Connection _uuid="{c6a0cb04-7586-4164-ad85-48195445608c}" _name="Connection" _locked="false" connectionType="OutputInput" sourceObject="{979cdda2-398a-40e4-93d0-5ed77ee7d498}" sourceConnector="Touching" targetObject="{cb0f4709-3234-4a4e-9db6-ed4fb52afdb1}" targetConnector="value"/>
+        <_Connection _uuid="{c8030bbb-ab7a-4941-b7a2-d31a81589eda}" _name="Connection" _locked="false" connectionType="OutputVariable" sourceObject="{0b00f66e-2369-4ee1-a9d0-1be1d1141eb0}" sourceConnector="GlobalHeight" targetObject="{3b6e394d-0d8e-464a-a2e5-8738f1b20280}" targetConnector="_widgetHeight"/>
+        <_Connection _uuid="{ca3290c0-5575-43ce-a57a-805fe40caabc}" _name="Connection" _locked="false" connectionType="VariableInput" sourceObject="{e70afdbb-886b-449c-9491-4a08a0b029b6}" sourceConnector="value" targetObject="{3b6e394d-0d8e-464a-a2e5-8738f1b20280}" targetConnector="EndPoint"/>
+        <_Connection _uuid="{cad7733e-4124-46bc-8379-1e7444e52a90}" _name="Connection" _locked="false" connectionType="WriterVariable" sourceObject="{48b433b9-c7c2-462f-a9e3-07165776d7a9}" sourceConnector="target" targetObject="{40b32bbc-9f96-4320-b52a-b4ecb7348180}" targetConnector="value"/>
+        <_Connection _uuid="{cdbb42a3-dff6-4f5e-91fc-33ac425f29ae}" _name="Connection" _locked="false" connectionType="InputInput" sourceObject="{3b6e394d-0d8e-464a-a2e5-8738f1b20280}" sourceConnector="SelectionColor" targetObject="{f13c9cc9-76cf-4f6d-ada2-d2c1a6bf06dc}" targetConnector="left"/>
+        <_Connection _uuid="{d47fe87e-04c1-4382-af3c-22d33ae80143}" _name="Connection" _locked="false" connectionType="VariableInput" sourceObject="{597ecd73-e033-4259-9720-5216967fb398}" sourceConnector="value" targetObject="{4f52a146-392f-4384-addf-e82c8a054a88}" targetConnector="right"/>
+        <_Connection _uuid="{d5fb3bac-03d0-4ad2-bb8f-4f10827c4ff2}" _name="Connection" _locked="false" connectionType="VariableInput" sourceObject="{12563046-2afe-4cc4-85b5-9f4a081d1c67}" sourceConnector="value" targetObject="{957c1a8e-1015-4aaf-897b-bd28f1fb67b3}" targetConnector="right"/>
+        <_Connection _uuid="{d706750c-51ae-40cd-b712-59a46152e4d7}" _name="Connection" _locked="false" connectionType="OutputInput" sourceObject="{f56a728b-f792-4553-b814-7910aebb46e2}" sourceConnector="value" targetObject="{3b6e394d-0d8e-464a-a2e5-8738f1b20280}" targetConnector="OuterBorder"/>
+        <_Connection _uuid="{dd2ae5a0-edd8-4d86-a760-15537e55c57d}" _name="Connection" _locked="false" connectionType="VariableInput" sourceObject="{0cd2a1d7-55a5-48fd-9b57-d0a6712d62a1}" sourceConnector="_widgetActive" targetObject="{79958b92-aa66-4516-9516-0d330544754f}" targetConnector="value"/>
+        <_Connection _uuid="{deb71c22-ee2b-4f4c-a655-e6dd3b64467c}" _name="Connection" _locked="false" connectionType="VariableInput" sourceObject="{937b3656-ff48-4316-9619-5fd741d8e404}" sourceConnector="value" targetObject="{3b6e394d-0d8e-464a-a2e5-8738f1b20280}" targetConnector="Clockwise"/>
+        <_Connection _uuid="{e875b192-0156-476d-a914-f3f677967385}" _name="Connection" _locked="false" connectionType="SignalSlot" sourceObject="{2ef1fffd-ed11-4dd3-a9ce-407ff720aba7}" sourceConnector="Fired" targetObject="{b18b7986-83be-458f-a527-8429e5f7ed18}" targetConnector="write"/>
+        <_Connection _uuid="{e93004c5-d746-4c18-9455-554ef6eddf4f}" _name="Connection" _locked="false" connectionType="WriterVariable" sourceObject="{b18b7986-83be-458f-a527-8429e5f7ed18}" sourceConnector="target" targetObject="{40b32bbc-9f96-4320-b52a-b4ecb7348180}" targetConnector="value"/>
+        <_Connection _uuid="{f0fd36e4-dcca-43ac-bc37-caa477e3b027}" _name="Connection" _locked="false" connectionType="OutputVariable" sourceObject="{1da80cad-1147-4877-a295-09720e89ec36}" sourceConnector="result" targetObject="{0cd2a1d7-55a5-48fd-9b57-d0a6712d62a1}" targetConnector="_widgetX"/>
+        <_Connection _uuid="{f6018a9c-01a4-4226-9215-4851ab695be5}" _name="Connection" _locked="false" connectionType="OutputInput" sourceObject="{3d400a26-fe33-4b26-b209-85daa7420da6}" sourceConnector="value" targetObject="{3b6e394d-0d8e-464a-a2e5-8738f1b20280}" targetConnector="SelectionColor"/>
+        <_Connection _uuid="{fad42118-e6b5-4d59-a56b-1724db89dec0}" _name="Connection" _locked="false" connectionType="SlotSlot" sourceObject="{b18b7986-83be-458f-a527-8429e5f7ed18}" sourceConnector="write" targetObject="{d45308b4-9303-47d7-abde-1f5f2de1f5b6}" targetConnector="write"/>
+        <_Connection _uuid="{fbeee4e5-180c-4b9d-b36a-432d874580ae}" _name="Connection" _locked="false" connectionType="SlotSlot" sourceObject="{d45308b4-9303-47d7-abde-1f5f2de1f5b6}" sourceConnector="write" targetObject="{2fda957d-91db-46cb-a114-ce443171259a}" targetConnector="write"/>
+    </_ConnectionContainer>
+    <_NodeContainer _uuid="{bd7632ad-9909-4f3b-854c-3d4f233d9b53}" _name="Nodes" _locked="false">
+        <_LogicBlockSlot _uuid="{00afc092-883f-49e4-972b-b83e65f1a07f}" _name="Start" _locked="false" _x="-1428" _y="-232" _color="#303030" _background="#606060" _displayName=""/>
+        <_LogicOperatorBinary _uuid="{8d7fa607-6ac5-4e94-85d8-b3e5f1a39ec1}" _name="value maxAngle" _locked="false" _x="-497" _y="-150" _color="#303030" _background="#2c2421" _comment="" _type="int" _editRole="">
+            <__Properties>
+                <operator type="String">*</operator>
+                <left type="int">360</left>
+            </__Properties>
+        </_LogicOperatorBinary>
+        <_LogicSequence _uuid="{05155a22-4f03-4ce7-ac60-7282ab06ec0f}" _name="Sequence" _locked="false" _x="-1427" _y="-140" _color="#303030" _background="#606060" count="2"/>
+        <_LogicBlockVariable _uuid="{8813f0d5-8ec3-4fd9-a13a-4bb2b6457fde}" _name="Angle" _locked="false" _x="-928" _y="-66" _color="#303030" _background="#606060" _displayName="" _comment="" _type="ft_int16_t" _editRole="">
+            <__Properties>
+                <_min type="String">0</_min>
+                <_max type="String">360</_max>
+                <value type="int">90</value>
+                <access type="String">Private</access>
+            </__Properties>
+        </_LogicBlockVariable>
+        <_LogicOperatorBinary _uuid="{957c1a8e-1015-4aaf-897b-bd28f1fb67b3}" _name="value to angle" _locked="false" _x="-497" _y="-47" _color="#303030" _background="#2c2421" _comment="" _type="int" _editRole="">
+            <__Properties>
+                <operator type="String">/</operator>
+            </__Properties>
+        </_LogicOperatorBinary>
+        <_LogicOperatorUnary _uuid="{79958b92-aa66-4516-9516-0d330544754f}" _name="Invert active" _locked="false" _x="1031" _y="-41" _color="#303030" _background="#606060" _comment="" _type="int" _editRole="">
+            <__Properties>
+                <operator type="String">!</operator>
+            </__Properties>
+        </_LogicOperatorUnary>
+        <_LogicOperatorBinary _uuid="{1da80cad-1147-4877-a295-09720e89ec36}" _name="offset" _locked="false" _x="476" _y="-39" _color="#303030" _background="#606060" _comment="" _type="int" _editRole="">
+            <__Properties>
+                <operator type="String">+</operator>
+            </__Properties>
+        </_LogicOperatorBinary>
+        <_LogicVariableWriter _uuid="{b18b7986-83be-458f-a527-8429e5f7ed18}" _name="Set Variable 3" _locked="false" _x="-47" _y="-39" _color="#303030" _background="#606060" _comment="" _type="int" _editRole="">
+            <__Properties>
+                <value type="int">0</value>
+            </__Properties>
+        </_LogicVariableWriter>
+        <_LogicBlockInput _uuid="{d81a4f37-c823-40b4-ad0b-bd5d865072db}" _name="Clockwise" _locked="false" _x="-928" _y="-13" _color="#303030" _background="#606060" _displayName="Clockwise" _comment="Circular slide in clockwise direction" _type="ft_bool_t" _editRole="">
+            <__Properties>
+                <default type="bool">true</default>
+            </__Properties>
+        </_LogicBlockInput>
+        <_LogicVariableWriter _uuid="{48b433b9-c7c2-462f-a9e3-07165776d7a9}" _name="Set intial angle" _locked="false" _x="-225" _y="39" _color="#303030" _background="#2c2421" _comment="" _type="int" _editRole=""/>
+        <_LogicBlockInput _uuid="{35598756-dc5f-4800-91b6-f2a9d39979f0}" _name="InnerOrigin" _locked="false" _x="-928" _y="45" _color="#303030" _background="#606060" _displayName="Origin" _comment="for inner circle only" _type="int" _editRole="">
+            <__Properties>
+                <_min type="String">0</_min>
+                <_max type="String">360</_max>
+                <default type="int">270</default>
+            </__Properties>
+        </_LogicBlockInput>
+        <_LogicOperatorBinary _uuid="{9d82227c-2a20-416c-a354-302053925456}" _name="double offset" _locked="false" _x="476" _y="90" _color="#303030" _background="#606060" _comment="" _type="int" _editRole="">
+            <__Properties>
+                <operator type="String">*</operator>
+                <right type="int">2</right>
+            </__Properties>
+        </_LogicOperatorBinary>
+        <_LogicOperatorBinary _uuid="{ee888163-0cfd-499b-80b5-1996bc5caff6}" _name="inner width" _locked="false" _x="475" _y="153" _color="#303030" _background="#606060" _comment="" _type="int" _editRole="">
+            <__Properties>
+                <operator type="String">-</operator>
+            </__Properties>
+        </_LogicOperatorBinary>
+        <_LogicOperatorBinary _uuid="{0f07dcb4-e82e-426c-a5c5-742e3f7ac597}" _name="inner height" _locked="false" _x="475" _y="213" _color="#303030" _background="#606060" _comment="" _type="int" _editRole="">
+            <__Properties>
+                <operator type="String">-</operator>
+            </__Properties>
+        </_LogicOperatorBinary>
+        <_LogicBlockInput _uuid="{b6bf0476-d619-4a33-8a09-4ec3e05cb3db}" _name="RingWidth" _locked="false" _x="-928" _y="233" _color="#303030" _background="#606060" _displayName="Ring Width" _comment="" _type="int" _editRole="">
+            <__Properties>
+                <_min type="String">1</_min>
+                <_max type="String">100</_max>
+                <default type="int">50</default>
+            </__Properties>
+        </_LogicBlockInput>
+        <_LogicBlockInput _uuid="{1444e921-7687-4425-8864-9d4328ad861c}" _name="InnerBorder" _locked="false" _x="-928" _y="283" _color="#303030" _background="#606060" _displayName="Inner Border" _comment="" _type="int" _editRole="">
+            <__Properties>
+                <_min type="String">-1</_min>
+                <_max type="String">100</_max>
+                <default type="int">2</default>
+            </__Properties>
+        </_LogicBlockInput>
+        <_LogicOperatorBinary _uuid="{4f52a146-392f-4384-addf-e82c8a054a88}" _name="Value to angle" _locked="false" _x="236" _y="324" _color="#303030" _background="#606060" _comment="" _type="int" _editRole="">
+            <__Properties>
+                <operator type="String">/</operator>
+                <right type="int">0</right>
+            </__Properties>
+        </_LogicOperatorBinary>
+        <_LogicOperatorBinary _uuid="{14d91ee7-6afc-4920-bef3-13e90c367903}" _name="Active arc line condition" _locked="false" _x="745" _y="327" _color="#303030" _background="#606060" _comment="when more than one circle required" _type="int" _editRole="">
+            <__Properties>
+                <operator type="String">&lt;</operator>
+            </__Properties>
+        </_LogicOperatorBinary>
+        <_LogicOperatorBinary _uuid="{bb6dbc34-9378-4d5e-9fa5-9b787687625d}" _name="max in degree" _locked="false" _x="-48" _y="328" _color="#303030" _background="#606060" _comment="" _type="int" _editRole="">
+            <__Properties>
+                <operator type="String">*</operator>
+                <right type="int">360</right>
+            </__Properties>
+        </_LogicOperatorBinary>
+        <_LogicBlockInput _uuid="{f56a728b-f792-4553-b814-7910aebb46e2}" _name="OuterBorder" _locked="false" _x="-928" _y="333" _color="#303030" _background="#606060" _displayName="Outer Border" _comment="" _type="int" _editRole="">
+            <__Properties>
+                <_min type="String">-1</_min>
+                <_max type="String">100</_max>
+                <default type="int">4</default>
+            </__Properties>
+        </_LogicBlockInput>
+        <_LogicSwitchSelect _uuid="{b761dc8b-ab75-4c39-88c0-67f940b00bee}" _name="Switch Angle" _locked="false" _x="236" _y="400" _color="#303030" _background="#606060" _comment="" _type="int" _editRole="">
+            <__Properties>
+                <value type="int">0</value>
+                <cases type="VariantList">
+                    <li type="int">0</li>
+                    <li type="int">1</li>
+                </cases>
+                <results type="VariantList">
+                    <li type="int">0</li>
+                    <li/>
+                </results>
+                <default type="int">0</default>
+            </__Properties>
+        </_LogicSwitchSelect>
+        <_LogicBlockVariable _uuid="{71afd76a-f250-410e-9a79-f6ffdd94b344}" _name="StartAngle" _locked="false" _x="660" _y="424" _color="#303030" _background="#606060" _displayName="" _comment="" _type="int" _editRole="">
+            <__Properties>
+                <access type="String">Private</access>
+            </__Properties>
+        </_LogicBlockVariable>
+        <_LogicBlockVariable _uuid="{a3b92ba5-8e0c-44e8-95cd-ad38553134f0}" _name="StartValue" _locked="false" _x="920" _y="424" _color="#303030" _background="#606060" _displayName="" _comment="" _type="int" _editRole="">
+            <__Properties>
+                <access type="String">Private</access>
+            </__Properties>
+        </_LogicBlockVariable>
+        <_LogicBlockInput _uuid="{6d7a74c1-a6c9-4a5a-a238-716e32ce8088}" _name="BorderColor" _locked="false" _x="-928" _y="433" _color="#303030" _background="#606060" _displayName="Border Color" _comment="" _type="ft_argb32_t" _editRole="">
+            <__Properties>
+                <default type="Color">#d0cec6</default>
+            </__Properties>
+        </_LogicBlockInput>
+        <_LogicBlockVariable _uuid="{80ad5f15-d6ee-44ae-8bbe-52c6bc47bc8d}" _name="NewAngle" _locked="false" _x="660" _y="495" _color="#303030" _background="#606060" _displayName="" _comment="" _type="int" _editRole="">
+            <__Properties>
+                <access type="String">Private</access>
+            </__Properties>
+        </_LogicBlockVariable>
+        <_LogicBlockInput _uuid="{3d400a26-fe33-4b26-b209-85daa7420da6}" _name="SelectionColor" _locked="false" _x="-928" _y="507" _color="#303030" _background="#606060" _displayName="Selection Color" _comment="" _type="ft_argb32_t" _editRole="">
+            <__Properties>
+                <default type="Color">#c55a11</default>
+            </__Properties>
+        </_LogicBlockInput>
+        <_LogicBlockVariable _uuid="{40b32bbc-9f96-4320-b52a-b4ecb7348180}" _name="ClampedNewAngle" _locked="false" _x="234" _y="519" _color="#303030" _background="#606060" _displayName="Angle" _comment="Clamped New Angle" _type="int" _editRole="">
+            <__Properties>
+                <_min type="String">0</_min>
+                <_max type="String">360</_max>
+                <value type="int">0</value>
+                <access type="String">Private</access>
+            </__Properties>
+        </_LogicBlockVariable>
+        <_LogicBlockVariable _uuid="{add8678e-4778-4e55-92fa-e1487028ea35}" _name="TrackAngle" _locked="false" _x="660" _y="582" _color="#303030" _background="#606060" _displayName="" _comment="" _type="int" _editRole="">
+            <__Properties>
+                <access type="String">Private</access>
+            </__Properties>
+        </_LogicBlockVariable>
+        <_LogicBlockInput _uuid="{a48e3e3d-67b2-44d9-a3a1-e3c0192b8e10}" _name="BackgroundColor" _locked="false" _x="-928" _y="589" _color="#303030" _background="#606060" _displayName="Background Color" _comment="" _type="ft_argb32_t" _editRole="">
+            <__Properties>
+                <default type="Color">#060504</default>
+            </__Properties>
+        </_LogicBlockInput>
+        <_LogicBlockInput _uuid="{176e29e6-52b2-47cf-8042-f85997916348}" _name="ValueColor" _locked="false" _x="-928" _y="654" _color="#303030" _background="#606060" _displayName="Value Color" _comment="Value Color for inner circle if it requires" _type="ft_argb32_t" _editRole="">
+            <__Properties>
+                <default type="Color">#35ac39</default>
+            </__Properties>
+        </_LogicBlockInput>
+        <_LogicBlockVariable _uuid="{cd60c112-65dc-4185-8967-05762b85891b}" _name="StartTrackAngle" _locked="false" _x="660" _y="666" _color="#303030" _background="#606060" _displayName="" _comment="" _type="int" _editRole="">
+            <__Properties>
+                <access type="String">Private</access>
+            </__Properties>
+        </_LogicBlockVariable>
+        <_LogicVariableWriter _uuid="{6e1c6e8d-cad6-455c-ad9f-9d86d9812bab}" _name="Set New Angle" _locked="false" _x="235" _y="669" _color="#303030" _background="#606060" _comment="" _type="int" _editRole=""/>
+        <_LogicCondition _uuid="{2a358678-b26e-4c5b-b775-1d7a8bb0c9e1}" _name="Condition" _locked="false" _x="-226" _y="709" _color="#303030" _background="#606060"/>
+        <_LogicBlockVariable _uuid="{937b3656-ff48-4316-9619-5fd741d8e404}" _name="IsClockwise" _locked="false" _x="920" _y="741" _color="#303030" _background="#606060" _displayName="" _comment="" _type="ft_bool_t" _editRole="">
+            <__Properties>
+                <access type="String">Private</access>
+            </__Properties>
+        </_LogicBlockVariable>
+        <_LogicBlockVariable _uuid="{0e1f293c-ba6a-43f5-b36b-08053cee3702}" _name="IsTracking" _locked="false" _x="660" _y="741" _color="#303030" _background="#606060" _displayName="" _comment="" _type="ft_bool_t" _editRole="">
+            <__Properties>
+                <access type="String">Private</access>
+            </__Properties>
+        </_LogicBlockVariable>
+        <_LogicConditionBinary _uuid="{e00f437f-611c-467b-93df-9ad5ff68cce9}" _name="Binary Condition" _locked="false" _x="-1428" _y="747" _color="#303030" _background="#606060" _comment="" _type="int" _editRole="">
+            <__Properties>
+                <operator type="String">&gt;</operator>
+            </__Properties>
+        </_LogicConditionBinary>
+        <_LogicVariableWriter _uuid="{d45308b4-9303-47d7-abde-1f5f2de1f5b6}" _name="Reset IsTracking" _locked="false" _x="235" _y="747" _color="#303030" _background="#606060" _comment="" _type="ft_bool_t" _editRole="">
+            <__Properties>
+                <value type="bool">false</value>
+            </__Properties>
+        </_LogicVariableWriter>
+        <_LogicBlockVariable _uuid="{098f33b7-ccea-4e7d-9918-dd1b921d1719}" _name="Value" _locked="false" _x="-928" _y="763" _color="#303030" _background="#008000" _displayName="" _comment="" _type="ft_int16_t" _editRole="">
+            <__Properties>
+                <_min type="String">0</_min>
+                <_max type="String">1024</_max>
+                <value type="int">0</value>
+                <access type="String">Public</access>
+            </__Properties>
+        </_LogicBlockVariable>
+        <_LogicBlockVariable _uuid="{e70afdbb-886b-449c-9491-4a08a0b029b6}" _name="IsReady" _locked="false" _x="660" _y="799" _color="#303030" _background="#606060" _displayName="" _comment="" _type="ft_bool_t" _editRole="">
+            <__Properties>
+                <access type="String">Private</access>
+            </__Properties>
+        </_LogicBlockVariable>
+        <_LogicVariableWriter _uuid="{2fda957d-91db-46cb-a114-ce443171259a}" _name="Set Variable" _locked="false" _x="236" _y="817" _color="#303030" _background="#606060" _comment="" _type="int" _editRole=""/>
+        <_LogicBlockVariable _uuid="{12563046-2afe-4cc4-85b5-9f4a081d1c67}" _name="UnitCircle" _locked="false" _x="-928" _y="855" _color="#303030" _background="#606060" _displayName="Unit Value" _comment="Unit value for one complete circle" _type="ft_int16_t" _editRole="">
+            <__Properties>
+                <_min type="String">10</_min>
+                <_max type="String">1024</_max>
+                <value type="int">100</value>
+                <access type="String">Public</access>
+            </__Properties>
+        </_LogicBlockVariable>
+        <_LogicBlockVariable _uuid="{b7941548-9b28-4af3-99ad-83367e558647}" _name="ShiftedOrigin" _locked="false" _x="659" _y="877" _color="#303030" _background="#606060" _displayName="Angle" _comment="Clamped New Angle" _type="int" _editRole="">
+            <__Properties>
+                <_min type="String">0</_min>
+                <_max type="String">360</_max>
+                <value type="int">0</value>
+                <access type="String">Private</access>
+            </__Properties>
+        </_LogicBlockVariable>
+        <_LogicBlockVariable _uuid="{9ff1136e-aac5-4895-bdad-903d6e786fa0}" _name="StartOrigin" _locked="false" _x="920" _y="877" _color="#303030" _background="#606060" _displayName="Angle" _comment="Clamped New Angle" _type="int" _editRole="">
+            <__Properties>
+                <_min type="String">0</_min>
+                <_max type="String">360</_max>
+                <value type="int">0</value>
+                <access type="String">Private</access>
+            </__Properties>
+        </_LogicBlockVariable>
+        <_LogicVariableWriter _uuid="{64271824-81f4-492b-9b08-d00c2bbbd7ca}" _name="Set Max to Unit" _locked="false" _x="-1428" _y="887" _color="#303030" _background="#606060" _comment="" _type="int" _editRole=""/>
+        <_LogicBlockVariable _uuid="{597ecd73-e033-4259-9720-5216967fb398}" _name="MaxValue" _locked="false" _x="-928" _y="941" _color="#303030" _background="#606060" _displayName="Max Value" _comment="" _type="ft_int16_t" _editRole="">
+            <__Properties>
+                <_min type="String">10</_min>
+                <_max type="String">1024</_max>
+                <value type="int">200</value>
+                <access type="String">Public</access>
+            </__Properties>
+        </_LogicBlockVariable>
+        <Ft_Esd_CircularSlider_Update_TouchTracker _uuid="{b7f0441e-45d9-4c2b-a329-a0c90660d606}" _name="Update TouchTracker" _locked="false" _x="236" _y="946" _color="#303030" _background="#606060">
+            <__Properties>
+                <tag type="String">255</tag>
+            </__Properties>
+        </Ft_Esd_CircularSlider_Update_TouchTracker>
+        <_LogicSwitchSelect _uuid="{cb0f4709-3234-4a4e-9db6-ed4fb52afdb1}" _name="Switch Value" _locked="false" _x="-496" _y="1045" _color="#303030" _background="#606060" _comment="" _type="ft_argb32_t" _editRole="">
+            <__Properties>
+                <cases type="VariantList">
+                    <li/>
+                    <li type="int">1</li>
+                </cases>
+                <results type="VariantList">
+                    <li type="Color">#d0cec6</li>
+                    <li type="Color">#d0cec6</li>
+                </results>
+                <default type="Color">#d0cec6</default>
+            </__Properties>
+        </_LogicSwitchSelect>
+        <_LogicOperatorBinary _uuid="{f13c9cc9-76cf-4f6d-ada2-d2c1a6bf06dc}" _name="Binary Operator" _locked="false" _x="-497" _y="1147" _color="#303030" _background="#606060" _comment="" _type="ft_argb32_t" _editRole="">
+            <__Properties>
+                <operator type="String">+</operator>
+                <right type="Color">#303030</right>
+            </__Properties>
+        </_LogicOperatorBinary>
+    </_NodeContainer>
+    <_WidgetContainer _uuid="{399d5c5b-ed8e-482f-b69f-df57958938d7}" _name="Widgets" _locked="false">
+        <__Properties>
+            <x type="double">1</x>
+            <y type="double">-2</y>
+            <width type="double">801</width>
+            <height type="double">481</height>
+        </__Properties>
+        <Ft_Esd_RenderForwarder _super="_Widget" _uuid="{0b00f66e-2369-4ee1-a9d0-1be1d1141eb0}" _name="Render Forwarder" _locked="false" _x="-227" _y="447" _color="#62af21" _background="#606060" _allocation="Static" _z="0">
+            <__Properties>
+                <_widgetActive type="bool">true</_widgetActive>
+                <_widgetX type="int">0</_widgetX>
+                <_widgetY type="int">0</_widgetY>
+                <_widgetWidth type="int">50</_widgetWidth>
+                <_widgetHeight type="int">50</_widgetHeight>
+            </__Properties>
+        </Ft_Esd_RenderForwarder>
+        <Ft_Esd_Layout_Tag _super="_Widget" _uuid="{6def2eb2-655e-42ed-bf40-06510c72dc20}" _name="Set Touch Tag" _locked="false" _x="-226" _y="807" _color="#8544a5" _background="#606060" _z="0">
+            <__Properties>
+                <_widgetActive type="bool">true</_widgetActive>
+                <_widgetX type="int">0</_widgetX>
+                <_widgetY type="int">0</_widgetY>
+                <_widgetWidth type="int">50</_widgetWidth>
+                <_widgetHeight type="int">50</_widgetHeight>
+                <Tag type="String">255</Tag>
+            </__Properties>
+            <Ft_Esd_Layout_Fixed _super="_Widget" _uuid="{64efbe8a-ba7e-49b8-87f8-8b7466429f9e}" _name="Fixed Positioning" _locked="false" _x="-497" _y="574" _color="#8544a5" _background="#606060" _z="-4">
+                <__Properties>
+                    <_widgetActive type="bool">true</_widgetActive>
+                    <_widgetX type="double">343.65389565666203</_widgetX>
+                    <_widgetY type="double">211.71782079359122</_widgetY>
+                    <_widgetWidth type="int">50</_widgetWidth>
+                    <_widgetHeight type="int">50</_widgetHeight>
+                </__Properties>
+                <Ft_Esd_ArcLine _super="_Widget" _uuid="{0cd2a1d7-55a5-48fd-9b57-d0a6712d62a1}" _name="ESD Arc Line" _locked="false" _x="745" _y="-37" _color="#62af21" _background="#606060" _allocation="Static" _z="1">
+                    <__Properties>
+                        <_widgetActive type="bool">false</_widgetActive>
+                        <_widgetX type="double">97</_widgetX>
+                        <_widgetY type="double">46</_widgetY>
+                        <_widgetWidth type="double">390</_widgetWidth>
+                        <_widgetHeight type="double">383</_widgetHeight>
+                        <Border type="int">10</Border>
+                        <Color type="Color">#35ac39</Color>
+                        <Origin type="int">270</Origin>
+                        <IsClockwise type="String">true</IsClockwise>
+                        <ShowStartPoint type="bool">false</ShowStartPoint>
+                        <ShowEndPoint type="bool">true</ShowEndPoint>
+                        <ShowPointShadow type="bool">false</ShowPointShadow>
+                    </__Properties>
+                </Ft_Esd_ArcLine>
+                <Ft_Esd_CircleLine _super="_Widget" _uuid="{937a500a-a1e6-4802-9b24-f60505f9d3c9}" _name="ESD Circle Line" _locked="false" _x="1031" _y="11" _color="#62af21" _background="#606060" _allocation="Static" _z="0">
+                    <__Properties>
+                        <_widgetActive type="bool">true</_widgetActive>
+                        <_widgetX type="double">95</_widgetX>
+                        <_widgetY type="double">49</_widgetY>
+                        <_widgetWidth type="double">384</_widgetWidth>
+                        <_widgetHeight type="double">370</_widgetHeight>
+                        <Border type="String">20</Border>
+                        <Color type="String">#7d35ac39</Color>
+                    </__Properties>
+                </Ft_Esd_CircleLine>
+                <Ft_Esd_Ring _super="_Widget" _uuid="{3b6e394d-0d8e-464a-a2e5-8738f1b20280}" _name="ESD Ring" _locked="false" _x="235" _y="-39" _color="#62af21" _background="#606060" _allocation="Static" _z="-1">
+                    <__Properties>
+                        <_widgetActive type="bool">true</_widgetActive>
+                        <_widgetX type="int">0</_widgetX>
+                        <_widgetY type="int">0</_widgetY>
+                        <_widgetWidth type="double">579</_widgetWidth>
+                        <_widgetHeight type="double">469</_widgetHeight>
+                        <Angle type="int">0</Angle>
+                        <Clockwise type="String">true</Clockwise>
+                        <Origin type="int">0</Origin>
+                        <RingWidth type="int">42</RingWidth>
+                        <InnerBorder type="String">3</InnerBorder>
+                        <OuterBorder type="String">3</OuterBorder>
+                        <StartPoint type="bool">false</StartPoint>
+                        <EndPoint type="String">true</EndPoint>
+                        <BackgroundColor type="String">#060504</BackgroundColor>
+                        <SelectionColor type="String">#c55a11</SelectionColor>
+                        <BorderColor type="String">#d0cec6</BorderColor>
+                    </__Properties>
+                </Ft_Esd_Ring>
+            </Ft_Esd_Layout_Fixed>
+        </Ft_Esd_Layout_Tag>
+    </_WidgetContainer>
+</_WidgetDocument>
