@@ -32,6 +32,7 @@
 #include "EVE_HalImpl.h"
 #include "EVE_Platform.h"
 #include "FT_DataTypes.h"
+#include <time.h>
 #if defined(ColibriiMX6_PLATFORM)
 
 #include "colibri_spi.h"
@@ -550,6 +551,7 @@ void EVE_Mcu_release()
 /* Globals for interrupt implementation */
 #if !defined(EVE_MODULE_PANL)
 static uint32_t s_TotalMilliseconds = 0;
+static clock_t start;
 #endif
 
 void EVE_Millis_initialize()
@@ -558,15 +560,16 @@ void EVE_Millis_initialize()
 	panl_timer_register_ms_callback(ticker);
 #else
 	s_TotalMilliseconds = 0;
-//	sys_enable(sys_device_timer_wdt);
-//	timer_prescaler(FT900_TIMER_PRESCALE_VALUE);
-//	timer_init(FT900_FT_MILLIS_TIMER, FT900_TIMER_OVERFLOW_VALUE, timer_direction_up, timer_prescaler_select_on, timer_mode_continuous);
+    clock_t start = clock();
+//    sys_enable(sys_device_timer_wdt);
+//    timer_prescaler(FT900_TIMER_PRESCALE_VALUE);
+//    timer_init(FT900_FT_MILLIS_TIMER, FT900_TIMER_OVERFLOW_VALUE, timer_direction_up, timer_prescaler_select_on, timer_mode_continuous);
 
-//	interrupt_attach(interrupt_timers, 17, ticker);
-//	/* enabling the interrupts for timer */
-//	timer_enable_interrupt(FT900_FT_MILLIS_TIMER);
+//    interrupt_attach(interrupt_timers, 17, ticker);
+//    /* enabling the interrupts for timer */
+//    timer_enable_interrupt(FT900_FT_MILLIS_TIMER);
 
-//	timer_start(FT900_FT_MILLIS_TIMER);
+//    timer_start(FT900_FT_MILLIS_TIMER);
 #endif
 }
 
@@ -586,7 +589,8 @@ uint32_t EVE_millis()
 	return panl_timer_get_time();
 #else
 	/* Interrupt implementation */
-	return (s_TotalMilliseconds);
+    s_TotalMilliseconds = (uint32_t) ((((double) (clock() - start)) / CLOCKS_PER_SEC) * 1000);
+    return (s_TotalMilliseconds);
 #endif
 }
 
