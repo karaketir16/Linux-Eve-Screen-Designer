@@ -2,19 +2,15 @@
 
 ### Preparing
 - Include files under `Colibri_Hal` folder to project.
-- Edit `designerOut/Libraries/FT_Eve_Hal/EVE_Config.h`
-  ```
-  Add NHD_3_5C_FT813
-  Change this line
-  #if defined(ME810A_HV35R) || defined(ME812A_WH50R) || defined(ME813A_WV7C) || defined(ME813AU_WH50C) \
-  with this line
-  #if defined(ME810A_HV35R) || defined(ME812A_WH50R) || defined(ME813A_WV7C) || defined(ME813AU_WH50C) ||defined(NHD_3_5C_FT813) \
 
-  ```
 - Add defines to .pro file
   ```
   DEFINES += ColibriiMX6_PLATFORM
   DEFINES += NHD_3_5C_FT813
+  DEFINES += DISPLAY_RESOLUTION_QVGA
+  DEFINES += EVE_GRAPHICS_AVAILABLE
+  DEFINES += EVE_DISPLAY_AVAILABLE
+  DEFINES += FT813_ENABLE
   ```
 - Connect pins
   

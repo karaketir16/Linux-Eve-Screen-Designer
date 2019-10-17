@@ -10,6 +10,10 @@ DEFINES += QT_DEPRECATED_WARNINGS
 
 DEFINES += ColibriiMX6_PLATFORM
 DEFINES += NHD_3_5C_FT813
+DEFINES += DISPLAY_RESOLUTION_QVGA
+DEFINES += EVE_GRAPHICS_AVAILABLE
+DEFINES += EVE_DISPLAY_AVAILABLE
+DEFINES += FT813_ENABLE
 
 # You can also make your code fail to compile if it uses deprecated APIs.
 # In order to do so, uncomment the following line.
