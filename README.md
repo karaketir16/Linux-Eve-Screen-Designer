@@ -11,7 +11,7 @@
   
   ![pins.png](docs/pins.png)
 
-- If needed, configure defines such as pd, cs pins in `Colibri_Hal/colibri/pinCtl.h` and spi clock speed in `Colibri_Hal/colibri/colibri_spi.h`
+- If needed, configure defines such as pd, cs pins in `Colibri_Hal/colibri/pinCtl.h` and spi clock speed, spi path in `Colibri_Hal/colibri/colibri_spi.h`
 
 
 ### Usage
