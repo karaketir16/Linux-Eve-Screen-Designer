@@ -33,11 +33,11 @@
 #include "EVE_Platform.h"
 #include "FT_DataTypes.h"
 #include <time.h>
+#include <stdint.h>
 #if defined(ColibriiMX6_PLATFORM)
 
 #include "colibri_spi.h"
-void ticker();
-
+#include "pinCtl.h"
 
 /*********
 ** INIT **
@@ -49,12 +49,6 @@ EVE_HalPlatform g_HalPlatform;
 void EVE_HalImpl_initialize()
 {
 	g_HalPlatform.TotalDevices = 1;
-
-#if defined(PANL70) || defined(PANL70PLUS)
-	gpio_function(GOODIXGPIO, pad_goodixgpio);
-	gpio_dir(GOODIXGPIO, pad_dir_output);
-	gpio_write(GOODIXGPIO, 1);
-#endif
 }
 
 /* Release HAL platform */
@@ -66,30 +60,27 @@ void EVE_HalImpl_release()
 /* Get the default configuration parameters */
 void EVE_HalImpl_defaults(EVE_HalParameters *parameters)
 {
-//	parameters->PowerDownPin = FT800_PD_N;
-//	parameters->SpiCsPin = 0; // SS0
+
 }
-
-
 
 /* Opens a new HAL context using the specified parameters */
 bool EVE_HalImpl_open(EVE_HalContext *phost, EVE_HalParameters *parameters)
 {
-    Spi_pd_connect();
-    Spi_cs_connect();
+    pinCtl_pd_connect();
+    pinCtl_cs_connect();
 
-    Spi_pdSet(HIGH);
-    Spi_init(SPI_PATH, SPI_CLOCK_SPEED);
+    pinCtl_pdSet(HIGH);
+    SPI_init(SPI_PATH, SPI_CLOCK_SPEED);
     uint8_t dummyTx = 0;
     uint8_t dummyRx = 0;
-    Spi_transfer(&dummyTx, &dummyRx, 1);
+    SPI_transfer(&dummyTx, &dummyRx, 1);
 
-    Spi_pdSet(LOW);
+    pinCtl_pdSet(LOW);
     usleep(300*1000);
 
-    Spi_pdSet(HIGH);
+    pinCtl_pdSet(HIGH);
     usleep(300*1000);
-    Spi_init(SPI_PATH, SPI_CLOCK_SPEED);
+    SPI_init(SPI_PATH, SPI_CLOCK_SPEED);
     /* Initialize the context valriables */
     phost->SpiDummyBytes = 1;//by default ft800/801/810/811 goes with single dummy byte for read
     phost->SpiChannels = 0;
@@ -101,17 +92,13 @@ bool EVE_HalImpl_open(EVE_HalContext *phost, EVE_HalParameters *parameters)
 /* Close a HAL context */
 void EVE_HalImpl_close(EVE_HalContext *phost)
 {
-//	phost->Status = EVE_STATUS_CLOSED;
-//	--g_HalPlatform.OpenedDevices;
-//	spi_close(SPIM, phost->Parameters.SpiCsPin);
+
 }
 
 /* Idle. Call regularly to update frequently changing internal state */
 void EVE_HalImpl_idle(EVE_HalContext *phost)
 {
-#if defined(EVE_MODULE_PANL)
-	panl_bacnet_task();
-#endif
+
 }
 
 /*************
@@ -122,7 +109,7 @@ void EVE_Hal_startTransfer(EVE_HalContext *phost, EVE_TRANSFER_T rw, uint32_t ad
 {
 	eve_assert(phost->Status == EVE_STATUS_OPENED);
 
-    Spi_csSet(LOW);
+    pinCtl_csSet(LOW);
     if (rw == EVE_TRANSFER_READ)
     {
         ft_uint8_t tx[4];
@@ -137,7 +124,7 @@ void EVE_Hal_startTransfer(EVE_HalContext *phost, EVE_TRANSFER_T rw, uint32_t ad
 
 
 
-        Spi_transfer(tx, rx, sizeof(tx));
+        SPI_transfer(tx, rx, sizeof(tx));
         phost->Status = FT_GPU_HAL_READING;
     }else{
 
@@ -149,7 +136,7 @@ void EVE_Hal_startTransfer(EVE_HalContext *phost, EVE_TRANSFER_T rw, uint32_t ad
         tx[1] = addr >> 8;
         tx[2] = addr;
 
-        Spi_transfer(tx, rx, sizeof(tx));
+        SPI_transfer(tx, rx, sizeof(tx));
         phost->Status = FT_GPU_HAL_WRITING;
     }
 
@@ -160,7 +147,7 @@ void EVE_Hal_endTransfer(EVE_HalContext *phost)
 {
     eve_assert(phost->Status == EVE_STATUS_READING || phost->Status == EVE_STATUS_WRITING);
 
-    Spi_csSet(HIGH);
+    pinCtl_csSet(HIGH);
     phost->Status = EVE_STATUS_OPENED;
 }
 
@@ -193,12 +180,12 @@ static inline uint8_t transfer8(EVE_HalContext *phost, uint8_t value)
 
     if (phost->Status == EVE_STATUS_READING)
     {
-        Spi_transfer(&tx, &rx, sizeof(tx));
+        SPI_transfer(&tx, &rx, sizeof(tx));
         return rx;
     }
     else
     {
-        Spi_transfer(&tx, &rx, sizeof(tx));
+        SPI_transfer(&tx, &rx, sizeof(tx));
         return 0;
     }
 
@@ -347,9 +334,9 @@ void EVE_Hal_hostCommand(EVE_HalContext *phost, uint8_t cmd)
     hcmd[3] = 0;
 
     ft_uint8_t rx[3];
-    Spi_csSet(LOW);
-    Spi_transfer(hcmd, rx, sizeof(hcmd));
-    Spi_csSet(HIGH);
+    pinCtl_csSet(LOW);
+    SPI_transfer(hcmd, rx, sizeof(hcmd));
+    pinCtl_csSet(HIGH);
 }
 
 void EVE_Hal_hostCommandExt3(EVE_HalContext *phost, uint32_t cmd)
@@ -363,9 +350,9 @@ void EVE_Hal_hostCommandExt3(EVE_HalContext *phost, uint32_t cmd)
 	hcmd[3] = 0;
 
     ft_uint8_t rx[3];
-    Spi_csSet(LOW);
-    Spi_transfer(hcmd, rx, sizeof(hcmd));
-    Spi_csSet(HIGH);
+    pinCtl_csSet(LOW);
+    SPI_transfer(hcmd, rx, sizeof(hcmd));
+    pinCtl_csSet(HIGH);
 
 }
 
@@ -373,17 +360,17 @@ void EVE_Hal_powerCycle(EVE_HalContext *phost, bool up)
 {
     if (up)
     {
-        Spi_pdSet(LOW);
+        pinCtl_pdSet(LOW);
         EVE_sleep(20);
 
-        Spi_pdSet(HIGH);
+        pinCtl_pdSet(HIGH);
         EVE_sleep(20);
     }else
     {
-        Spi_pdSet(HIGH);
+        pinCtl_pdSet(HIGH);
         EVE_sleep(20);
 
-        Spi_pdSet(LOW);
+        pinCtl_pdSet(LOW);
         EVE_sleep(20);
     }
 }
@@ -437,106 +424,12 @@ uint32_t EVE_Hal_currentFrequency(EVE_HalContext *phost)
 
 static void initSdHost()
 {
-//	sys_enable(sys_device_sd_card);
-//	sdhost_sys_init();
-//	sdhost_init();
 
-//	gpio_function(GPIO_SD_CLK, pad_sd_clk);
-//	gpio_pull(GPIO_SD_CLK, pad_pull_none); // pad_pull_none
-//	gpio_function(GPIO_SD_CMD, pad_sd_cmd);
-//	gpio_pull(GPIO_SD_CMD, pad_pull_pullup);
-//	gpio_function(GPIO_SD_DAT3, pad_sd_data3);
-//	gpio_pull(GPIO_SD_DAT3, pad_pull_pullup);
-//	gpio_function(GPIO_SD_DAT2, pad_sd_data2);
-//	gpio_pull(GPIO_SD_DAT2, pad_pull_pullup);
-//	gpio_function(GPIO_SD_DAT1, pad_sd_data1);
-//	gpio_pull(GPIO_SD_DAT1, pad_pull_pullup);
-//	gpio_function(GPIO_SD_DAT0, pad_sd_data0);
-//	gpio_pull(GPIO_SD_DAT0, pad_pull_pullup);
-//	gpio_function(GPIO_SD_CD, pad_sd_cd);
-//	gpio_pull(GPIO_SD_CD, pad_pull_pullup);
-//	gpio_function(GPIO_SD_WP, pad_sd_wp);
-//	gpio_pull(GPIO_SD_WP, pad_pull_pullup);
 }
 
 void EVE_Mcu_initialize()
 {
-#if (defined(EVE_MODULE_PANL))
-#ifndef EVDEMO
-	init_printf(UART0, tfp_putc);
-#endif
-	panl_board_cfg bcfg;
-#if defined(PANL35)
-	panl_board_cfg_set_defaults(PANL35_GENERIC_V2, &bcfg);
-#elif defined(PANL70) || defined(PANL70PLUS)
-	panl_board_cfg_set_defaults(PANL70_PLUS_V2, &bcfg);
-#endif
 
-	panl_result res = panl_init(&bcfg);
-	panl_bacnet_cfg_s cfg = { .msg_rxed_cb = bacnet_msg_received, .notif_ack_cb = bacnet_notification_acked, .unconf_msg_rxed_cb = bacnet_unconf_msg_received, .mac = 13, .config = config_default };
-	if (!panl_bacnet_init(&cfg))
-	{
-		eve_printf_debug("Error init bacnet!\n");
-	}
-
-	panl_led_init();
-
-	uint8_t panlID = 0;
-	res = panl_get_panl_id(&panlID);
-
-	eve_printf_debug("\r\nPanL ID :  %04x\r\n", panlID);
-#endif
-
-//	interrupt_enable_globally();
-
-//	sys_enable(sys_device_uart0);
-//	gpio_function(GPIO_UART0_TX, pad_uart0_txd); /* UART0 TXD */
-//	gpio_function(GPIO_UART0_RX, pad_uart0_rxd); /* UART0 RXD */
-//	uart_open(UART0, /* Device */
-//	    1, /* Prescaler = 1 */
-//	    UART_DIVIDER_115200_BAUD, /* Divider = 1302 */
-//	    uart_data_bits_8, /* No. Data Bits */
-//	    uart_parity_none, /* Parity */
-//	    uart_stop_bits_1); /* No. Stop Bits */
-
-#if (defined(ENABLE_ILI9488_HVGA_PORTRAIT) || defined(ENABLE_KD2401_HVGA_PORTRAIT))
-	/* asign all the respective pins to GPIO and set them to default values */
-	gpio_function(GPIO_ILI9488_DCX, pad_ili9488_dcx);
-	gpio_dir(GPIO_ILI9488_DCX, pad_dir_output);
-	gpio_write(GPIO_ILI9488_DCX, 1);
-
-	gpio_function(GPIO_SPIM_CLK, pad_spim_sck);
-	gpio_dir(GPIO_SPIM_CLK, pad_dir_output);
-	gpio_write(GPIO_SPIM_CLK, 1);
-
-	gpio_function(GPIO_SPIM_MOSI, pad_spim_mosi);
-	gpio_dir(GPIO_SPIM_MOSI, pad_dir_output);
-	gpio_write(GPIO_SPIM_MOSI, 1);
-
-	gpio_function(GPIO_ILI9488_CS1, pad_ili9488_cs1);
-	gpio_dir(GPIO_ILI9488_CS1, pad_dir_output);
-	gpio_write(GPIO_ILI9488_CS1, 1);
-
-	gpio_function(GPIO_SPIM_MISO, pad_spim_miso);
-	gpio_dir(GPIO_SPIM_MISO, pad_dir_output);
-	gpio_write(GPIO_SPIM_MISO, 1);
-
-	gpio_function(GPIO_SPIM_SS0, pad_spim_ss0);
-	gpio_dir(GPIO_SPIM_SS0, pad_dir_output);
-	gpio_write(GPIO_SPIM_SS0, 1);
-
-	gpio_function(GPIO_PWD, pad_pwd);
-	gpio_dir(GPIO_PWD, pad_dir_output);
-	gpio_write(GPIO_PWD, 1);
-
-	gpio_write(GPIO_ILI9488_DCX, 1);
-	gpio_write(GPIO_SPIM_SS0, 1);
-	gpio_write(GPIO_PWD, 1);
-	gpio_write(GPIO_ILI9488_CS1, 1);
-
-#endif
-
-	initSdHost();
 }
 
 void EVE_Mcu_release()
@@ -544,89 +437,34 @@ void EVE_Mcu_release()
 	/* no-op */
 }
 
-/*********
-** MISC **
-*********/
-
-/* Globals for interrupt implementation */
-#if !defined(EVE_MODULE_PANL)
-static uint32_t s_TotalMilliseconds = 0;
-static clock_t start;
-#endif
+static int64_t s_TotalMilliseconds = 0;
+static int64_t start;
 
 void EVE_Millis_initialize()
 {
-#if (defined(EVE_MODULE_PANL))
-	panl_timer_register_ms_callback(ticker);
-#else
-	s_TotalMilliseconds = 0;
-    clock_t start = clock();
-//    sys_enable(sys_device_timer_wdt);
-//    timer_prescaler(FT900_TIMER_PRESCALE_VALUE);
-//    timer_init(FT900_FT_MILLIS_TIMER, FT900_TIMER_OVERFLOW_VALUE, timer_direction_up, timer_prescaler_select_on, timer_mode_continuous);
-
-//    interrupt_attach(interrupt_timers, 17, ticker);
-//    /* enabling the interrupts for timer */
-//    timer_enable_interrupt(FT900_FT_MILLIS_TIMER);
-
-//    timer_start(FT900_FT_MILLIS_TIMER);
-#endif
+    start = (int64_t) clock();
 }
 
 void EVE_Millis_release()
 {
-#if !defined(EVE_MODULE_PANL)
-//    timer_stop(FT900_FT_MILLIS_TIMER);
-//    timer_disable_interrupt(FT900_FT_MILLIS_TIMER);
-#endif
+
 }
 
-/* Need to ensure that below api is called at least once in 6.5 seconds duration for FT900 platform as this module doesnt use timer for context update */
-/* global counter to loopback after ~49.71 days */
+
 uint32_t EVE_millis()
 {
-#if defined(EVE_MODULE_PANL)
-	return panl_timer_get_time();
-#else
-	/* Interrupt implementation */
-    s_TotalMilliseconds = (uint32_t) ((((double) (clock() - start)) / CLOCKS_PER_SEC) * 1000);
-    return (s_TotalMilliseconds);
-#endif
+    return ((int64_t) ((((double) ((int64_t)clock() - start)) / CLOCKS_PER_SEC) * 1000));
 }
 
-void ticker()
-{
-#if !defined(EVE_MODULE_PANL)
-	s_TotalMilliseconds += 1;
-
-//	timer_disable_interrupt(FT900_FT_MILLIS_TIMER);
-//	/* Clear the interrupt and increment the counter */
-//	timer_is_interrupted(FT900_FT_MILLIS_TIMER);
-//	timer_enable_interrupt(FT900_FT_MILLIS_TIMER);
-#endif
-}
 
 void EVE_sleep(uint32_t us)
 {
     usleep(us * 1000);
 }
 
-/*********
-** MISC **
-*********/
 
 bool EVE_UtilImpl_bootupDisplayGpio(EVE_HalContext *phost)
 {
-#if defined(PANL70) || defined(PANL70PLUS)
-	gpio_function(GOODIXGPIO, pad_gpio33);
-	gpio_dir(GOODIXGPIO, pad_dir_output);
-	gpio_write(GOODIXGPIO, 0);
-	EVE_sleep(1);
-	Ft_Gpu_Hal_Wr8(phost, REG_CPURESET, 0);
-	EVE_sleep(100);
-	gpio_dir(GOODIXGPIO, pad_dir_input);
-#endif
-
 	return true;
 }
 

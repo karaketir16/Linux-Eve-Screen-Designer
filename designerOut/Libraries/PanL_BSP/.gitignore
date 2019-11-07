@@ -1,5 +1,0 @@
-# Various build directories
-!Debug
-!Release
-!Lib
-!*.a
