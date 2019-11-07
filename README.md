@@ -17,6 +17,6 @@
 ### Usage
 
 - As an example `EVE Screen Designer/Examples/Basic/RadioButtonGroups` used in this project.
-- Copy `RadioButtonGroups/Generated` to Project folder. It should be in same directory with README.me
-- Run `script.sh`, `./script.sh`
+- To use any other project, delete `Colibri-Eve-Screen-Designer/Generated` and replace with `PathtoProject/Generated`.
+- Run script.sh with `./script.sh` command
 - If working on linux machine, fix lower/upper case issues.
