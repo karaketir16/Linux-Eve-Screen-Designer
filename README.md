@@ -1,4 +1,7 @@
-# Eve Screen Designer Colibri Hal Implementation
+# Eve Screen Designer Linux Hal Implementation
+
+## Example project
+
 ### Devices
 
 - NHD_3_5C_FT813
