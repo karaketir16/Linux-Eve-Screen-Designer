@@ -34,7 +34,7 @@
 #include "FT_DataTypes.h"
 #include <time.h>
 #include <stdint.h>
-#if defined(ColibriiMX6_PLATFORM)
+#if defined(Linux_PLATFORM)
 
 #include "colibri_spi.h"
 #include "pinCtl.h"

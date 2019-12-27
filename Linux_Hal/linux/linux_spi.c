@@ -1,4 +1,4 @@
-#include "colibri_spi.h"
+#include "linux_spi.h"
 #include "pinCtl.h"
 
 static const char *device;

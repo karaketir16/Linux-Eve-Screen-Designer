@@ -8,7 +8,7 @@ CONFIG -= app_bundle
 # deprecated API in order to know how to port your code away from it.
 DEFINES += QT_DEPRECATED_WARNINGS
 
-DEFINES += ColibriiMX6_PLATFORM
+DEFINES += Linux_PLATFORM
 DEFINES += DISPLAY_RESOLUTION_QVGA
 DEFINES += EVE_GRAPHICS_AVAILABLE
 DEFINES += EVE_DISPLAY_AVAILABLE
@@ -40,37 +40,20 @@ INCLUDEPATH += $$PWD/Generated/FT_Esd_Widgets/
 DEPENDPATH  += $$PWD/Generated/App/
 INCLUDEPATH += $$PWD/Generated/App/
 
-DEPENDPATH  += $$PWD/Colibri_Hal/colibri/
-INCLUDEPATH += $$PWD/Colibri_Hal/colibri/
+DEPENDPATH  += $$PWD/Linux_Hal/linux/
+INCLUDEPATH += $$PWD/Linux_Hal/linux/
 
-DEPENDPATH  += $$PWD/Colibri_Hal/
-INCLUDEPATH += $$PWD/Colibri_Hal/
+DEPENDPATH  += $$PWD/Linux_Hal/
+INCLUDEPATH += $$PWD/Linux_Hal/
 
 DEPENDPATH  += $$PWD/Libraries/FT_Eve_Hal/Hdr/
 INCLUDEPATH += $$PWD/Libraries/FT_Eve_Hal/Hdr/
 
 SOURCES += \
         $$files(*.c, true)
-#        $$PWD/Generated/*/*/*.c \
-#        $$PWD/Libraries/FT_Esd_Framework/*.c \
-#        $$PWD/Generated/*/FT_Esd_Widgets/*.c \
-#        $$PWD/Libraries/FT_Eve_Hal/*.c \
-#        $$PWD/Libraries/FT_Esd_Widgets/*.c \
-#        $$PWD/Generated/*/FT_Esd_Framework/*.c \
-#        $$PWD/Colibri_Hal/colibri_spi/*.c* \
-#        $$PWD/Colibri_Hal/*.c*
 
 HEADERS += \
         $$files(*.h, true)
-#        $$PWD/Generated/*/App/*.h \
-#        $$PWD/Libraries/FT_Esd_Framework/*.h \
-#        $$PWD/Generated/*/FT_Esd_Widgets/*.h \
-#        $$PWD/Libraries/FT_Eve_Hal/*.h \
-#        $$PWD/Libraries/FT_Eve_Hal/Hdr/*.h \
-#        $$PWD/Libraries/FT_Esd_Widgets/*.h \
-#        $$PWD/Generated/*/FT_Esd_Framework/*.h \
-#        $$PWD/Colibri_Hal/colibri_spi/*.h
-
 
 
 unix {
