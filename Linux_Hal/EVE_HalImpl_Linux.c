@@ -36,7 +36,7 @@
 #include <stdint.h>
 #if defined(Linux_PLATFORM)
 
-#include "colibri_spi.h"
+#include "linux_spi.h"
 #include "pinCtl.h"
 
 /*********
